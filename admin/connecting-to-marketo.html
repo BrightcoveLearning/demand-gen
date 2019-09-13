@@ -1,0 +1,174 @@
+<article class="bcls-article">
+  <section class="bcls-section">
+    <p>The Demand Gen application can be configured to synchronize viewing data from Brightcove Players to Marketo. Once in Marketo, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
+    <p>There are two options for integrating  with Marketo:</p>
+    <ul>
+      <li><strong><a href="#rest">Using the Marketo REST APIs</a></strong> - With this method, Audience will only track viewing data for known viewers.</li>
+      <li><strong><a href="#munchkin">Using the Marketo Munchkin</a></strong><a href="#client_side"><strong> method</strong></a> - With this method, Audience will track viewing data for all viewers. </li>
+    </ul>
+    <p>The Audience module integration with Marketo consists of two main components:</p>
+    <ul>
+      <li>A Brightcove Player plug-in to enable tracking of video views data</li>
+      <li>A Synchronization process to send tracking data from Video Cloud to Marketo</li>
+    </ul>
+    <p>Some of the key features of the  Marketo integration are:</p>
+    <ul>
+      <li><strong>Data format</strong> - Video cloud viewing data is delivered to Marketo as a page view, or a virtual web visit. The web page visit event contains query parameters that indicate the viewer's level of engagement. The data that is replicated to Marketo is as follows:
+        <ul>
+          <li>Video Name</li>
+          <li>Video ID</li>
+          <li>Account ID (Video Cloud)</li>
+          <li>Page URL (URL of the referring page)</li>
+          <li>Player ID (Video Cloud player)</li>
+          <li>% Watched (25%, 50%, 75%, 95%)</li>
+        </ul>
+      </li>
+      <li><strong>Data transfer</strong> - Viewing data is sent immediately to Marketo when the Audience-enabled Brightcove player generates it; however, some reports in the Marketo platform may take some time to refresh</li>
+      <li><strong>Data retention</strong> - Data collected can optionally be retained in Video Cloud for up to 6 months</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="rest">Marketo REST API integration</h2>
+    <p>To use the Audience module with the Marketo REST integration, you must:</p>
+    <ul>
+      <li>Create a role in Marketo which has access to all of the API permissions</li>
+      <li>Create a LaunchPoint Service</li>
+      <li>Have a Professional or Enterprise Video Cloud account</li>
+      <li>Have the Audience module enabled for your account by submitting the required information in the initial splash screen that appears when you open the Audience module</li>
+      <li>Click through the service agreement the first time you use the module</li>
+      <li>Use the Advanced Embed (in-page) publishing code when publishing your player; Standard Embed (iframe) publishing code will not work as the plugin will be running inside of an iframe and therefore will be unable to access any parent page URL parameters and may not get the correct cookies</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="api">Creating an API-only user and LaunchPoint service</h2>
+    <p>Before you can make a call to the Marketo REST API, you need to create a new API role with access to all of the APIs, create an API-only user and then create a service that uniquely identifies your client application. The steps to complete these tasks are outlined in the <a href="https://developers.marketo.com/blog/quick-start-guide-for-marketo-rest-api/">Marketo documentation</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setupConnection">Setting up the connection</h2>
+    <p>Once the configuration steps on the Marketo side have been completed, follow these steps to setup the connection between Video Cloud and Marketo.</p>
+    <h3 id="establishConnection">Establishing the connection between Video Cloud and Marketo</h3>
+    <ol class="bcls-tasklist">
+      <li>Open the Audience module and click <strong>Data Connections</strong> in the left navigation.</li>
+      <li>Click <strong>Add New Connection</strong>.</li>
+      <li>Select <strong>Marketo</strong> as the integration.
+        <p class="BCL-aside">Note: The integrations that are available are based upon your Video Cloud subscription.</p>
+      </li>
+      <li>(Optional) Enter a <strong>Connection Name</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="audience setup" src="https://img.brightcove.com/node16341-setup-section.png" /></figure>
+      </li>
+      <li>Click <strong>Connect</strong>.</li>
+      <li>Select <strong>Standard (REST API) </strong>and then click <strong>Save</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo integration type" src="https://img.brightcove.com/node16341-munchkin-rest.png" /></figure>
+        <p>You will required to paste in several values from your Marketo account. Note that you must be logged in as a Marketo administrator to complete the following steps. For the following steps, click the empty link and provide the appropriate value:</p>
+      </li>
+      <li><strong>Marketo Account ID</strong> - To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Munchkin</strong>.</li>
+      <li><strong>Marketo REST API Endpoint URL</strong> - To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Web Services</strong>.</li>
+      <li><strong>Marketo REST API Identity URL</strong> - To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> Web Services</strong>.</li>
+      <li><strong>Marketo LaunchPoint Client ID</strong> - To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>LaunchPoint</strong> and then click the <strong>View Details</strong> link for the LaunchPoint you created earlier as part of this setup.</li>
+      <li><strong>Marketo LaunchPoint Client Secret</strong> - To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> LaunchPoint</strong> and then click the <strong>View Details</strong> link for the LaunchPoint you created earlier as part of this setup.</li>
+      <li>Click <strong>Setup</strong>.</li>
+    </ol>
+    <p>The Video Cloud connection to Marketo is now set up and ready to use.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: If the correct permissions are not assigned to the Marketo user, an error will be displayed in Studio. Check your permissions and then try again.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure">Configuring the integration</h2>
+    <p>Once the Video Cloud to Marketo connection has been made, you can configure the integration.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="connected options" src="https://img.brightcove.com/node16341-connected-options.png" /></figure>
+    <ol class="bcls-tasklist">
+      <li>By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if Video Cloud video engagement data is sent to Marketo.
+        <ul>
+          <li><strong>Enabled</strong> - Data is collected and will be sent to Marketo</li>
+          <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
+        </ul>
+      </li>
+      <li>By default, <strong>Track Data for Unknown Viewers</strong> will be set to <strong>Disabled</strong>. Enabling this option will track data for unknown users. Data will be retained based upon the selected data retention policy. If data retention is set to <strong>No retention</strong>, this field is not displayed.</li>
+      <li>Select a data retention policy. The data retention policy determines whether, and for how long, the lead information data that you capture will be retained in your Video Cloud account as well as in Marketo. Retaining data in Video Cloud allows you to recover from interrupted synchronizations. However, <strong>you should adjust the retention settings according to your privacy policy</strong> - it is not required to retain any user data in Video Cloud.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="data retention options" src="https://img.brightcove.com/node16341-data-retention-options.png" /></figure>
+      </li>
+    </ol>
+    <p>To remove the integration with Marketo, click <strong>Disconnect</strong>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="munchkin">Marketo Munchkin integration</h2>
+    <p>To use the Audience module with Marketo munchkin, you must:</p>
+    <ul>
+      <li>Have a Marketo account with the Munchkin API enabled - you will need your Munchkin account ID (see <a href="#marketo">Accessing the Marketo munchkin</a> below); users with the Munchkin User role should be able to access these values</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="access_munchkin">Accessing the Marketo munchkin</h2>
+    <p>When configuring the integration with Video Cloud, you will be prompted for your Marketo munchkin. Follow the steps below to access this value.</p>
+    <ol class="bcls-tasklist">
+      <li>Login to your Marketo account.</li>
+      <li>Click <strong>Admin</strong> in the top navigation.</li>
+      <li>In the left navigation, navigate to <strong>Admin</strong> &gt; <strong>Integration</strong> &gt; <strong>Munchkin</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo account settings" src="https://img.brightcove.com/node15636-marketo-account.png" /></figure>
+      </li>
+      <li>Copy the <strong>Munchkin Account ID</strong> and save it in a safe place. It will be needed when configuring the Audience module.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo-account-id" src="https://img.brightcove.com/node15636-marketo-account-id.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setupConnection">Setting up the connection</h2>
+    <p>Follow these steps to setup the connection between Video Cloud and Marketo.</p>
+    <h3 id="establishConnection">Establishing the connection between Video Cloud and Marketo</h3>
+    <ol class="bcls-tasklist">
+      <li>Open the Audience module and click <strong>Data Connections</strong> in the left navigation.</li>
+      <li>Click <strong>Add New Connection</strong>.</li>
+      <li>Select <strong>Marketo</strong> as the integration.
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: The integrations that are available are based upon your Video Cloud subscription.</aside>
+      </li>
+      <li>(Optional) Enter a <strong>Connection Name</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="audience setup" src="https://img.brightcove.com/node15636-setup-section.png" /></figure>
+      </li>
+      <li>Click <strong>Connect</strong>.</li>
+      <li>Select <strong>High Volume (Munchkin)</strong> and then click <strong>Save</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo integration type" src="https://img.brightcove.com/node15636-munchkin-rest.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: For information on using the REST integration, see <a href="/node/16341">Integrating Video Cloud with Marketo Using the REST APIs</a>.</aside>
+      </li>
+      <li>Click the <strong>empty</strong> link in the <strong>Marketo Account ID</strong> section. Paste in your <strong>Munchkin Account ID</strong> and click <strong>Save</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Marketo splash screen" src="https://img.brightcove.com/node15636-marketo-acct-id.png" /></figure>
+      </li>
+    </ol>
+    <p>The Video Cloud connection to Marketo is now set up and ready to use.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure">Configuring the integration</h2>
+    <p>Once the Video Cloud to Marketo connection has been made, you can configure the integration.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="connected options" src="https://img.brightcove.com/node15636-connected-options.png" /></figure>
+    <ol class="bcls-tasklist">
+      <li>By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if Video Cloud video engagement data is sent to Marketo.
+        <ul>
+          <li><strong>Enabled</strong> - Data is collected and will be sent to Marketo</li>
+          <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
+        </ul>
+      </li>
+    </ol>
+    <p>To remove the integration with Marketo, click <strong>Disconnect</strong>. The Audience module supports multiple connections to marketing platforms. Click <strong>Add New Connection</strong> to configure additional integrations.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="trackingid2">Passing a tracking ID</h2>
+    <p>The Audience module supports the ability to pass a tracking ID value to Marketo. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the URL that displays the Audience-enabled player or added to the player embed code.</p>
+    <ul>
+      <li>Example: Appended to URL</li>
+    </ul>
+    <pre>
+  http://www.myurl.com/video.html?<strong>bctrackingid=12345</strong></pre>
+    <ul>
+      <li>Example: Added to player embed code</li>
+    </ul>
+    <pre>
+  &lt;video data-video-id="6033402539001" 
+         data-account="1486906377" 
+         data-player="default" 
+         data-embed="default" 
+         data-application-id 
+         class="video-js"
+         <strong>data-bc-trackingid="12345"</strong> 
+         controls&gt;&lt;/video&gt;
+  &lt;script src="//players.brightcove.net/1486906377/default_default/index.min.js"&gt;&lt;/script&gt;</pre>
+    <p>Audience will then pass the value along to Marketo as another field that is synced.</p>
+  </section>
+</article>
