@@ -35,7 +35,7 @@
     <p>Data in the dashboard  is shown using the account's reporting time zone. The time zone is displayed below the calendar control.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="time zone" src="/demand-gen/images/dashboard/dashboard-time-zone.png" /></figure>
     <p>The reporting time zone is used to calculate day boundaries for reporting data. Changing the reporting time zone setting only affects data going forward, and changes are not applied retroactively. If you change this setting, you may see a flat spot or a spike in your data when looking at day boundaries where the change was applied. Updates to this setting may not take effect immediately, and analytics data may continue to refer to the old setting until the system processes the changes.</p>
-    <p>The reporting time zone can be configured as part of the <a href="../admin/managing_account_settings.html#account_settings">account settings</a>. </p>
+    <p>The reporting time zone can be configured as part of the <a href="file:///Macintosh HD/private/var/folders/x9/6htkrrb16s3gfz3j3dd3p9d40000gn/T/TemporaryItems/Adobe/admin/managing_account_settings.html#account_settings">account settings</a>. </p>
   </section>
   <section class="bcls-section">
     <h2 id="terms">Terms used on the dashboard</h2>
@@ -66,11 +66,37 @@
     <p>Selecting a video in the list will display the VBS details for the video.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="time zone" src="/demand-gen/images/dashboard/dashboard-adv-vbs-details.png" /></figure>
     <p>Clicking <strong>More Analytics for This Video</strong> will open the Analytics page with detailed analytics for the selected video.</p>
-    <p>The Play Rate graph will show the play rate for the selected video and the play rate for other videos with the same video content type. Based upon the Play Rate of your video compared to other videos of the same time, a Performance rating is displayed:</p>
-    <ul>
-      <li>Great - </li>
-      <li>Average  - </li>
-    </ul>
+    <p>The Play Rate graph will show the play rate for the selected video and the play rate for other videos with the same video content type. Based upon the Play Rate of your video compared to other videos of the same time, a Performance rating is displayed.</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Performance Rating</th>
+          <th>VBS Range</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>Great</td>
+          <td>80 - 100</td>
+        </tr>
+        <tr>
+          <td>Good</td>
+          <td>60 - 79</td>
+        </tr>
+        <tr>
+          <td>Average</td>
+          <td>40 - 59</td>
+        </tr>
+        <tr>
+          <td>Low</td>
+          <td>20 - 39</td>
+        </tr>
+        <tr>
+          <td>Poor</td>
+          <td>0 - 19</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 </article>
 </body>
