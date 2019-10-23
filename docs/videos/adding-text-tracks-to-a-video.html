@@ -17,9 +17,7 @@
   </section>
   <section class="bcls-section">
     <h2 id="captionsfile">Creating caption files</h2>
-    <p>To add captions to a video, you first need to create a captions file. The Brightcove player supports Web Video Text Tracks Format (WebVTT), SRT and DFXP formats. The WebVTT file format (shown below) is plain text and contains time text data followed by the desired caption or subtitle text.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: SRT and DFXP captions are not supported for videos using Legacy transcoding.</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: The text of the captions must be encoded UTF-8 to diplay properly for double-byte languages such as Japanese and Korean.</aside>
+    <p>To add captions to a video, you first need to create a captions file. Web Video Text Tracks Format (WebVTT), SRT and DFXP formats are supported. The WebVTT file format (shown below) is plain text and contains time text data followed by the desired caption or subtitle text.</p>
     <pre>
 WEBVTT
 00:00:00.000 --&gt; 00:00:07.080 align:middle line:90%
@@ -39,21 +37,23 @@ brief overview of what
 00:00:14.940 --&gt; 00:00:17.490 align:middle line:90%
 you can accomplish using it.
 </pre>
-    <p class="BCL-aside">Note: Caption file names should only include letters (upper or lower case), numbers, dashes (-) and underscores (_) .</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Caption file names should only include letters (upper or lower case), numbers, dashes (-) and underscores (_) .</aside>
     <p>For more information on the WebVTT format, see <a href="http://dev.w3.org/html5/webvtt/">this link</a>. You should have a separate caption file for each language you need to support. While there are many third-party tools to help create captions files, Brightcove has several partners that provide transcription, captioning and translation services. For a complete list of Brightcove partners, visit the <a href="//www.brightcove.com/en/partners/find-partner">Partners</a> section of our website.</p>
   </section>
   <section class="bcls-section">
     <h2 id="texttrack">Configuring the text track properties</h2>
     <p>Once the caption files have been created, they can be uploaded and hosted by Brightcove or reside at an internet accessible URL.</p>
-    <p>To view and edit the text track properties for a video, open the <strong>Videos</strong> page, click the video title link and locate the <strong>Text Tracks</strong> section. To configure the text track properties, follow these steps:</p>
+    <p>To view and edit the text track properties for a video,  follow these steps:</p>
     <ol class="bcls-tasklist">
-      <li>Click <strong>Edit</strong> or double-click in the section.</li>
+      <li>Open the <strong>Videos</strong> page.</li>
+      <li>Click the video title link to open the video properties page.</li>
+      <li>Locate the <strong>Text Tracks</strong> section and click <strong>Edit</strong> or double-click in the section.</li>
       <li>Select if the text track file will be uploaded or hosted on an external URL.
         <ul>
           <li><strong>File Upload</strong> - Click <strong>Browse</strong> and select the text track file from the file system.</li>
           <li><strong>URL Upload</strong> - Enter the public URL where the text track file resides and then click <strong>Upload</strong>.</li>
           <li><strong>Remote URL</strong> - Enter the public URL where the text track file resides. The URL must be less than 250 characters. Captions will be loaded from the remote URL.
-            <aside class="bcls-aside bcls-aside--information language-editable">Note: If you are hosting captions files on your own server, make sure the file is located at a URL that can be accessed by the Brightcove player. The server hosting the captions file should also have Cross-Origin Resource Sharing (CORS) enabled. You can read more about CORS <a href="/node/17916">here</a>.</aside>
+            <aside class="bcls-aside bcls-aside--information language-editable">Note: If you are hosting captions files on your own server, make sure the file is located at a publicly addressable URL. The server hosting the captions file should also have Cross-Origin Resource Sharing (CORS) enabled.</aside>
             <aside class="bcls-aside bcls-aside--information language-editable">Note: Text track file names with parentheses, question marks, quotation marks, spaces and other special characters will silently fail when uploading. Brightcove recommends using file names without special characters.</aside>
           </li>
         </ul>
@@ -70,7 +70,7 @@ you can accomplish using it.
           <li><strong>Metadata</strong> - Information and content about the video which isn’t intended to be displayed to the viewer by default (though you may wish to do so using JavaScript)</li>
         </ul>
       </li>
-      <li>Enter the <strong>MIME Type</strong> for the text track file. Selecting <strong>default</strong> will display the captions when the video is played (Brightcove Players 6.x and newer).
+      <li>Enter the <strong>MIME Type</strong> for the text track file. Selecting <strong>default</strong> will display the captions when the video is played.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/demand-gen/assets/images/videos/text-tracks-edit.png" /></figure>
       </li>
       <li>Check <strong>Default (Auto Display)</strong> to make the track the default. Most browsers will attempt to display the default text track first but language and accessibility settings may override the default setting.
@@ -80,11 +80,11 @@ you can accomplish using it.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/demand-gen/assets/images/videos/text-tracks-added.png" /></figure>
       </li>
       <li>Click <strong>Add Text Track</strong> to add another text track or<strong> Save</strong> to save the text tracks.
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: Changes made to the text track properties may take up to 15 minutes to appear in published players.</aside>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: Changes made to the text track properties may take up to 15 minutes to appear.</aside>
       </li>
     </ol>
     <p>If any text tracks have been designated as the default, they will appear in <strong>bold</strong>. To delete a text track, click the delete icon (<img alt="" src="/demand-gen/assets/images/videos/delete-icon-small.png" />) next to the text track.</p>
-    <p>When a player with associated captions is published, a <strong>CC</strong> button will appear on the player chrome. Click the <strong>CC</strong> button to select a caption language and display the captions.</p>
+    <p>When a video with  captions is published, a <strong>CC</strong> button will appear on the player chrome. Click the <strong>CC</strong> button to select a caption language and display the captions.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/demand-gen/assets/images/videos/cc-button.png" /></figure>
   </section>
   <section class="bcls-section">
