@@ -1,0 +1,16 @@
+- section: Home
+  url: /
+- section: Get Started
+  url: /get-started/
+  docs:
+    - name: Learning Guide
+      url: /get-started/learning-guide-bc-beacon.html
+  url: /references/
+  docs:
+    - name: Product Updates
+      url: /references/product-updates.html
+    - name: Glossary
+      url: /references/glossary.html
+    - name: Known Issues
+      url: /references/known-issues.html
+# TODO correct and add additional sections/pages

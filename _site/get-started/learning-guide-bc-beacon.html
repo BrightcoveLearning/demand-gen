@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Learning Guide - Brightcove Beacon</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/site/styles.css">
+  <link rel="stylesheet" href="/assets/css/site/prism.css">
+  <link rel="stylesheet" href="/assets/css/site/landing-page.css">
+  <script src="https://kit.fontawesome.com/9e0492656a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+
+<header>
+
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="/assets/images/site/product-logos/beacon-logo-ondark.png" alt="product logo"></a>
+    <span class="secondary-nav"><a href="https://support.brightcove.com/contact-support">Contact Support</a> | <a href="https://status.brightcove.com/">System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="//get-started/">Getting Started</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Learning Guide - Brightcove Beacon</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2 left-side-bar">
+      <nav class="sidenav">
+        
+          
+          <h5><a href="/">Home</a></h5>
+          
+        
+          
+          <h5 class="submenu-header"><a href="/get-started/">Get Started</a></h5>            
+          <ul class="sidenav-submenu list-none" style="display:none;">
+              
+                <li><a href="/get-started/learning-guide-bc-beacon.html">Learning Guide</a></li>
+              
+                <li><a href="/get-started/implementation-phases.html">Implementation Phases</a></li>
+              
+                <li><a href="/get-started/creating-your-site-map.html">Creating Your Sitemap</a></li>
+              
+            </ul>
+          
+        
+          
+          <h5 class="submenu-header"><a href="/video-cloud-sync/">Video Cloud Sync</a></h5>            
+          <ul class="sidenav-submenu list-none" style="display:none;">
+              
+                <li><a href="/video-cloud-sync/vc-custom-fields.html">Video Cloud Custom Fields</a></li>
+              
+            </ul>
+          
+        
+          
+          <h5 class="submenu-header"><a href="/admin-console/">Admin Console</a></h5>            
+          <ul class="sidenav-submenu list-none" style="display:none;">
+              
+                <li><a href="/admin-console/playlists.html">Creating a Playlist</a></li>
+              
+                <li><a href="/admin-console/advertisement.html">Create Ad Config</a></li>
+              
+                <li><a href="/admin-console/vc-ad-config-id.html">Ad Configuration ID</a></li>
+              
+            </ul>
+          
+        
+          
+          <h5 class="submenu-header"><a href="/submitting-apps/">Submitting Apps</a></h5>            
+          <ul class="sidenav-submenu list-none" style="display:none;">
+              
+                <li><a href="/submitting-apps/submitting-device-apps-stores.html">Submitting Apps to Device Stores</a></li>
+              
+            </ul>
+          
+        
+          
+          <h5 class="submenu-header"><a href="/references/">References</a></h5>            
+          <ul class="sidenav-submenu list-none" style="display:none;">
+              
+                <li><a href="/references/product-updates.html">Product Updates</a></li>
+              
+                <li><a href="/references/glossary.html">Glossary</a></li>
+              
+                <li><a href="/references/known-issues.html">Known Issues</a></li>
+              
+            </ul>
+          
+        
+    </nav>
+  </div>
+  <div class="col-lg-8" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+<!-- bootstrap layout -->
+
+<article class="bcls-article">
+
+  <h1>Brightcove Beacon Learning Guide</h1>
+  <summary>This learning guide provides a starting point for your understanding of Brightcove Beacon.</summary>
+        <section class="bcls-section">
+          <h2 id="Introduction">Introduction</h2>
+          <p>Brightcove Beacon provides video providers the environment for their customers to view videos without having a cable provider subscription. Along with this core functionality, Brightcove Beacon also:</p>
+          <ul>
+            <li>Allows customers to view videos on the devices that they already have, including mobile phones, tablets, connected TVs and Smart TVs.</li>
+            <li>Greatly reduces overall costs.The costs of developing apps for each platform are considerable, anywhere from $50K-$250K for a custom app targeted at just ONE platform. Brightcove Beacon allows creation of multiple apps from a single configured experience.</li>
+            <li>Provides a consistent experience for viewers across all platforms.</li>
+            <li>Allows monetization of video content via options like AVOD, SVOD and Pay Per View.</li>
+          </ul>
+
+          <p>Brightcove Beacon provides this functionality and these features in what is referred to as an OTT environment. This learning guide will start by defining what OTT is.</p>
+        </section>
+
+        <section class="bcls-section">
+          <h2 id="What_is_OTT">What is OTT?</h2>
+          <p>According to Wikipedia, over-the-top (OTT) media services are streaming media services offered directly to viewers over the Internet. OTT bypasses traditional cable, broadcast and satellite television platforms that traditionally act
+            as a controller or distributor of such content. Some existing OTT services include Prime Video, Hulu and Netflix.</p>
+          <p>More simply, OTT is for companies who own or buy media of some type and wish to sell it for people to watch.</p>
+          <p>Not only can OTT content can be viewed from traditional desktop, laptop and tablet computers, but also needs to provide viewing from mobile phones, smart TVs (Samsung, LG, etc.) and set-top “boxes” (Apple TV, Fire TV, Roku, etc.).</p>
+             <!-- and gaming consoles (Playstation, Xbox, etc.). -->
+          <h3>VOD versus OTT</h3>
+          <p>To be sure the difference between the two terms <strong>VOD</strong> and <strong>OTT</strong>, which  can be  confusing and often incorrectly considered to be the same thing,  is understood, let’s clarify. VOD (video on demand) generally refers to video on demand services through cable networks. OTT on the other hand is transmitted to the viewer via the Internet without requiring users to subscribe to a traditional cable service.</p>
+          <p>Now that OTT is defined, it will be easier to understand what Brightcove Beacon provides in the space.</p>
+        </section>
+
+        <section class="bcls-section">
+          <h2 id="What_is_Brightcove_Beacon">What is Brightcove Beacon?</h2>
+          <p>Brightcove Beacon is a platform that enables you to create and configure an OTT experience, which is then used to generate multiple device apps. The device apps generated are grouped into the following five categories (some specific
+            examples included):</p>
+          <ul>
+            <li>Mobile (Phone / Tablets)
+              <ul>
+                <li>Android</li>
+                <li>iOS</li>
+              </ul>
+            </li>
+            <li>Connected TVs
+              <ul>
+                <li>Android TV</li>
+                <li>Apple TV</li>
+                <li>Fire TV</li>
+                <li>Roku</li>
+              </ul>
+            </li>
+            <li>Smart TVs
+              <ul>
+                <li>LG</li>
+                <li>Panasonic</li>
+                <li>Samsung</li>
+                <li>Sony</li>
+                <li>Toshiba</li>
+              </ul>
+            </li>
+            <!-- <li>Consoles
+              <ul>
+                <li>Playstation</li>
+                <li>XBOX</li>
+              </ul>
+            </li> -->
+            <li>Web</li>
+          </ul>
+          <p>Not only do you get multiple device apps from a single source, but Brightcove Beacon also allows you to control the content and layout for each device app from your single Brightcove Beacon Experience.</p>
+          <p>The following is a visual representation of Brightcove Beacon:</p>
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="//learning-services-media.brightcove.com/doc-assets/beacon/learning-guide/beacon-intro-diagram.png" alt="">
+          </figure>
+        </section>
+        <section class="bcls-section">
+          <h2 id="How_is_Brightcove_Beacon_implemented">How is Brightcove Beacon implemented?</h2>
+          <p>The phases listed in this table are detailed in the Brightcove Beacon Implementation Phases document.</p>
+          <table class="bcls-table">
+            <thead class="bcls-table__head">
+              <tr>
+                <th>Implementation Phase</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="bcls-table__body">
+              <tr>
+                <td>Prepare for Brightcove Beacon Experience Creation*</td>
+                <td>Gather design artifacts, create your app site map and plan strategies for advertising and monetization.</td>
+              </tr>
+              <tr>
+                <td>Establish Relationships with 3rd Party Vendors*</td>
+                <td>Create accounts for: Stores to which you wish to submit device apps, advertising server, online payment vendor, etc.</td>
+              </tr>
+              <tr>
+                <td>Add Content and Configure Your Brightcove Beacon Experience</td>
+                <td>Configuration of, and media assets added to, your Brightcove Beacon Experience.</td>
+              </tr>
+              <tr>
+                <td>Create Device Application(s) from Your Brightcove Beacon Experience</td>
+                <td>Work with a Brightcove representative to finalize the configuration of your Brightcove Beacon Experience, from which the device apps are then generated.</td>
+              </tr>
+              <tr>
+                <td>Submit Your Device Applications to Corresponding Stores</td>
+                <td>Submit the newly generated device app(s) to corresponding store(s) for approval, and then your apps are ready for customers’ use.</td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="bcls-aside bcls-aside--information language-editable">* The first two phases should be executed simultaneously.</aside>
+          <p>For a more detailed explanation of the of the implementation phases see the <a href="//beacon.support.brightcove.com/get-started/implementation-phases.html">Implementation Phases</a> document.</p>
+        </section>
+        <section class="bcls-section">
+          <h2 id="How_are_the_device_apps_updated">How are the device apps updated?</h2>
+          <p>Your specific device apps need only be submitted once to vendors for approval. Of course, you will want to change the media that is offered for viewing, but you may also wish to alter the app layout, or change your monetization for
+            advertising strategy. The key to updating the app, but not having to resubmit to the vendor store lies in the architecture of Brightcove Beacon, is shown here:</p>
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="//learning-services-media.brightcove.com/doc-assets/beacon/learning-guide/brightcove-beacon-load-process.png" alt="">
+          </figure>
+          <p>This architecture provides the functionality to only alter the single Brightcove Beacon Experience to update the layout or configuration of all your device apps.</p>
+        </section>
+
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div style="text-align: center;font-size: smaller;">
+  Page last updated on 2019-11-02 14:57:57 -0400
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+          </li>
+          <li>
+            <a href="/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12" style="padding-left: 24%;">
+      <div class="bcls-copyright footer-menu">
+
+        <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item"> Brightcove Inc. All rights reserved.</div>
+
+        <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+          <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+        </div>
+      </div>
+      <div style="display: inline-block;width: 5px;"></div>
+      <div class="gf-links-cols footer-menu">
+        <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.8rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.8rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.8rem;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/assets/js/site/setDate.js"></script>
+  <script src="/assets/js/site/prism.js"></script>
+  <script src="/assets/js/site/site.js"></script>
+  <script src="/assets/js/site/tabs.js"></script>
+  <script src="/assets/js/site/toc.js"></script>
+</body>
+
+</html>
