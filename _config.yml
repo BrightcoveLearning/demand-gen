@@ -19,14 +19,14 @@
 # in the templates via {{ site.myvariable }}.
 
 # TODO change title
-title: Brightcove Beacon Documentation
+title: Brightcove Campaign
 email: training@brightcove.com
 # TODO change description
 description: >- # this means to ignore newlines until "baseurl:"
-  Brightcove Beacon provides video providers the environment for their customers to view videos without having a cable provider subscription.
+  Brightcove Campaign provides a set of tools to help marketers with the lead generation process.  Brightcove Campaign makes it easy to generate embed code for use in video landing pages and then provides analytics to measure the performance of your videos.
 # baseurl: "" # the subpath of your site, e.g. /blog
 # TODO change description
-site_url: "https://beacon.support.brightcove.com"
+site_url: "https://campaign.support.brightcove.com"
 
 # Build settings
 # theme: minima

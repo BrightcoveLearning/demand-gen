@@ -9,7 +9,18 @@
             <h5 class="submenu-header"><a href="{{ item.url: }}">{{ item.section }}</a></h5>            
             <ul class="sidenav-submenu list-none" style="display:none;">
               {% for entry in item.docs %}
-                <li><a href="{{ entry.url: }}">{{ entry.name }}</a></li>
+                {% if entry.docs == nil %}
+                  <li><a href="{{ entry.url: }}">{{ entry.name }}</a></li>
+                {% else %}
+                  <li>
+                    <a href="{{ entry.url: }}">{{ entry.name }}</a>
+                    <ul class="sidenav-submenu list-none" style="display:none;">
+                      {% for doc in entry.docs %}
+                      <li><a href="{{ doc.url: }}">{{ doc.name }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% endif %}
               {% endfor %}
             </ul>
           {% endif %}

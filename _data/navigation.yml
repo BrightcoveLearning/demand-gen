@@ -3,14 +3,18 @@
 - section: Get Started
   url: /get-started/
   docs:
-    - name: Learning Guide
+    - name: Get Started with your Brightcove Campaign Trial
       url: /get-started/learning-guide-bc-beacon.html
-  url: /references/
+    - name: Get Started with Brightcove Campaign
+      url: /get-started/getting-started-brightcove-campaign.html
+- section: docs
+  url: /docs/
+  docs:
+    - name
+  url: /general/
   docs:
     - name: Product Updates
       url: /references/product-updates.html
-    - name: Glossary
-      url: /references/glossary.html
-    - name: Known Issues
-      url: /references/known-issues.html
 # TODO correct and add additional sections/pages
+# TODO note that the order of items here determines the order in navigation
+# TODO indentation in YAML is crucial and must be with spaces (not tabs!)
