@@ -18,10 +18,10 @@
         - name: Managing Account Settings
           url: /docs/admin/managing_account_settings.html
 - section: General
-    url: /general/
-    docs:
-      - name: Product Updates
-        url: /references/product-updates.html
+  url: /general/
+  docs:
+    - name: Product Updates
+      url: /references/product-updates.html
 # TODO correct and add additional sections/pages
 # TODO note that the order of items here determines the order in navigation
 # TODO indentation in YAML is crucial and must be with spaces (not tabs!)

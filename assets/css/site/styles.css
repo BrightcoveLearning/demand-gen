@@ -33,7 +33,7 @@ div.container {
 
 /* page sections */
 .bcls-section {
-  margin-top: 3em;
+  margin-top: 2.5em;
   padding-top: .5em;
   border-top: 1px #CCC solid;
 }
@@ -349,6 +349,13 @@ h2#expanderHead.changed:before {
 
 .display-block {
   display: block
+}
+
+/* last updated */
+.last-updated {
+  color: seashell;
+  text-align: center;
+  font-size: smaller;
 }
 
 
@@ -793,6 +800,8 @@ button.gsc-search-button
   padding: .2em;
   background-color: rgb(239, 251, 255);
   color: inherit;
+  margin-top:13em;
+
 }
 
 .right-side-nav h6 {
@@ -800,6 +809,7 @@ button.gsc-search-button
   margin-left: 1em;
   margin-top: .5em;
 }
+
 
 #in_page_nav li {
   margin-bottom:.5em;
@@ -847,7 +857,6 @@ body {
 
 h1 {
   color: {{ site.color }};
-  margin-top: .5em;
 }
 
 header {
