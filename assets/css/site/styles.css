@@ -944,3 +944,19 @@ right-side-bar {
   background-color: rgb(239, 251, 255);
   color: rgb(11, 155, 179);
 }
+
+/* fontawesome */
+
+.fa-stack {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.stacked-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+.fa-stack + .fa-stack {
+  margin-left: .3em;
+}
+.fa-stack {
+  margin-bottom: 20px;
+}

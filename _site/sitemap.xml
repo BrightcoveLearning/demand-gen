@@ -83,6 +83,20 @@
     </url>
     
     <url>
+        <loc>https://campaign.support.brightcove.com/get-started/getting-started-brightcove-campaign-trial.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/get-started/getting-started-brightcove-campaign.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/docs/videos/how-to-search-for-videos.html</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
@@ -104,14 +118,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/</loc>
+        <loc>https://campaign.support.brightcove.com/general/</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/general/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/admin/</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -154,6 +168,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/support/</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/get-started/</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -287,6 +308,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/docs/videos/uploading-poster-and-thumbnail-images.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/get-started/uploading-publishing-your-first-video.html</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>

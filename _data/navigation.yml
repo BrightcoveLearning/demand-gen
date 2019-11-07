@@ -7,6 +7,8 @@
       url: /get-started/learning-guide-bc-beacon.html
     - name: Get Started with Brightcove Campaign
       url: /get-started/getting-started-brightcove-campaign.html
+    - name: Uploading and Publishing Your First Video
+      url: /get-started/uploading-publishing-your-first-video.html
 - section: Docs
   url: /docs/
   docs:
