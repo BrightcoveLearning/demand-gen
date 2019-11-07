@@ -66,13 +66,23 @@
                   </li>
                     <ul class="sidenav-subsubmenu" style="display:none;">
                       
-                      <li><a href="/docs/admin/managing_profile_information.html">Managing Account Information</a></li>
+                      <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
+                      
+                      <li><a href="/docs/admin/managing_account_information.html">Managing Account Information</a></li>
                       
                       <li><a href="/docs/admin/managing_account_settings.html">Managing Account Settings</a></li>
                       
-                      <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
-                      
                       <li><a href="/docs/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
+                      
+                      <li><a href="/docs/admin/managing_profile_information.html">Managing Profile Information</a></li>
+                      
+                      <li><a href="/docs/admin/viewing-billing-information.html">Viewing Billing Information</a></li>
+                      
+                      <li><a href="/docs/admin/configuring-google-analytics-event-tracking.html">Configuring Google Analytics Event Tracking</a></li>
+                      
+                      <li><a href="/docs/admin/reviewing-player-event-data-in-google-analytics.html">Reviewing Player Event Data in Google Analytics</a></li>
+                      
+                      <li><a href="/docs/admin/configuring-adobe-analytics-event-tracking.html">Configuring Adobe Analytics Event Tracking</a></li>
                       
                       <li><a href="/docs/admin/configuring-map-connections.html">Configuring MAP Connections</a></li>
                       
@@ -81,14 +91,6 @@
                       <li><a href="/docs/admin/connecting-to-marketo.html">Connecting to Marketo</a></li>
                       
                       <li><a href="/docs/admin/connecting-to-oracle-eloqua.html">Connecting to Oracle Eloqua</a></li>
-                      
-                      <li><a href="/docs/admin/configuring-adobe-analytics-event-tracking.html">Configuring Adobe Analytics Event Tracking</a></li>
-                      
-                      <li><a href="/docs/admin/configuring-google-analytics-event-tracking.html">Configuring Google Analytics Event Tracking</a></li>
-                      
-                      <li><a href="/docs/admin/reviewing-player-event-data-in-google-analytics.html">Reviewing Player Event Data in Google Analytics</a></li>
-                      
-                      <li><a href="/docs/admin/viewing-billing-information.html">Viewing Billing Information</a></li>
                       
                     </ul>
                   </li>
@@ -173,6 +175,21 @@
               
                 
                   <li><a href="/references/product-updates.html">Product Updates</a></li>
+                
+              
+            </ul>
+          
+        
+          
+            <h5 class="submenu-header"><a href="/support/">Support</a></h5>            
+            <ul class="sidenav-submenu" style="display:none;">
+              
+                
+                  <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+                
+              
+                
+                  <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
                 
               
             </ul>

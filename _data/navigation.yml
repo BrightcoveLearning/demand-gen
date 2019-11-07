@@ -13,14 +13,24 @@
     - name: Admin
       url: /docs/admin/
       docs:
-        - name: Managing Account Information
-          url: /docs/admin/managing_profile_information.html
-        - name: Managing Account Settings
-          url: /docs/admin/managing_account_settings.html
         - name: Managing Users
           url: /docs/admin/managing-users.html
+        - name: Managing Account Information
+          url: /docs/admin/managing_account_information.html
+        - name: Managing Account Settings
+          url: /docs/admin/managing_account_settings.html
         - name: Managing Media Sharing Settings
           url: /docs/admin/managing-media-sharing-settings.html
+        - name: Managing Profile Information
+          url: /docs/admin/managing_profile_information.html
+        - name: Viewing Billing Information
+          url: /docs/admin/viewing-billing-information.html
+        - name: Configuring Google Analytics Event Tracking
+          url: /docs/admin/configuring-google-analytics-event-tracking.html
+        - name: Reviewing Player Event Data in Google Analytics
+          url: /docs/admin/reviewing-player-event-data-in-google-analytics.html
+        - name: Configuring Adobe Analytics Event Tracking
+          url: /docs/admin/configuring-adobe-analytics-event-tracking.html
         - name: Configuring MAP Connections
           url: /docs/admin/configuring-map-connections.html
         - name: Connecting to HubSpot
@@ -29,14 +39,6 @@
           url: /docs/admin/connecting-to-marketo.html
         - name: Connecting to Oracle Eloqua
           url: /docs/admin/connecting-to-oracle-eloqua.html
-        - name: Configuring Adobe Analytics Event Tracking
-          url: /docs/admin/configuring-adobe-analytics-event-tracking.html
-        - name: Configuring Google Analytics Event Tracking
-          url: /docs/admin/configuring-google-analytics-event-tracking.html
-        - name: Reviewing Player Event Data in Google Analytics
-          url: /docs/admin/reviewing-player-event-data-in-google-analytics.html
-        - name: Viewing Billing Information
-          url: /docs/admin/viewing-billing-information.html
     - name: Analytics
       url: /docs/analytics/
       docs:
@@ -84,6 +86,13 @@
   docs:
     - name: Product Updates
       url: /references/product-updates.html
+- section: Support
+  url: /support/
+  docs:
+    - name: Open a Support Case
+      url: /support/opening-case-with-brightcove-support.html
+    - name: Viewing System Status
+      url: /support/viewing-brightcove-system-status-page.html
 # TODO correct and add additional sections/pages
 # TODO note that the order of items here determines the order in navigation
 # TODO indentation in YAML is crucial and must be with spaces (not tabs!)
