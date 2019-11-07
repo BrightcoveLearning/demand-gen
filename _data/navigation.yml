@@ -17,6 +17,47 @@
           url: /docs/admin/managing_profile_information.html
         - name: Managing Account Settings
           url: /docs/admin/managing_account_settings.html
+        - name: Managing Users
+          url: /docs/admin/managing-users.html
+        - name: Managing Media Sharing Settings
+          url: /docs/admin/managing-media-sharing-settings.html
+        - name: Configuring MAP Connections
+          url: /docs/admin/configuring-map-connections.html
+        - name: Connecting to HubSpot
+          url: /docs/admin/connecting-to-hubspot.html
+        - name: Connecting to Marketo
+          url: /docs/admin/connecting-to-marketo.html
+        - name: Connecting to Oracle Eloqua
+          url: /docs/admin/connecting-to-oracle-eloqua.html
+        - name: Configuring Adobe Analytics Event Tracking
+          url: /docs/admin/configuring-adobe-analytics-event-tracking.html
+        - name: Configuring Google Analytics Event Tracking
+          url: /docs/admin/configuring-google-analytics-event-tracking.html
+        - name: Reviewing Player Event Data in Google Analytics
+          url: /docs/admin/reviewing-player-event-data-in-google-analytics.html
+        - name: Viewing Billing Information
+          url: /docs/admin/viewing-billing-information.html
+    - name: Analytics
+      url: /docs/analytics/
+      docs:
+        - name: Reviewing Video Analytics
+          url: /docs/analytics/reviewing-video-analytics.html
+        - name: How Video Benchmark Score is Calculated
+          url: /docs/analytics/how-vbs-calculated.html
+    - name: Dashboard
+      url: /docs/dashboard/
+      docs:
+        - name: Dashboard Overview
+          url: /docs/dashboard/dashboard-overview.html
+        - name: Reviewing the Basic Dashboard
+          url: /docs/dashboard/reviewing-basic-dashboard.html
+        - name: Reviewing the Advanced Dashboard
+          url: /docs/dashboard/reviewing-adv-dashboard.html
+    - name: Heads-Up Display
+      url: /docs/hud/
+      docs:
+        - name: Using the Heads-Up Display
+          url: /docs/hud/using-hud.html
 - section: General
   url: /general/
   docs:

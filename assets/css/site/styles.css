@@ -744,13 +744,13 @@ button.gsc-search-button
 }
 
 .sidenav h5 {
-  font-size: .9rem;
+  font-size: .8rem;
   padding: 2px;
   color: inherit;
 }
 
 .sidenav h5 a {
-  font-size: .9rem;
+  font-size: .8rem;
   padding: 2px;
   color: inherit;
 }
@@ -773,6 +773,10 @@ ul.sidenav-submenu {
   list-style: none;
 }
 
+ul.sidenav-subsubmenu {
+  list-style-type: disc;
+}
+
 .sidenav-submenu a ::visited {
   color: inherit;
 }
@@ -782,12 +786,12 @@ ul.sidenav-submenu {
 }
 
 .sidenav ul {
-  list-style: none;
+  /* list-style: none; */
 }
 
 .sidenav ul li {
-  margin-left: -1.5em;
-  font-size: .9rem;
+  margin-left: -2.5em;
+  font-size: .8rem;
   padding-left: 2px;
 }
 
