@@ -7,14 +7,14 @@
           <h5><a href="{{ item.url: }}">{{ item.section }}</a></h5>
           {% else %}
             <h5 class="submenu-header"><a href="{{ item.url: }}">{{ item.section }}</a></h5>            
-            <ul class="sidenav-submenu list-none" style="display:none;">
+            <ul class="sidenav-submenu" style="display:none;">
               {% for entry in item.docs %}
                 {% if entry.docs == nil %}
                   <li><a href="{{ entry.url: }}">{{ entry.name }}</a></li>
                 {% else %}
-                  <li>
+                  <li class="submenu-header">
                     <a href="{{ entry.url: }}">{{ entry.name }}</a>
-                    <ul class="sidenav-submenu list-none" style="display:none;">
+                    <ul class="sidenav-submenu" style="display:none;">
                       {% for doc in entry.docs %}
                       <li><a href="{{ doc.url: }}">{{ doc.name }}</a></li>
                       {% endfor %}

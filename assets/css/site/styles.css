@@ -755,11 +755,11 @@ button.gsc-search-button
   color: inherit;
 }
 
-.sidenav h5.submenu-header {
+.sidenav h5.submenu-header, .sidenav li.submenu-header {
   color: inherit;
 }
 
-.sidenav h5.submenu-header::after {
+.sidenav h5.submenu-header::after, .sidenav li.submenu-header::after {
   content: ' +';
   font-weight: bold;
   color: inherit;
@@ -767,6 +767,10 @@ button.gsc-search-button
 
 .sidenav a ::visited {
   color: inherit;
+}
+
+ul.sidenav-submenu {
+  list-style: none;
 }
 
 .sidenav-submenu a ::visited {

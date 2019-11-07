@@ -13,6 +13,48 @@
     </url>
     
     <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/configuring-adobe-analytics-event-tracking.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/configuring-google-analytics-event-tracking.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/configuring-map-connections.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/connecting-to-hubspot.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/connecting-to-marketo.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/connecting-to-oracle-eloqua.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/index-for-launch.html</loc>
         <lastmod>2019-11-06</lastmod>
         <changefreq>daily</changefreq>
@@ -20,7 +62,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/admin/</loc>
         <lastmod>2019-11-06</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -34,7 +76,49 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/</loc>
+        <loc>https://campaign.support.brightcove.com/</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing-media-sharing-settings.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing-users.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing_account_information.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing_account_settings.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing_profile_information.html</loc>
+        <lastmod>2019-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/reviewing-player-event-data-in-google-analytics.html</loc>
         <lastmod>2019-11-06</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
