@@ -759,11 +759,6 @@ button.gsc-search-button
   color: inherit;
 }
 
-.sidenav h5.submenu-header::after, .sidenav li.submenu-header::after {
-  content: ' +';
-  font-weight: bold;
-  color: inherit;
-}
 
 .sidenav a ::visited {
   color: inherit;

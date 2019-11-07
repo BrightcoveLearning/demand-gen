@@ -42,7 +42,7 @@
           
         
           
-            <h5 class="submenu-header"><a href="/get-started/">Get Started</a></h5>            
+            <h5 class="submenu-header"><a href="/get-started/">Get Started <strong>+</strong></a></h5>            
             <ul class="sidenav-submenu" style="display:none;">
               
                 
@@ -61,12 +61,12 @@
           
         
           
-            <h5 class="submenu-header"><a href="/docs/">Docs</a></h5>            
+            <h5 class="submenu-header"><a href="/docs/">Docs <strong>+</strong></a></h5>            
             <ul class="sidenav-submenu" style="display:none;">
               
                 
                   <li class="submenu-header">
-                    <a href="/docs/admin/">Admin</a>
+                    <a href="/docs/admin/">Admin <strong>+</strong></a>
                   </li>
                     <ul class="sidenav-subsubmenu" style="display:none;">
                       
@@ -102,7 +102,7 @@
               
                 
                   <li class="submenu-header">
-                    <a href="/docs/analytics/">Analytics</a>
+                    <a href="/docs/analytics/">Analytics <strong>+</strong></a>
                   </li>
                     <ul class="sidenav-subsubmenu" style="display:none;">
                       
@@ -116,7 +116,7 @@
               
                 
                   <li class="submenu-header">
-                    <a href="/docs/dashboard/">Dashboard</a>
+                    <a href="/docs/dashboard/">Dashboard <strong>+</strong></a>
                   </li>
                     <ul class="sidenav-subsubmenu" style="display:none;">
                       
@@ -132,7 +132,7 @@
               
                 
                   <li class="submenu-header">
-                    <a href="/docs/hud/">Heads-Up Display</a>
+                    <a href="/docs/hud/">Heads-Up Display <strong>+</strong></a>
                   </li>
                     <ul class="sidenav-subsubmenu" style="display:none;">
                       
@@ -144,7 +144,7 @@
               
                 
                   <li class="submenu-header">
-                    <a href="/docs/videos/">Videos</a>
+                    <a href="/docs/videos/">Videos <strong>+</strong></a>
                   </li>
                     <ul class="sidenav-subsubmenu" style="display:none;">
                       
@@ -174,7 +174,7 @@
           
         
           
-            <h5 class="submenu-header"><a href="/general/">General</a></h5>            
+            <h5 class="submenu-header"><a href="/general/">General <strong>+</strong></a></h5>            
             <ul class="sidenav-submenu" style="display:none;">
               
                 
@@ -185,7 +185,7 @@
           
         
           
-            <h5 class="submenu-header"><a href="/support/">Support</a></h5>            
+            <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
             <ul class="sidenav-submenu" style="display:none;">
               
                 
@@ -968,11 +968,6 @@ button.gsc-search-button
   color: inherit;
 }
 
-.sidenav h5.submenu-header::after, .sidenav li.submenu-header::after {
-  content: ' +';
-  font-weight: bold;
-  color: inherit;
-}
 
 .sidenav a ::visited {
   color: inherit;
