@@ -58,6 +58,27 @@
       docs:
         - name: Using the Heads-Up Display
           url: /docs/hud/using-hud.html
+    - name: Videos
+      url: /docs/videos/
+      docs:
+        - name: Uploading Videos
+          url: /docs/videos/uploading-videos.html
+        - name: Managing Videos
+          url: /docs/videos/managing-videos.html
+        - name: Editing Video Properties
+          url: /docs/videos/editing-video-properties.html
+        - name: Capturing Poster and Thumbnail Images
+          url: /docs/videos/capturing-poster-and-thumbnail-images.html
+        - name: Uploading Poster and Thumbnail Images
+          url: /docs/videos/uploading-poster-and-thumbnail-images.html
+        - name: Search for Videos
+          url: /docs/videos/how-to-search-for-videos.html
+        - name: Publishing Videos
+          url: /docs/videos/publishing-videos.html
+        - name: Publishing Videos
+          url: /docs/videos/working-with-shared-videos.html
+        - name: Adding Text Tracks
+          url: /docs/videos/adding-text-tracks-to-a-video.html
 - section: General
   url: /general/
   docs:

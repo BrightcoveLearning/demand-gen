@@ -83,6 +83,13 @@
     </url>
     
     <url>
+        <loc>https://campaign.support.brightcove.com/docs/videos/how-to-search-for-videos.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/docs/analytics/how-vbs-calculated.html</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
@@ -97,7 +104,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/dashboard/</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -111,13 +118,6 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/dashboard/</loc>
-        <lastmod>2019-11-07</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/docs/videos/</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
@@ -125,7 +125,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/analytics/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -139,7 +146,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/analytics/</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -154,6 +161,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/docs/admin/managing-users.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/videos/managing-videos.html</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -175,6 +189,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/docs/admin/managing_profile_information.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/videos/publishing-videos.html</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -237,6 +258,20 @@
     </url>
     
     <url>
+        <loc>https://campaign.support.brightcove.com/docs/videos/uploading-poster-and-thumbnail-images.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/videos/uploading-videos.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/docs/hud/using-hud.html</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
@@ -245,6 +280,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/docs/admin/viewing-billing-information.html</loc>
+        <lastmod>2019-11-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/videos/working-with-shared-videos.html</loc>
         <lastmod>2019-11-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
