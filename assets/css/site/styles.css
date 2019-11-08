@@ -590,8 +590,12 @@ ul.menu {
   /* padding: .4rem; */
 }
 /* search */
+
+.gsc-control-wrapper-cse {
+  margin-top: 0;
+}
 .search-bar {
-  margin-top: -.5em;
+  margin-top: .5em;
   margin-bottom: 1em;
   /* padding-bottom: .8em; */
   /* background-color: white; */
