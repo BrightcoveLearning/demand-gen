@@ -84,7 +84,7 @@
     - name: Product Updates
       url: /references/product-updates.html
     - name: Using the Heads-Up Display
-    url: /docs/hud/using-hud.html
+      url: /docs/hud/using-hud.html
 - section: Support
   url: /support/
   docs:

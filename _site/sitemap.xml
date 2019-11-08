@@ -118,7 +118,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/general/</loc>
+        <loc>https://campaign.support.brightcove.com/support/</loc>
         <lastmod>2019-11-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -153,13 +153,6 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/hud/</loc>
-        <lastmod>2019-11-08</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/docs/</loc>
         <lastmod>2019-11-08</lastmod>
         <changefreq>daily</changefreq>
@@ -167,7 +160,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/support/</loc>
+        <loc>https://campaign.support.brightcove.com/general/</loc>
         <lastmod>2019-11-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -328,7 +321,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/hud/using-hud.html</loc>
+        <loc>https://campaign.support.brightcove.com/general/using-hud.html</loc>
         <lastmod>2019-11-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
