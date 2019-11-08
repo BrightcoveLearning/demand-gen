@@ -226,46 +226,27 @@
     <h2 id="terminology">Media sharing terminology</h2>
     <p>This topic will use the following terminology:</p>
     <ul>
-      <li><strong>Master</strong> - The account that created the original video. The Master owns the content and is responsible for setting up, managing and providing content to affiliates.</li>
-      <li><strong>Affiliate</strong> - The account that is receiving the video. The affiliate can accept content shared to it from a master.</li>
+      <li><strong>Master</strong> - The account that created the original video. The Master owns the content and is responsible for setting up, managing and providing content to affiliates. The Master account will always be a Brightcove Video Cloud account.</li>
+      <li><strong>Affiliate</strong> - The account that is receiving the video. The affiliate can accept content shared to it from a master. Brightcove Campaign accounts are always affiliate accounts.</li>
     </ul>
   </section>
   <section class="bcls-section">
     <h2 id="manage">Managing media sharing relationships</h2>
-    <p>Before videos can be shared between accounts, media sharing settings must be configured using the Administration menu (gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/videos/gear-icon.png" />) and then <strong> Media Sharing</strong>). Note that only account administrators have access to the Administration menu. If you wish to share videos to other accounts, affiliates must be added and the affiliate accounts must accept the relationship. Master and affiliate accounts can terminate the relationship at any time. Terminating a media sharing relationship <strong>does not</strong> remove any shared videos from affiliate accounts. If you want to remove shared videos from an affiliate's account, you need either delete them from your own (master) account or open the video properties, go to the <strong>Media Sharing</strong> section, and click the <strong>Remove Video</strong> icon for the affiliate account.</p>
-    <figure><img class="bcls-image--no-border" alt="" src="/assets/images/videos/media-sharing-section.png" /></figure>
-    <p>For information on configuring the Media Sharing settings, see <a href="/docs/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a>.</p>
+    <p>Before videos can be shared from a Brightcove Video Cloud account to a Brightcove Campaign account, media sharing settings must be configured in the Video Cloud account. For information on how to do this, check the <a href="https://support.brightcove.com/managing-media-sharing-settings">Video Cloud documentation</a>. </p>
+    <p>After the Video Cloud account adds the Campaign account as an affiliate, the affiliate account must accept the relationship. Master and affiliate accounts can terminate the relationship at any time. Terminating a media sharing relationship <strong>does not</strong> remove any shared videos from affiliate accounts. </p>
+    <figure></figure>
+    <p>For information on  Media Sharing settings, see <a href="/docs/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="sharing">Sharing videos</h2>
-    <p>By default, the ability to share videos is available to all users in your account. To share videos, follow these steps:</p>
-    <ol class="bcls-tasklist">
-      <li>Open the <strong>Videos</strong> page, select one or more videos and then click <strong>More &gt; Share</strong>.      </li>
-      <li>Select the affiliate account(s) to share the video(s) to and then click <strong>Share</strong>. The search field can be used to search for an account ID. The search field supports fuzzy searches so entering part of an ID will return matches.
-        <figure><img alt="" src="/assets/images/videos/media-sharing-select-account.png" /></figure>
-      </li>
-    </ol>
-    <p>It is possible to reshare videos (share previously shared videos to the same account). Doing so will replace any video metadata changes made by the affiliate account with the values from the master (sharing) account. Use caution when resharing videos.</p>
+    <p>All videos shared to a Brightcove Campaign account will originate from a Brightcove Video Cloud account. For information on how to share videos from a Video Cloud account, check the <a href="https://support.brightcove.com/media-sharing-using-media-module">Video Cloud documentation</a>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="view">Shared videos in the Videos page</h2>
-    <p>Shared videos will display a sharing icon in the upper corner of the video thumbnail to indicate that the video has been shared into or out of an account.</p>
-    <h3>Video shared into an account</h3>
-    <p>
-      <figure><img alt="" src="/assets/images/videos/shared-in-example.png" /></figure>
-    </p>
+    <p>Shared videos will display a sharing icon in the upper left corner of the video thumbnail to indicate that the video has been shared into the account.</p>
+    <figure><img alt="" src="/assets/images/videos/shared-in-example.png" /></figure>
     <p>Click on the video title and review the Video Information properties to see which account shared the video.</p>
     <figure><img alt="" src="/assets/images/videos/shared-in-properties.png" /></figure>
-    <h3>Video shared to another account</h3>
-    <figure><img alt="" src="/assets/images/videos/shared-out-example.png" /></figure>
-    <p>To see the status of videos shared to affiliate accounts, click on the video title and locate the <strong>Media Sharing</strong> section of the video properties page.</p>
-    <figure><img alt="" src="/assets/images/videos/media-sharing-section.png" /></figure>
-    <figure></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="delete">Deleting shared videos</h2>
-    <p>When a shared video is deleted from a master account, a message is displayed reminding you that deleting the shared video will delete it from all the affiliate accounts you've shared it with.</p>
-    <figure><img alt="" src="/assets/images/videos/shared-video-delete.png" /></figure>
   </section>
   <section class="bcls-section">
     <h2 id="properties">Shared video properties</h2>
@@ -281,11 +262,9 @@
     <ul>
       <li>Video files are not copied when you use Media Sharing, only the video metadata is copied. The shared video points to the original video files in your account.</li>
       <li>If the video is deleted from the master account, the video is deleted from all affiliate accounts.</li>
-      <li>Any changes an affiliate makes to a video will not affect the original or any other shared copies. If an affiliate deletes a shared video, it is removed from the affiliate's account but remains in the master account and in all other affiliate accounts.</li>
+      <li>Any changes an affiliate makes to a video will not affect the original. If an affiliate deletes a shared video, it is removed from the affiliate's account but remains in the master account.</li>
       <li>Affiliates can't remove or update text tracks.</li>
       <li>When affiliates receive a video by sharing, it is in the active state. This is true even if the video was not active in the master account.</li>
-      <li>If an affiliate accepts a video and required fields are missing, the video will be inactive.</li>
-      <li>An affiliate account that receives a shared video cannot share that video to another account. Only the master account can share the video.</li>
       <li>Each account is billed separately for playback (video plays and bandwidth usage) of a shared video from that account.</li>
       <li>Reporting about a shared video is specific to each account and does not aggregate information about each copy of the video in each account.</li>
     </ul>
@@ -306,7 +285,7 @@
 
 <hr>
 <div class="last-updated">
-  Page last updated on 07 November 2019
+  Page last updated on 08 November 2019
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
