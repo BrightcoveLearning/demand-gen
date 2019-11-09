@@ -57,11 +57,6 @@
           url: /docs/dashboard/reviewing-basic-dashboard.html
         - name: Reviewing the Advanced Dashboard
           url: /docs/dashboard/reviewing-adv-dashboard.html
-    - name: Heads-Up Display
-      url: /docs/hud/
-      docs:
-        - name: Using the Heads-Up Display
-          url: /docs/hud/using-hud.html
     - name: Videos
       url: /docs/videos/
       docs:
@@ -88,6 +83,8 @@
   docs:
     - name: Product Updates
       url: /references/product-updates.html
+    - name: Using the Heads-Up Display
+      url: /docs/hud/using-hud.html
 - section: Support
   url: /support/
   docs:
