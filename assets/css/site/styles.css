@@ -994,23 +994,27 @@ right-side-bar {
 
 .bcls-card i, .bcls-card-wide span {
   float: left;
+  margin-right: .5em;
 }
 
 .bcls-card-wide ul {
   list-style: none;
 }
 
+.bcls-card h2, .bcls-card-wide h2 {
+  padding-left: .5em;
+}
+
+.bcls-card p, .bcls-card-wide p {
+  clear: left;
+}
+
 /* breadcrumb divider */
 .arr-right .breadcrumb-item+.breadcrumb-item::before {
- 
   content: "›";
- 
   vertical-align:top;
- 
   color: rgb(16, 155, 246);
- 
-  font-size:35px;
- 
+  font-size:2rem;
   line-height:18px;
  
 }
