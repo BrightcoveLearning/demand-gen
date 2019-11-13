@@ -939,9 +939,12 @@ footer nav li {
 
 /* side nav */
 
-left-side-bar {
+
+
+.left-side-bar {
   background-color: {{ site.color }};
   color: rgb(206, 206, 206);
+  min-width: 240px;
 }
 
 right-side-bar {
