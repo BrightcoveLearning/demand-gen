@@ -13,13 +13,26 @@ var BCLS_site = (function(window, document) {
     pNextSib,
     p1NextSib;
 
+// utilities for adding/removing classes
+function hasClass(el, name) {
+  return new RegExp('(\\s|^)'+name+'(\\s|$)').test(el.className);
+}
+function addClass(el, name)
+{
+  if (!hasClass(el, name)) { el.className += (el.className ? ' ' : '') +name; }
+}
+function removeClass(el, name)
+{
+  if (hasClass(el, name)) {
+     el.className=el.className.replace(new RegExp('(\\s|^)'+name+'(\\s|$)'),' ').replace(/^\s+|\s+$/g, '');
+  }
+}
   // side navigation
   iMax = all_sidenav_links.length;
   for (i = 0; i < iMax; i++) {
     currentLink = all_sidenav_links[i];
     if (currentLink.getAttribute("href") === href) {
-      // currentLink.setAttribute("class", "bcls-active");
-      currentLink.parentElement.setAttribute("class", "bcls-active");
+      addClass(currentLink, 'bcls-active');
       if (currentLink.getAttribute("href") !== "/") {
         p1 = currentLink.parentElement;
         p1NextSib = p1.nextElementSibling;
