@@ -6,6 +6,13 @@
 
     
     <url>
+        <loc>https://campaign.support.brightcove.com/release-notes/2020.html</loc>
+        <lastmod>2019-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/404.html</loc>
         <lastmod>2019-11-13</lastmod>
         <changefreq>daily</changefreq>
@@ -160,7 +167,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/general/</loc>
+        <loc>https://campaign.support.brightcove.com/release-notes/</loc>
         <lastmod>2019-11-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -224,13 +231,6 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
-        <lastmod>2019-11-13</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/general/product-updates.html</loc>
         <lastmod>2019-11-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -321,7 +321,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/general/using-hud.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/analytics/using-hud.html</loc>
         <lastmod>2019-11-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
