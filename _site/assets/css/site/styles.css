@@ -1181,14 +1181,14 @@ right-side-bar {
   display: inline-block;
   margin-right: 1em;
   margin-bottom: 1em;
-  min-height: 275px;
+  min-height: 350px;
   max-height: 350px;
   position: relative;
   transition: -webkit-box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   vertical-align: top;
-  width: 46%;
+  width: 47%;
 }
 
 
