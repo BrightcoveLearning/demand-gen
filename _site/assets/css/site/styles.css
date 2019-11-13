@@ -1143,9 +1143,12 @@ footer nav li {
 
 /* side nav */
 
-left-side-bar {
+
+
+.left-side-bar {
   background-color: rgb(51, 51, 51);
   color: rgb(206, 206, 206);
+  min-width: 240px;
 }
 
 right-side-bar {
@@ -1241,7 +1244,7 @@ right-side-bar {
 }
 <!-- complete bootstrap layout -->
     </div>
-    <div class="col-sm-2 right-side-bar">
+    <div class="col-lg-2 right-side-bar">
       
       <nav class="right-side-nav">
         <h6 class="toc">Page Contents</h6>
