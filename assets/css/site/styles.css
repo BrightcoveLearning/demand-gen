@@ -802,7 +802,7 @@ ul.sidenav-subsubmenu {
 .sidenav ul li {
   margin-left: -2.5em;
   font-size: .8rem;
-  padding-left: 2px;
+  padding: 2px;
 }
 
 .right-side-bar {

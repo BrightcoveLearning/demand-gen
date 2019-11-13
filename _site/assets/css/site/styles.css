@@ -1006,7 +1006,7 @@ ul.sidenav-subsubmenu {
 .sidenav ul li {
   margin-left: -2.5em;
   font-size: .8rem;
-  padding-left: 2px;
+  padding: 2px;
 }
 
 .right-side-bar {
@@ -1254,7 +1254,7 @@ right-side-bar {
 
 <hr>
 <div class="last-updated">
-  Page last updated on 12 November 2019
+  Page last updated on 13 November 2019
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
