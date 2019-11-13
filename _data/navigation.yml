@@ -12,7 +12,7 @@
 - section: Docs
   url: /docs/
   docs:
-    - name: Videos
+    - name: Manage Videos
       url: /docs/videos/
       docs:
         - name: Uploading Videos
@@ -78,7 +78,7 @@
         url: /docs/admin/connecting-to-marketo.html
       - name: Connecting to Oracle Eloqua
         url: /docs/admin/connecting-to-oracle-eloqua.html
-- section: General
+- section: Release Notes
   url: /general/
   docs:
     - name: Product Updates
