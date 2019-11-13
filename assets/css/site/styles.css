@@ -12,6 +12,7 @@ body, .body {
 }
 
 body {
+  counter-reset: figure 0 table 0 step 0;
   margin: 0;
   position: relative;
 }
@@ -801,7 +802,7 @@ ul.sidenav-subsubmenu {
 
 .sidenav ul li {
   margin-left: -2.5em;
-  font-size: .8rem;
+  font-size: .9rem;
   padding: 2px;
 }
 
@@ -931,7 +932,6 @@ footer nav li {
 .series_details {
   vertical-align: top;
   display: inline-block;
-  /* width: 35%;
   min-height: 500px; */
   border: 1px solid black;
   margin: 5px;
@@ -944,7 +944,7 @@ footer nav li {
 .left-side-bar {
   background-color: {{ site.color }};
   color: rgb(206, 206, 206);
-  min-width: 240px;
+  max-width: 425px;
 }
 
 right-side-bar {
