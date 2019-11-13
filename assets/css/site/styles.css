@@ -703,6 +703,7 @@ button.gsc-search-button
 .bcls-active {
   color: {{ site.color }} !important;
   background-color: rgb(206, 206, 206);
+  /* padding-left: 1em !important; */
 }
 
 .bcls-active a, .bcls-active a ::visited {
@@ -743,10 +744,11 @@ button.gsc-search-button
   vertical-align: top;
   color: rgb(206, 206, 206);
   font-size: .9rem;
+  line-height: 1.6em;
 }
 
 .secondary-nav img {
-  vertical-align: top;
+  vertical-align: text-bottom;
   padding-top: .2em;
 }
 
@@ -759,20 +761,20 @@ button.gsc-search-button
 /* left nav */
 
 .sidenav {
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   font-size: smaller;
   color: rgb(206, 206, 206);
   padding-top: 1em;
 }
 
 .sidenav h5 {
-  font-size: .8rem;
+  font-size: .9rem;
   padding: 2px;
   color: inherit;
 }
 
 .sidenav h5 a {
-  font-size: .8rem;
+  font-size: .9rem;
   padding: 2px;
   color: inherit;
 }
@@ -787,7 +789,7 @@ button.gsc-search-button
 }
 
 ul.sidenav-submenu {
-  list-style: none;
+  /* list-style: none; */
 }
 
 ul.sidenav-subsubmenu {
@@ -800,6 +802,7 @@ ul.sidenav-subsubmenu {
 
 .sidenav-submenu a {
   color: inherit;
+  padding: 2px;
 }
 
 .sidenav ul {
@@ -807,7 +810,7 @@ ul.sidenav-subsubmenu {
 }
 
 .sidenav ul li {
-  margin-left: -2.5em;
+  /* margin-left: -2.5em; */
   font-size: .9rem;
   padding: 2px;
 }
@@ -945,8 +948,6 @@ footer nav li {
 
 /* side nav */
 
-
-
 .left-side-bar {
   background-color: {{ site.color }};
   color: rgb(206, 206, 206);
@@ -993,7 +994,26 @@ right-side-bar {
   width: 47%;
 }
 
+.bcls-card-small {
+  padding: 4%;
+  box-shadow: 0px 5px 15px 0 RGB(204, 204, 204);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 1em;
+  margin-top: 1em;
+  min-height: 220px;
+  position: relative;
+  transition: -webkit-box-shadow 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
+  vertical-align: top;
+  width: 30%;
+}
 
+.bcls-card-small h3 {
+  font-size: 1.4rem;;
+}
 
 .bcls-card::hover {
   box-shadow: 0px 10px 20px 0 RGB(51, 204, 204);
