@@ -7,31 +7,25 @@ grandparent_path: /docs/
 
 <article class="bcls-article">
   <h1>Connecting to HubSpot using the REST APIs</h1>
+      <summary>In this topic you will learn how to configure Brightcove Campaign for use with HubSpot using the REST APIs.</summary>
+
   <section class="bcls-section">
-    <p>Brightcove Campaign can be configured to  synchronize viewing data from Brightcove Players to HubSpot. Once in HubSpot, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications. </p>
-    <p>There are two options for integrating  with HubSpot:</p>
-    <ul>
-      <li><strong><a href="#rest">Using the Standard (REST API) method</a></strong> - With this method, Audience will only track viewing data for known viewers. By default, lead forms will only be shown to unknown viewers.</li>
-      <li><strong><a href="#client_side">Using the High Volume (Client-Side</a></strong><a href="#client_side"><strong> API) method</strong></a> - With this method, Audience will track viewing data for all viewers.</li>
-    </ul>
-    <p>Some of the key features of the Video Cloud - HubSpot integration are:</p>
+    <p>Brightcove Campaign can be configured to integrate with  HubSpot. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  HubSpot. Once in HubSpot, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: For information on how to configure Brightcove Campaign for use with HubSpot using the Client-Side APIs, see <a href="connecting-to-hubspot-client-side-api.html">Connecting to HubSpot using the Client-Side APIs</a>.</aside>
+    <p>Some of the key features of the Brightcove Campaign - HubSpot integration are:</p>
     <ul>
       <li><strong>Data format</strong> - Viewing data is delivered as a custom <a href="https://developers.hubspot.com/docs/methods/timeline/timeline-overview">Timeline Event Type</a>. The data that is replicated to HubSpot is as follows:
         <ul>
           <li>Video Name</li>
           <li>Video ID</li>
-          <li>Account ID (Video Cloud)</li>
-          <li>Page URL (URL of the referring page)</li>
-          <li>Player ID (Video Cloud player)</li>
-          <li>% Watched (25%, 50%, 75%, 95%)</li>
+          <li>Brightcove Account ID</li>
+          <li>Page URL of the referring page</li>
+          <li>Brightcove Player ID</li>
+          <li>% Watched</li>
         </ul>
       </li>
       <li><strong>Data transfer</strong> - Viewing data is sent to HubSpot using an automated process; however, some reports in the HubSpot platform may take some time to refresh</li>
-      <li><strong>Data retention</strong> - Data collected can optionally be retained in Brightcove Campaign for up to 6 months</li>
     </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="rest">HubSpot REST Connections</h2>
   </section>
   <section class="bcls-section">
     <h2 id="setupConnection">Setting up the connection</h2>
@@ -87,79 +81,6 @@ grandparent_path: /docs/
     </ul>
     <p>One possible scenario is to create video landing pages with a URL that’s been uniquely generated for tracking purposes. The Audience module will then use the URL parameter to look up the user server-side and sync viewing data.</p>
     <p>In order for the player/plugin to read the URL parameters, the Advanced Embed (in-page) publishing code should be used. The Standard Embed (iframe) publishing code will not work as the plugin will be running inside of an iframe and therefore is unable to access the parent page URL which has the parameter.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="client_side">Client-side API Connection</h2>
-    <p>The Audience module allows Video Cloud to synchronize viewing data from Brightcove Players to HubSpot. Once in HubSpot, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
-    <p>There are two options for integrating Video Cloud with HubSpot:</p>
-    <ul>
-      <li><strong>Using the Standard (REST API) method</strong> - With this method, Audience will only track viewing data for known viewers. By default, lead forms will only be shown to unknown viewers. For information on this type of integration, see <a href="#rest">HubSpot REST connections</a>.</li>
-      <li><strong>Using the High Volume (Client-Side</strong><strong> API) method</strong> - With this method, Audience will track viewing data for all viewers. This method is covered in this topic.</li>
-    </ul>
-    <p>The Audience module integration with HubSpot consists of two main components:</p>
-    <ul>
-      <li>A Brightcove Player plug-in to enable tracking of video views data</li>
-      <li>A Synchronization process to send tracking data from Video Cloud to HubSpot</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="setupConnection">Setting up the connection</h2>
-    <p>Follow these steps to setup the connection between Video Cloud and HubSpot.</p>
-    <h3 id="establishConnection">Establishing the connection between Video Cloud and HubSpot</h3>
-    <ol class="bcls-tasklist__restart">
-      <li>Open the Audience module and click <strong>Data Connections</strong> in the left navigation.</li>
-      <li>Click <strong>Add New Connection</strong>.</li>
-      <li>Select <strong>HubSpot</strong> as the integration.</li>
-      <li>(Optional) Enter a <strong>Connection Name</strong>.
-        <div><img class="bcls-image--no-border" alt="audience setup" src="https://img.brightcove.com/node18751-setup-section.png" /></div>
-      </li>
-      <li>Click <strong>Connect</strong>.</li>
-      <li>Select <strong>High Volume (Client-Side API)</strong>.
-        <div><img class="bcls-image--no-border" alt="connect to hubspot" src="https://img.brightcove.com/node18751-select-high-volume.png" /></div>
-      </li>
-      <li>Click<strong> Save</strong>.</li>
-    </ol>
-    <p>The Video Cloud connection to HubSpot is now set up.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="configure">Configuring the integration</h2>
-    <p>Once the Video Cloud to HubSpot connection has been made, follow these steps to configure the integration.</p>
-    <ol class="bcls-tasklist__restart">
-      <li>The integration requires your HubSpot Account ID. Click the <strong>empty </strong>link, enter your HubSpot Account ID and then click <strong>Save</strong>.
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: Having multiple HubSpot connections with the same Account ID is not supported.</aside>
-        <div><img class="bcls-image--no-border" alt="connected options" src="https://img.brightcove.com/node18751-enter-account-id.png" /></div>
-      </li>
-      <li>By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if Video Cloud video engagement data is sent to HubSpot.
-        <ul>
-          <li><strong>Enabled</strong> - Data is collected and will be sent to HubSpot</li>
-          <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
-        </ul>
-      </li>
-    </ol>
-    <p>To remove the integration with HubSpot, click <strong>Disconnect</strong>. The Audience module supports multiple connections to marketing platforms. Click <strong>Add New Connection</strong> to configure additional integrations.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="trackingid2">Passing a tracking ID</h2>
-    <p>Brightcove Campaign supports the ability to pass a tracking ID value to HubSpot. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the URL that displays the Audience-enabled player or added to the player embed code.</p>
-    <ul>
-      <li>Example: Appended to URL</li>
-    </ul>
-    <pre>
-  http://www.myurl.com/video.html?<strong>bctrackingid=12345</strong></pre>
-    <ul>
-      <li>Example: Added to player embed code</li>
-    </ul>
-    <pre>
-  &lt;video data-video-id="6033402539001" 
-         data-account="1486906377" 
-         data-player="default" 
-         data-embed="default" 
-         data-application-id 
-         class="video-js"
-         <strong>data-bc-trackingid="12345"</strong> 
-         controls&gt;&lt;/video&gt;
-  &lt;script src="//players.brightcove.net/1486906377/default_default/index.min.js"&gt;&lt;/script&gt;</pre>
-    <p>Audience will then pass the value along to HubSpot as another field that is synced.</p>
   </section>
 </article>
 </body>
