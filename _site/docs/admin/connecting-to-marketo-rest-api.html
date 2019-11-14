@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- remember to remove the following line when the site is ready to go live -->
+  <meta name="robots" content="noindex" />
+  <title>Connecting to Marketo using the REST API</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e0492656a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <!-- TODO - change logo to current product -->
+    <!-- <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/beacon-logo-ondark.png" alt="product logo"></a> -->
+    <span style="float:left;margin-left: 1em;line-height: 4em;">BRIGHTCOVE CAMPAIGN</span>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Docs</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/admin/">Admin</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Connecting to Marketo using the REST API</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/index-for-launch.html">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/">Get Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-campaign-trial.html">Get Started with your Brightcove Campaign Trial</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-campaign.html">Get Started with Brightcove Campaign</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/uploading-publishing-your-first-video.html">Uploading and Publishing Your First Video</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/docs/">Docs <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/videos/">Manage Videos <strong>+</strong></a>
+                    </li>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
+                        
+                        <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
+                        
+                        <li><a href="/docs/videos/editing-video-properties.html">Editing Video Properties</a></li>
+                        
+                        <li><a href="/docs/videos/capturing-poster-and-thumbnail-images.html">Capturing Poster and Thumbnail Images</a></li>
+                        
+                        <li><a href="/docs/videos/uploading-poster-and-thumbnail-images.html">Uploading Poster and Thumbnail Images</a></li>
+                        
+                        <li><a href="/docs/videos/how-to-search-for-videos.html">Search for Videos</a></li>
+                        
+                        <li><a href="/docs/videos/publishing-videos.html">Publishing Videos</a></li>
+                        
+                        <li><a href="/docs/videos/working-with-shared-videos.html">Publishing Videos</a></li>
+                        
+                        <li><a href="/docs/videos/adding-text-tracks-to-a-video.html">Adding Text Tracks</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/dashboard/">Dashboard <strong>+</strong></a>
+                    </li>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/dashboard/dashboard-overview.html">Dashboard Overview</a></li>
+                        
+                        <li><a href="/docs/dashboard/reviewing-basic-dashboard.html">Reviewing the Basic Dashboard</a></li>
+                        
+                        <li><a href="/docs/dashboard/reviewing-adv-dashboard.html">Reviewing the Advanced Dashboard</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/analytics/">Analytics <strong>+</strong></a>
+                    </li>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+                        
+                        <li><a href="/docs/analytics/how-vbs-calculated.html">How Video Benchmark Score is Calculated</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/admin/">Administration <strong>+</strong></a>
+                    </li>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
+                        
+                        <li><a href="/docs/admin/managing_account_information.html">Managing Account Information</a></li>
+                        
+                        <li><a href="/docs/admin/managing_account_settings.html">Managing Account Settings</a></li>
+                        
+                        <li><a href="/docs/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
+                        
+                        <li><a href="/docs/admin/managing_profile_information.html">Managing Profile Information</a></li>
+                        
+                        <li><a href="/docs/admin/viewing-billing-information.html">Viewing Billing Information</a></li>
+                        
+                        <li><a href="/docs/admin/configuring-google-analytics-event-tracking.html">Configuring Google Analytics Event Tracking</a></li>
+                        
+                        <li><a href="/docs/admin/reviewing-player-event-data-in-google-analytics.html">Reviewing Player Event Data in Google Analytics</a></li>
+                        
+                        <li><a href="/docs/admin/configuring-adobe-analytics-event-tracking.html">Configuring Adobe Analytics Event Tracking</a></li>
+                        
+                        <li><a href="/docs/admin/configuring-map-connections.html">Configuring MAP Connections</a></li>
+                        
+                        <li><a href="/docs/admin/connecting-to-hubspot.html">Connecting to HubSpot</a></li>
+                        
+                        <li><a href="/docs/admin/connecting-to-marketo.html">Connecting to Marketo</a></li>
+                        
+                        <li><a href="/docs/admin/connecting-to-oracle-eloqua.html">Connecting to Oracle Eloqua</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+            <h5><a href="/product-updates/release-notes-2019.html">Release Notes</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- search bar -->
+      <div id="search_bar" class="search-bar">
+        <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
+        <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:9ybe0wftqs0"></script>
+        <div class="gcse-search"></div>
+      </div>
+  <!-- bootstrap layout -->
+  
+<article class="bcls-article">
+  <h1>Connecting to Marketo using the REST API</h1>
+  <summary>In this topic you will learn how to configure Brightcove Campaign for use with Marketo using the REST APIs.</summary>
+  <section class="bcls-section">
+    <p>Brightcove Campaign can be configured to integrate with  Marketo. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  Marketo. Once in Marketo, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: For information on how to configure Brightcove Campaign for use with Marketo using the Munchkin ID, see <a href="connecting-to-marketo-munchkin.html">Connecting to Marketo using Munchkin</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="requirements">Requirements</h2>
+    <p>To use Brightcove Campaign with the Marketo REST integration, you must:</p>
+    <ul>
+      <li>Create a role in Marketo which has access to all of the API permissions</li>
+      <li>Create a LaunchPoint Service</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="api">Creating an API-only user and LaunchPoint service</h2>
+    <p>Before you can make a call to the Marketo REST API, you need to create a new API role with access to all of the APIs, create an API-only user and then create a service that uniquely identifies your client application. The steps to complete these tasks are outlined in the <a href="https://developers.marketo.com/blog/quick-start-guide-for-marketo-rest-api/">Marketo documentation</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setupConnection">Setting up the connection</h2>
+    <p>Once the configuration steps on the Marketo side have been completed, follow these steps to setup the connection between Brightcove Campaign and Marketo.</p>
+    <h3 id="establishConnection">Establishing the connection between Brightcove Campaign and Marketo</h3>
+    <ol class="bcls-tasklist">
+      <li> Login to Brightcove Campaign.</li>
+      <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
+      <li>Click <strong>Add New Connection</strong>.</li>
+      <li>Select <strong>Marketo</strong> from the dropdown list.</li>
+      <li>Select the  <strong>Standard (REST API) </strong>integration type. You will required to paste in several values from your Marketo account. Note that you must be logged in as a Marketo administrator to complete the following steps. </li>
+      <li>Enter your <strong>Marketo Account ID</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Munchkin</strong>.</li>
+      <li>Enter your <strong>Marketo REST API Endpoint URL</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Web Services</strong>. Copy the <strong>Endpoint</strong> in the <strong>REST API</strong> section.</li>
+      <li>Enter your <strong>Marketo REST API Identity URL</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> Web Services</strong>.</li>
+      <li>Enter <strong>Marketo LaunchPoint Client ID</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>LaunchPoint</strong> and then click the <strong>View Details</strong> link for the LaunchPoint you created earlier as part of this setup.</li>
+      <li>Enter <strong>Marketo LaunchPoint Client Secret</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> LaunchPoint</strong> and then click the <strong>View Details</strong> link for the LaunchPoint you created earlier as part of this setup.</li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Click <strong>Connect</strong>.</li>
+    </ol>
+    <p>The connection to Marketo is now set up and ready to use.
+    By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if video engagement data is sent to Marketo:</p>
+        <ul>
+          <li><strong>Enabled</strong> - Data is collected and will be sent to Marketo</li>
+          <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
+        </ul>
+    <p>Click <strong>Save</strong> to save changes. To remove the integration, click <strong>Delete</strong>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="trackingid2">Passing a tracking ID</h2>
+    <p>The Audience module supports the ability to pass a tracking ID value to Marketo. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the URL that displays the Audience-enabled player or added to the player embed code.</p>
+    <ul>
+      <li>Example: Appended to URL</li>
+    </ul>
+    <pre>
+  http://www.myurl.com/video.html?<strong>bctrackingid=12345</strong></pre>
+    <ul>
+      <li>Example: Added to player embed code</li>
+    </ul>
+    <pre>
+  &lt;video data-video-id="6033402539001" 
+         data-account="1486906377" 
+         data-player="default" 
+         data-embed="default" 
+         data-application-id 
+         class="video-js"
+         <strong>data-bc-trackingid="12345"</strong> 
+         controls&gt;&lt;/video&gt;
+  &lt;script src="//players.brightcove.net/1486906377/default_default/index.min.js"&gt;&lt;/script&gt;</pre>
+    <p>Audience will then pass the value along to Marketo as another field that is synced.</p>
+  </section>
+</article>
+</body></html>
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-lg-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 14 November 2019
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+          </li>
+          <li>
+            <a href="/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12" style="padding-left: 24%;">
+      <div class="bcls-copyright footer-menu">
+
+        <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item"> Brightcove Inc. All rights reserved.</div>
+
+        <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+          <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+        </div>
+      </div>
+      <div style="display: inline-block;width: 5px;"></div>
+      <div class="gf-links-cols footer-menu">
+        <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.8rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.8rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.8rem;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+</body>
+
+</html>
