@@ -118,7 +118,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/support/</loc>
+        <loc>https://campaign.support.brightcove.com/get-started/</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -146,6 +146,13 @@
     </url>
     
     <url>
+        <loc>https://campaign.support.brightcove.com/</loc>
+        <lastmod>2019-11-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/docs/analytics/</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
@@ -160,14 +167,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/get-started/</loc>
-        <lastmod>2019-11-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/</loc>
+        <loc>https://campaign.support.brightcove.com/support/</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -231,6 +231,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/release-notes/release-notes-2019.html</loc>
+        <lastmod>2019-11-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/product-updates/release-notes-2019.html</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
