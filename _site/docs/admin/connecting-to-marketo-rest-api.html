@@ -239,7 +239,7 @@
       <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
       <li>Click <strong>Add New Connection</strong>.</li>
       <li>Select <strong>Marketo</strong> from the dropdown list.</li>
-      <li>Select the  <strong>Standard (REST API) </strong>integration type. You will required to paste in several values from your Marketo account. Note that you must be logged in as a Marketo administrator to complete the following steps. </li>
+      <li>Select the <strong>Standard (REST API) </strong>integration type. You will required to paste in several values from your Marketo account. Note that you must be logged in as a Marketo administrator to complete the following steps. </li>
       <li>Enter your <strong>Marketo Account ID</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Munchkin</strong>.</li>
       <li>Enter your <strong>Marketo REST API Endpoint URL</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Web Services</strong>. Copy the <strong>Endpoint</strong> in the <strong>REST API</strong> section.</li>
       <li>Enter your <strong>Marketo REST API Identity URL</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> Web Services</strong>.</li>
@@ -249,35 +249,12 @@
       <li>Click <strong>Connect</strong>.</li>
     </ol>
     <p>The connection to Marketo is now set up and ready to use.
-    By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if video engagement data is sent to Marketo:</p>
-        <ul>
-          <li><strong>Enabled</strong> - Data is collected and will be sent to Marketo</li>
-          <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
-        </ul>
+      By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if video engagement data is sent to Marketo:</p>
+    <ul>
+      <li><strong>Enabled</strong> - Data is collected and will be sent to Marketo</li>
+      <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
+    </ul>
     <p>Click <strong>Save</strong> to save changes. To remove the integration, click <strong>Delete</strong>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="trackingid2">Passing a tracking ID</h2>
-    <p>The Audience module supports the ability to pass a tracking ID value to Marketo. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the URL that displays the Audience-enabled player or added to the player embed code.</p>
-    <ul>
-      <li>Example: Appended to URL</li>
-    </ul>
-    <pre>
-  http://www.myurl.com/video.html?<strong>bctrackingid=12345</strong></pre>
-    <ul>
-      <li>Example: Added to player embed code</li>
-    </ul>
-    <pre>
-  &lt;video data-video-id="6033402539001" 
-         data-account="1486906377" 
-         data-player="default" 
-         data-embed="default" 
-         data-application-id 
-         class="video-js"
-         <strong>data-bc-trackingid="12345"</strong> 
-         controls&gt;&lt;/video&gt;
-  &lt;script src="//players.brightcove.net/1486906377/default_default/index.min.js"&gt;&lt;/script&gt;</pre>
-    <p>Audience will then pass the value along to Marketo as another field that is synced.</p>
   </section>
 </article>
 </body></html>
