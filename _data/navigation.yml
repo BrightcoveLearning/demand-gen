@@ -81,8 +81,8 @@
 - section: Release Notes
   url: /release-notes/
   docs:
-    name: Release Notes 2019
-    url: /release-notes/release-notes-2019.html
+    - name: Release Notes 2019
+      url: /release-notes/release-notes-2019.html
 - section: Support
   url: /support/
   docs:
