@@ -7,25 +7,18 @@ grandparent_path: /docs/
 
 <article class="bcls-article">
   <h1>Connecting to Oracle Eloqua</h1>
+      <summary>In this topic you will learn how to configure Brightcove Campaign for use with Oracle Eloqua.</summary>
   <section class="bcls-section">
-    <p>The Audience module allows Video Cloud to synchronize viewing data from Brightcove Players to Oracle Eloqua. Once in Oracle Eloqua, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications. The Audience module integration with Oracle Eloqua consists of two main components:</p>
-    <ul>
-      <li>A Brightcove Player plug-in to enable tracking of video views data</li>
-      <li>A synchronization process to send tracking data from Video Cloud to Oracle Eloqua</li>
-    </ul>
+    <p>Brightcove Campaign can be configured to integrate with  Oracle Eloqua. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  Eloqua. Once in Eloqua, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.  </p>
   </section>
   <section class="bcls-section">
     <h2 id="requirements">Requirements</h2>
     <p>To use the Audience module with Oracle Eloqua, you must:</p>
     <ul>
-      <li>Have a Professional or Enterprise Video Cloud account</li>
-      <li>Have the Audience module enabled for your account by submitting the required information in the initial splash screen that appears when you open the Audience module</li>
-      <li>Click through the service agreement the first time you use the module</li>
-      <li>Use the Advanced Embed (in-page) publishing code when publishing your player; Standard Embed (iframe) publishing code will not work as the plugin will be running inside of an iframe and therefore will be unable to access any parent page URL parameters and may not get the correct cookies</li>
       <li>Have Oracle Eloqua 10 and credentials to login at: <a href="https://login.eloqua.com/">https://login.eloqua.com</a>
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: These credentials are entered into an Oracle Eloqua login page and are not provided directly to Brightcove.</aside>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: These credentials are entered into an  Eloqua login page and are not provided directly to Brightcove.</aside>
       </li>
-      <li>The credential being used to login to Oracle Eloqua should be added to the <strong>Advanced Users - Marketing</strong> group and have the following permissions:
+      <li>The credential being used to login to  Eloqua should be added to the <strong>Advanced Users - Marketing</strong> group and have the following permissions:
         <ul>
           <li>Consume API</li>
           <li>Install Cloud Applications</li>
@@ -36,110 +29,63 @@ grandparent_path: /docs/
   </section>
   <section class="bcls-section">
     <h2 id="features">Features</h2>
-    <p>Some of the key features of the Video Cloud - Oracle Eloqua integration are:</p>
+    <p>Some of the key features of the Brightcove Campaign - Oracle Eloqua integration are:</p>
     <ul>
-      <li><strong>Data format</strong> - Video cloud viewing data is delivered to a custom data object (CDO) in Oracle Eloqua. The data that is replicated to Oracle Eloqua is as follows:
+      <li><strong>Data format</strong> - Video  viewing data is delivered to a custom data object (CDO) in Oracle Eloqua. The data that is replicated to  Eloqua is as follows:
         <ul>
           <li>Video Name</li>
           <li>Video ID</li>
-          <li>Account ID (Video Cloud)</li>
-          <li>Page URL (URL of the referring page)</li>
-          <li>Player ID (Video Cloud player)</li>
+          <li>Brightcove Account ID</li>
+          <li>Page URL of the referring page</li>
+          <li>Brightcove Player ID</li>
           <li>% Watched</li>
         </ul>
       </li>
-      <li><strong>Data transfer</strong> - Viewing data that is more than 15 minutes old is sent from Video Cloud to Oracle Eloqua four times per hour. Note that this means that viewing data can take up to 30 minutes to appear in Oracle Eloqua.</li>
-      <li><strong>Data retention</strong> - Data collected can optionally be retained in Video Cloud for up to 6 months.</li>
+      <li><strong>Data transfer</strong> - Viewing data that is more than 15 minutes old is sent from Brightcove Campaign to  Eloqua four times per hour. Note that this means that viewing data can take up to 30 minutes to appear in  Eloqua.</li>
     </ul>
   </section>
   <section class="bcls-section">
     <h2 id="setupConnection">Setting up the connection</h2>
     <p>Before configuring the integration with Eloqua, we recommend that you open a new browser window and manually log out of your Eloqua account. This will ensure that when you configure the integration, you will be prompted to login to your Eloqua account and you can confirm that you are using the correct account.</p>
-    <p>Follow these steps to setup the connection between Video Cloud and Oracle Eloqua.</p>
+    <p>Follow these steps to setup the connection between Brightcove Campaign and Oracle Eloqua.</p>
     <ol class="bcls-tasklist">
-      <li>Open the Audience module and click <strong>Data Connections</strong> in the left navigation.</li>
+      <li>Login to Brightcove Campaign.</li>
+      <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
       <li>Click <strong>Add New Connection</strong>.</li>
-      <li>Select <strong>Eloqua</strong> as the integration.
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: The data connections that are available are based upon your Video Cloud subscription.</aside>
-      </li>
-      <li>(Optional) Enter a <strong>Connection Name</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="select eloqua" src="https://img.brightcove.com/node15635-select-eloqua.png" /></figure>
-      </li>
-      <li>Click <strong>Connect</strong>.</li>
-      <li>Click <strong>Connect to Eloqua</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="connect to eloqua" src="https://img.brightcove.com/node15635-connect-to-eloqua.png" /></figure>
-      </li>
+      <li>Select <strong>Eloqua</strong> from the dropdown list.</li>
+      <li>Click <strong>Connect to Eloqua</strong>.</li>
       <li>You will be prompted to sign in to Eloqua. Enter your Eloqua <strong>Company Name</strong>, <strong>Username</strong> and <strong>Password</strong>. Click <strong>Sign In</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Eloqua login" src="https://img.brightcove.com/node15635-eloqua-login2.png" /></figure>
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/map-eloqua-login.png" /></figure>
       </li>
       <li>If the login is successful, you will prompted to install the <strong>Brightcove Video Connect for Eloqua</strong> app. Click <strong>Accept and Install</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="install app" src="https://img.brightcove.com/node15635-eloqua-install-app.png" /></figure>
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/map-eloqua-video-connect.png" /></figure>
       </li>
       <li>You will be prompted to enable Eloqua for the account. Click <strong>Enable</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="confirm account" src="https://img.brightcove.com/node15635-confirm-enable-eloqua.png" /></figure>
       </li>
+      <li>Review the terms for using the integration and then click <strong>I Agree</strong>.</li>
       <li>You will be prompted to allow <strong>Brightcove Video Connect for Eloqua</strong> to access your Eloqua account. Click <strong>Sign In</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="allow access to eloqua" src="https://img.brightcove.com/node15635-allow-access-eloqua.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/map-eloqua-video-connect-signin.png" /></figure>
       </li>
       <li>Confirm your company name and username and click <strong>Accept</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="allow access to eloqua" src="https://img.brightcove.com/node15635-confirm-account.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/map-eloqua-video-connect-confirm.png" /></figure>
       </li>
-      <li>You will be prompted to setup Eloqua. Click <strong>Setup Eloqua</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="setup eloqua" src="https://img.brightcove.com/node15635-setup-eloqua.png" /></figure>
+      <li>You will be prompted to continue the setup. Click <strong>Continue Setup</strong>.
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/map-eloqua-continue-setup.png" /></figure>
+
       </li>
+        <li>Confirm the connection details display.
+                    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/map-eloqua-connection-details.png" /></figure>
+
+        </li>
     </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="configure">Configuring the integration</h2>
-    <p>Once the Video Cloud to Oracle Eloqua connection has been made, you can configure the integration.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="connected options" src="https://img.brightcove.com/node15635-connected-options2.png" /></figure>
-    <ol class="bcls-tasklist__restart">
-      <li>Check <strong>Sync video views to Eloqua as External Activities</strong> to sync views as external activities. External activities are another place to put information in Eloqua. Publishers may choose to do reporting or trigger things in Eloqua using external activities. For more information, see the Eloqua <a href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAA/Help/ExternalAssets/ExternalAssets.htm">documentation</a>.</li>
-      <li>By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if Video Cloud video engagement data is sent to Oracle Eloqua.
-        <ul>
-          <li><strong>Enabled</strong> - Data is collected and will be sent to Eloqua</li>
-          <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
-        </ul>
-      </li>
-      <li>By default, <strong>Track Data for Unknown Viewers</strong> will be <strong>Disabled</strong>. This setting determines if video engagement data is saved in Video Cloud when the viewer is unknown. Only data for known viewers is sent to Eloqua.
-        <ul>
-          <li><strong>Enabled</strong> - Data for all viewers is collected and saved in Video Cloud</li>
-          <li><strong>Disabled</strong> - Data for unknown viewers is not saved in Video Cloud</li>
-        </ul>
-      </li>
-      <li>Select a data retention policy. The data retention policy determines how long the viewing data and lead form data (if using an Audience lead form) will be retained in your Video Cloud account. Retaining data in Video Cloud allows you to recover from interrupted synchronizations. Also, Audience will continue to retry events that fail to sync (usually because the viewer isn't a known contact at the time they viewed a video) until the event ages past the data retention period. <strong>You should adjust the retention settings according to your privacy policy</strong> - it is not required to retain any user data in Video Cloud.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="data retention options" src="https://img.brightcove.com/node15635-data-retention-options.png" /></figure>
-      </li>
-    </ol>
-    <p>To remove the integration with Oracle Eloqua, click <strong>Disconnect</strong>. The bottom of the page will list all Audience-enabled players and associated lead forms.</p>
-    <p>The Audience module supports multiple connections to marketing platforms. Click <strong>Add New Connection</strong> to configure additional integrations.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="verify">Verifying the integration</h2>
-    <p>When the integration is configured, test the integration to confirm that video view data is being sent to Eloqua. For information on verifying the integration, see the <a href="/node/18742">Eloqua Integration Testing Guide</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="trackingid2">Passing a tracking ID</h2>
-    <p>The Audience module supports the ability to pass a tracking ID value to Eloqua. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the URL that displays the Audience-enabled player or added to the player embed code.</p>
+    <p>The connection to Eloqua is now set up and ready to use.
+    By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if video engagement data is sent to Eloqua:</p>
     <ul>
-      <li>Example: Appended to URL</li>
+      <li><strong>Enabled</strong> - Data is collected and will be sent to Eloqua</li>
+      <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
     </ul>
-    <pre>
-  http://www.myurl.com/video.html?<strong>bctrackingid=12345</strong></pre>
-    <ul>
-      <li>Example: Added to player embed code</li>
-    </ul>
-    <pre>
-  &lt;video data-video-id="6033402539001" 
-         data-account="1486906377" 
-         data-player="default" 
-         data-embed="default" 
-         data-application-id 
-         class="video-js"
-         <strong>data-bc-trackingid="12345"</strong> 
-         controls&gt;&lt;/video&gt;
-  &lt;script src="//players.brightcove.net/1486906377/default_default/index.min.js"&gt;&lt;/script&gt;</pre>
-    <p>Audience will then pass the value along to Eloqua as another field that is synced.</p>
+    <p>Click <strong>Save</strong> to save changes. To remove the integration, click <strong>Delete</strong>.  </p>
   </section>
 </article>
 </body>
