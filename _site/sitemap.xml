@@ -160,13 +160,6 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/release-notes/</loc>
-        <lastmod>2019-11-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/get-started/</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
@@ -231,6 +224,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/docs/videos/publishing-videos.html</loc>
+        <lastmod>2019-11-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/release-notes/release-notes-2019.html</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
