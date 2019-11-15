@@ -18,6 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# local server for "jekyll serve") localhost:{PORT value below}
+port: 5000
+
 # TODO change title
 title: Brightcove Campaign
 email: training@brightcove.com
