@@ -47,6 +47,8 @@
       docs:
         - name: Reviewing Video Analytics
           url: /docs/analytics/reviewing-video-analytics.html
+        - name: Using the Heads-Up Display Chrome Extension
+          url: /docs/analytics/using-hud.html
         - name: How Video Benchmark Score is Calculated
           url: /docs/analytics/how-vbs-calculated.html
     - name: Administration
