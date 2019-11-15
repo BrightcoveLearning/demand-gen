@@ -38,10 +38,10 @@
       docs:
         - name: Dashboard Overview
           url: /docs/dashboard/dashboard-overview.html
-        - name: Reviewing the Basic Dashboard
-          url: /docs/dashboard/reviewing-basic-dashboard.html
         - name: Reviewing the Advanced Dashboard
           url: /docs/dashboard/reviewing-adv-dashboard.html
+        - name: Reviewing the Basic Dashboard
+          url: /docs/dashboard/reviewing-basic-dashboard.html
     - name: Analytics
       url: /docs/analytics/
       docs:
@@ -72,17 +72,21 @@
         url: /docs/admin/configuring-adobe-analytics-event-tracking.html
       - name: Configuring MAP Connections
         url: /docs/admin/configuring-map-connections.html
-      - name: Connecting to HubSpot
-        url: /docs/admin/connecting-to-hubspot.html
-      - name: Connecting to Marketo
-        url: /docs/admin/connecting-to-marketo.html
+      - name: Connecting to HubSpot using the REST APIs
+        url: /docs/admin/connecting-to-hubspot-rest-api.html
+      - name: Connecting to HubSpot using the Client-Side APIs
+        url: /docs/admin/connecting-to-hubspot-client-side-api.html
+      - name: Connecting to Marketo using the REST APIs
+        url: /docs/admin/connecting-to-marketo-rest-api.html
+      - name: Connecting to Marketo using Munchkin
+        url: /docs/admin/connecting-to-marketo-munchkin.html
       - name: Connecting to Oracle Eloqua
         url: /docs/admin/connecting-to-oracle-eloqua.html
 - section: Release Notes
   url: /release-notes/
   docs:
-    - name: Release Notes 2019
-      url: /release-notes/release-notes-2019.html
+    - name: 2020
+      url: /release-notes/2020.html
 - section: Support
   url: /support/
   docs:
