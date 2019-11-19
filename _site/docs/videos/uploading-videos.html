@@ -253,6 +253,19 @@
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-lg-2 right-side-bar">
+      <div class="side-nav-container">
+          <script src="​https://assets.talla.com/latest/embeddedjs/talla.js​"></script>
+          <script type="text/javascript">
+          var token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NzM3NzAwNTd9.9sPmw7WKDvpXLCuC9V9DOAknxeYiglxdfFjaUKokRns"
+             Talla.widget = Talla.init(
+          '​campaign_talla`, 
+          Talla.OptionQuickLoadBeacon, 
+          Talla.OptionBotName("Questions?")
+          )
+          
+          Talla.widget.display(Talla.OptionJWTCredentials(token)) 
+          </script>
+      </div>
       
       <nav class="right-side-nav">
         <h6 class="toc">Page Contents</h6>
