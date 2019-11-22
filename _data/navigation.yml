@@ -9,6 +9,8 @@
       url: /get-started/getting-started-brightcove-campaign.html
     - name: Uploading and Publishing Your First Video
       url: /get-started/uploading-publishing-your-first-video.html
+    - name: Overview of Video Content Types
+      url: /get-started/overview-video-content-types.html
 - section: Docs
   url: /docs/
   docs:
