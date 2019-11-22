@@ -111,6 +111,13 @@
     </url>
     
     <url>
+        <loc>https://campaign.support.brightcove.com/docs/videos/exporting-video-data.html</loc>
+        <lastmod>2019-11-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/get-started/getting-started-brightcove-campaign-trial.html</loc>
         <lastmod>2019-11-22</lastmod>
         <changefreq>daily</changefreq>
@@ -146,7 +153,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/dashboard/</loc>
+        <loc>https://campaign.support.brightcove.com/</loc>
         <lastmod>2019-11-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -160,14 +167,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/support/</loc>
-        <lastmod>2019-11-22</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/docs/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/dashboard/</loc>
         <lastmod>2019-11-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -181,7 +181,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/analytics/</loc>
+        <lastmod>2019-11-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/</loc>
         <lastmod>2019-11-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -195,7 +202,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/analytics/</loc>
+        <loc>https://campaign.support.brightcove.com/support/</loc>
         <lastmod>2019-11-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -252,6 +259,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
+        <lastmod>2019-11-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/get-started/overview-video-content-types.html</loc>
         <lastmod>2019-11-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
