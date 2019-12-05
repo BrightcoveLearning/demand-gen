@@ -13,11 +13,11 @@ grandparent: Docs
       <li>Play Rate</li>
       <li>Engagement Rate</li>
     </ul>
-    <p>Play Rate is calculated by dividing the number of video views by the number of times the video was loaded (video views / video loads). If you have a page with a video on it and that page is viewed 10 times, and viewers watch the video on 4 of those pageviews, the video will have a 40% play rate.  </p>
+    <p>Play Rate is calculated by dividing the number of video views by the number of times the video was loaded (video views / video loads). If you have a page with a video on it and that page is viewed 10 times, and viewers watch the video on 4 of those page views, the video will have a 40% play rate.  </p>
     <p>Engagement Rate measures the percentage of a video that is actually watched. For example, two viewers watch a 60 second video. The first viewer watches for 5 seconds and the second viewer watches for 25 seconds. In total these viewers have accumulated 30 seconds of view time, or an average of 15 seconds. The Engagement Rate would be 25% (60 seconds / (5 seconds + 25 seconds) / 2 viewers).</p>
     <p>The VBS starts by comparing  the Play Rate and Engagement Rate of your video to  all videos with the same Video Content Type (Product Overview, Product Details, etc.). We then determine where your video ranks within this grouping: is it in the 10th percentile, 20th percentile, etc. These two percentiles are then averaged. So if you're video is in the 60th percentile for Play rate and 70th percentile in engagement rate, you're VBS would be 65.</p>
-    <p>There is  additional downard weighting of the VBS if either Play Rate or Engagement Rate is at or below the 30th percentile. This is to emphasize the poor performance and the need to improve.</p>
-    <p>The formula for downard weighting is as follows, written in psuedo-code: </p>
+    <p>There is  additional downward weighting of the VBS if either Play Rate or Engagement Rate is at or below the 30th percentile. This is to emphasize the poor performance and the need to improve.</p>
+    <p>The formula for downward weighting is as follows, written in pseudo-code: </p>
     <pre><code>
 If either rate is &lt;=30
    lower_rate = smaller of the two rates
