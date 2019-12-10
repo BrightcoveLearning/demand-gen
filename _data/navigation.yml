@@ -1,20 +1,20 @@
 - section: Home
   url: /index.html
-- section: Get Started
+- section: Getting Started
   url: /get-started/
   docs:
-    - name: Get Started with your Brightcove Campaign Trial
+    - name: Getting Started with your Brightcove Campaign Trial
       url: /get-started/getting-started-brightcove-campaign-trial.html
-    - name: Get Started with Brightcove Campaign
+    - name: Getting Started with Brightcove Campaign
       url: /get-started/getting-started-brightcove-campaign.html
     - name: Overview of Video Content Types
       url: /get-started/overview-video-content-types.html
     - name: Uploading and Publishing Your First Video
       url: /get-started/uploading-publishing-your-first-video.html
-- section: Docs
+- section: Documentation
   url: /docs/
   docs:
-    - name: Manage Videos
+    - name: Managing Videos
       url: /docs/videos/
       docs:
         - name: Uploading Videos
@@ -55,7 +55,7 @@
           url: /docs/analytics/using-hud.html
         - name: How Video Benchmark Score is Calculated
           url: /docs/analytics/how-vbs-calculated.html
-    - name: Administration
+    - name: Administering Accounts
       url: /docs/admin/
       docs:
       - name: Managing Users
