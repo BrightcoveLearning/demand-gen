@@ -188,6 +188,13 @@
     </url>
     
     <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/</loc>
+        <lastmod>2019-12-11</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/support/</loc>
         <lastmod>2019-12-11</lastmod>
         <changefreq>daily</changefreq>
@@ -202,13 +209,6 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/</loc>
-        <lastmod>2019-12-11</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/</loc>
         <lastmod>2019-12-11</lastmod>
         <changefreq>daily</changefreq>
@@ -216,7 +216,28 @@
     </url>
     
     <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing-account-information.html</loc>
+        <lastmod>2019-12-11</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing-account-settings.html</loc>
+        <lastmod>2019-12-11</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://campaign.support.brightcove.com/docs/admin/managing-media-sharing-settings.html</loc>
+        <lastmod>2019-12-11</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing-profile-information.html</loc>
         <lastmod>2019-12-11</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -231,27 +252,6 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/docs/videos/managing-videos.html</loc>
-        <lastmod>2019-12-11</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/managing_account_information.html</loc>
-        <lastmod>2019-12-11</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/managing_account_settings.html</loc>
-        <lastmod>2019-12-11</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/managing_profile_information.html</loc>
         <lastmod>2019-12-11</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
