@@ -44,7 +44,11 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-# you should have a collection corresponding to each folder of docs
+
+# plugins
+plugins:
+  - jekyll-last-modified-at
+
 
 
 # Exclude from processing.
