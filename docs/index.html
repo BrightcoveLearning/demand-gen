@@ -2,43 +2,73 @@
 title: Documentation
 parent: Home
 ---
-<article class="bcls-article"> <i class="fad fa-file-alt fa-3x" style="color: seagreen;"></i>
-  <h1>Documentation</h1>
-  <section onclick="window.location.pathname = '/docs/videos/';" class="bcls-card"> <i class="fad fa-film fa-3x" style="color: mediumblue;"></i>
-    <h2 id="videos"><a href="/docs/videos/">Managing Videos</a></h2>
-    <p>Learn how to upload and manage videos.</p>
-    <ul>
-      <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
-      <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
-      <li><a href="/docs/videos/publishing-videos.html">Publishing Videos</a></li>
-      <li><a href="/docs/videos/index.html">View All...</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/docs/dashboard/';" class="bcls-card"> <i class="fad fa-tachometer-alt fa-3x" style="color: blueviolet;"></i>
-    <h2 id="config"><a href="/docs/dashboard/">Reviewing the Dashboard</a></h2>
-    <p>Learn about the various Dashboard pages that are available that provide basic video analytics.</p>
-    <ul>
-      <li><a href="/docs/dashboard/dashboard-overview.html">Overview of the Dashboard</a></li>
-      <li><a href="/docs/dashboard/reviewing-adv-dashboard.html">Advanced Dashboard</a></li>
-      <li><a href="/docs/dashboard/reviewing-basic-dashboard.html">Basic Dashboard</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/docs/analytics/';" class="bcls-card"> <i class="fad fa-analytics  fa-3x" style="color: dodgerblue;"></i>
-    <h2 id="analytics"><a href="/docs/analytics/">Reviewing Analytics</a></h2>
-    <p>Learn how to view video analytics to see how your videos are performing.</p>
-    <ul>
-      <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
-      <li><a href="/docs/analytics/using-hud.html">Using the  Chrome Extension</a></li>
-      <li><a href="/docs/analytics/index.html">View All...</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/docs/admin/';" class="bcls-card"> <i class="fad fa-user-cog fa-3x" style="color: crimson;"></i>
-    <h2 id="admin"><a href="/docs/admin/">Administering Accounts</a></h2>
-    <p>Learn how to create users and configure other account settings.</p>
-    <ul>
-      <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
-      <li><a href="/docs/admin/viewing-billing-information.html">Billing Information</a></li>
-      <li><a href="/docs/admin/index.html">View all...</a></li>
-    </ul>
+<style>
+  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
+    font-size: 3rem;
+    color:{{site.product_color}};
+    margin-right: 1rem;
+  }
+  .card-icon i {
+    color: {{site.product_color}};
+  }
+</style>
+<article class="bcls-article"> 
+  <h1><i class="fal fa-file-alt"></i> Documentation</h1>
+  <section class="card-wrapper">
+    <section onclick="window.location.pathname = '/docs/videos/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="fas fa-film"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="videos"><a href="/docs/videos/">Managing Videos</a></h2>
+        <p>Learn how to upload and manage videos.</p>
+        <ul>
+          <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
+          <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
+          <li><a href="/docs/videos/publishing-videos.html">Publishing Videos</a></li>
+          <li><a href="/docs/videos/index.html">View All...</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname = '/docs/dashboard/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-tachometer-fast"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="config"><a href="/docs/dashboard/">Reviewing the Dashboard</a></h2>
+        <p>Learn about the various Dashboard pages that are available that provide basic video analytics.</p>
+        <ul>
+          <li><a href="/docs/dashboard/dashboard-overview.html">Overview of the Dashboard</a></li>
+          <li><a href="/docs/dashboard/reviewing-adv-dashboard.html">Advanced Dashboard</a></li>
+          <li><a href="/docs/dashboard/reviewing-basic-dashboard.html">Basic Dashboard</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname = '/docs/analytics/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-chart-bar"></i>
+      </div>
+      <h2 id="analytics"><a href="/docs/analytics/">Reviewing Analytics</a></h2>
+      <p>Learn how to view video analytics to see how your videos are performing.</p>
+      <ul>
+        <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+        <li><a href="/docs/analytics/using-hud.html">Using the  Chrome Extension</a></li>
+        <li><a href="/docs/analytics/index.html">View All...</a></li>
+      </ul>
+    </section>
+    <section onclick="window.location.pathname = '/docs/admin/';" class="bcls-card">  
+      <div class="card-icon">
+        <i class="fal fa-tools"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="admin"><a href="/docs/admin/">Administering Accounts</a></h2>
+        <p>Learn how to create users and configure other account settings.</p>
+        <ul>
+          <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
+          <li><a href="/docs/admin/viewing-billing-information.html">Billing Information</a></li>
+          <li><a href="/docs/admin/index.html">View all...</a></li>
+        </ul>
+      </div>
+    </section>
   </section>
 </article>

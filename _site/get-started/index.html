@@ -12,9 +12,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/bc-icons.css">
-  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <!-- <link rel="stylesheet" href="/assets/css/site/bc-icons.css"> -->
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -218,23 +218,55 @@
       </div>
   <!-- bootstrap layout -->
 
-<article class="bcls-article"> <i class="fad fa-map-pin fa-3x" style="color: limegreen;"></i>
-  <h1>Getting Started</h1>
+<style>
+  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
+    font-size: 3rem;
+    color:rgb(193, 66, 217);
+    margin-right: 1rem;
+  }
+  .card-icon i {
+    color: rgb(193, 66, 217);
+  }
+</style>
+<article class="bcls-article"> 
+  <h1><i class="far fa-location-arrow"></i> Getting Started</h1>
   <summary>
     <p>Brightcove Campaign&trade; provides a set of tools to help marketers with the lead generation process. Brightcove Campaign makes it easy to generate embed code for use in video landing pages and then provides analytics to measure the performance of your videos.</p>
     <p>Sign up for a free trial account <a href="https://register.brightcove.com">here</a>.</p>
   </summary>
-  <section onclick="window.location.pathname = '/get-started/getting-started-brightcove-campaign.html';" class="bcls-card-small"> <i class="fad fa-route fa-3x" style="color: indianred;"></i>
-    <h3 id="navigate">Learn How to Navigate the UI</h3>
-  </section>
-  <section onclick="window.location.pathname = '/docs/admin/managing-users.html';" class="bcls-card-small"> <i class="fad fa-user-plus fa-3x" style="color: mediumblue;"></i>
-    <h3 id="users">Create Some Users</h3>
-  </section>
-  <section onclick="window.location.pathname = '/get-started/uploading-publishing-your-first-video.html';" class="bcls-card-small"> <i class="fad fa-film fa-3x" style="color: darkorange;"></i>
-    <h3 id="build">Upload  and Publish a Video</h3>
-  </section>
-  <section onclick="window.location.pathname = '/docs/analytics/using-hud.html';" class="bcls-card-small"> <i class="fad fa-browser fa-3x" style="color: orchid;"></i>
-    <h3 id="build">Install the Chrome Browser Plugin</h3>
+  <section class="card-wrapper">
+    <section onclick="window.location.pathname = '/get-started/getting-started-brightcove-campaign.html';" class="bcls-card-small"> 
+      <div class="card-icon">
+        <i class="far fa-compass"></i>
+      </div>
+      <div class="card-content">
+        <h3 id="navigate">Learn How to Navigate the UI</h3>
+      </div>
+    </section>
+    <section onclick="window.location.pathname = '/docs/admin/managing-users.html';" class="bcls-card-small"> 
+      <div class="card-icon">
+        <i class="fal fa-users-medical"></i>
+      </div>
+      <div class="card-content">
+        <h3 id="users">Create Some Users</h3>
+      </div>
+    </section>
+    <section onclick="window.location.pathname = '/get-started/uploading-publishing-your-first-video.html';" class="bcls-card-small"> 
+      <div class="card-icon">
+        <i class="far fa-cloud-upload-alt"></i>
+      </div>
+      <div class="card-content">
+        <h3 id="build">Upload  and Publish a Video</h3>
+      </div>
+    </section>
+    <section onclick="window.location.pathname = '/docs/analytics/using-hud.html';" class="bcls-card-small"> 
+      <div class="card-icon">
+        <i class="far fa-plug"></i>
+      </div>
+      <div class="card-content">
+        <h3 id="build">Install the Chrome Browser Plugin</h3>
+      </div>
+    </section>
   </section>
 </article>
 

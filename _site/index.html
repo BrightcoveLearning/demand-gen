@@ -12,9 +12,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/bc-icons.css">
-  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <!-- <link rel="stylesheet" href="/assets/css/site/bc-icons.css"> -->
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -216,66 +216,113 @@
       </div>
   <!-- bootstrap layout -->
 
+<style>
+  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
+    font-size: 3rem;
+    color:rgb(193, 66, 217);
+    margin-right: 1rem;
+  }
+  .card-icon i {
+    color: rgb(193, 66, 217);
+  }
+</style>
 <article class="bcls-article">
   <h1>Brightcove Campaign&trade; Documentation</h1>
-  <section onclick="window.location.pathname = '/get-started/index.html';" class="bcls-card"> <i class="fad fa-map-pin fa-3x" style="color: limegreen;"></i>
-    <h2><a href="get-started/index.html">Getting Started</a></h2>
-    <p>Just getting started with Brightcove Campaign?</p>
-      <ul>
-      <li><a href="/get-started/overview-video-content-types.html">Overview of Video Content Types</a></li>
-      <li><a href="/get-started/uploading-publishing-your-first-video.html">Uploading and Publishing Your First Video</a></li>
-      <li><a href="/get-started/index.html">View All...</a></li>
-    </ul>
-  </section>
-    <section onclick="window.location.pathname = '/docs/videos/';" class="bcls-card"> <i class="fad fa-film fa-3x" style="color: mediumblue;"></i>
-    <h2 id="videos"><a href="/docs/videos/">Managing Videos</a></h2>
-    <p>Learn how to upload and manage videos.</p>
-    <ul>
-      <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
-      <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
-      <li><a href="/docs/videos/publishing-videos.html">Publishing Videos</a></li>
-      <li><a href="/docs/videos/index.html">View All...</a></li>
-    </ul>
-  </section>
-      <section onclick="window.location.pathname = '/docs/dashboard/';" class="bcls-card"> <i class="fad fa-tachometer-alt fa-3x" style="color: blueviolet;"></i>
-    <h2 id="config"><a href="/docs/dashboard/">Reviewing the Dashboard</a></h2>
-    <p>Learn about the various Dashboard pages that are available that provide basic video analytics.</p>
-    <ul>
-      <li><a href="/docs/dashboard/dashboard-overview.html">Overview of the Dashboard</a></li>
-      <li><a href="/docs/dashboard/reviewing-adv-dashboard.html">Advanced Dashboard</a></li>
-      <li><a href="/docs/dashboard/reviewing-basic-dashboard.html">Basic Dashboard</a></li>
-    </ul>
-  </section>
-    <section onclick="window.location.pathname = '/docs/analytics/';" class="bcls-card"> <i class="fad fa-analytics  fa-3x" style="color: dodgerblue;"></i>
-    <h2 id="analytics"><a href="/docs/analytics/">Reviewing Analytics</a></h2>
-    <p>Learn how to view video analytics to see how your videos are performing.</p>
-    <ul>
-      <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
-      <li><a href="/docs/analytics/using-hud.html">Using the  Chrome Extension</a></li>
-      <li><a href="/docs/analytics/index.html">View All...</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/docs/admin/';" class="bcls-card"> <i class="fad fa-user-cog fa-3x" style="color: crimson;"></i>
-    <h2 id="admin"><a href="/docs/admin/">Administering Accounts</a></h2>
-    <p>Learn how to create users and configure other account settings.</p>
-    <ul>
-      <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
-      <li><a href="/docs/admin/viewing-billing-information.html">Billing Information</a></li>
-      <li><a href="/docs/admin/configuring-map-connections.html">Configuring MAP Connections</a></li>
-      <li><a href="/docs/admin/index.html">View all...</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/release-notes/index.html';" class="bcls-card"> <i class="fad fa-lightbulb fa-3x" style="color: darkorange;"></i>
-    <h2><a href="release-notes/index.html">Release Notes</a></h2>
-    <p>Learn about new product features</p>
-  </section>
-  <section onclick="window.location.pathname = '/support/index.html';" class="bcls-card"> <i class="fad fa-question-circle fa-3x" style="color: orangered;"></i>
-    <h2><a href="support/index.html">Support</a></h2>
-    <p>Have a  question or need help?</p>
-      <ul>
-      <li><a href="/support/viewing-brightcove-system-status-page.html">View Brightcove System Status</a></li>
-      <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
-    </ul>
+  <section class="card-wrapper">
+    <section onclick="window.location.pathname= '/get-started/index.html';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-location-arrow"></i>
+      </div>
+      <div class="card-content">
+        <h2><a href="get-started/index.html">Getting Started</a></h2>
+        <p>Just getting started with Brightcove Campaign?</p>
+        <ul>
+          <li><a href="/get-started/overview-video-content-types.html">Overview of Video Content Types</a></li>
+          <li><a href="/get-started/uploading-publishing-your-first-video.html">Uploading and Publishing Your First Video</a></li>
+          <li><a href="/get-started/index.html">View All...</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname= '/docs/videos/';" class="bcls-card">
+      <div class="card-icon">
+        <i class="fas fa-film"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="videos"><a href="/docs/videos/">Managing Videos</a></h2>
+        <p>Learn how to upload and manage videos.</p>
+        <ul>
+          <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
+          <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
+          <li><a href="/docs/videos/publishing-videos.html">Publishing Videos</a></li>
+          <li><a href="/docs/videos/index.html">View All...</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname= '/docs/dashboard/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-tachometer-fast"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="config"><a href="/docs/dashboard/">Reviewing the Dashboard</a></h2>
+        <p>Learn about the various Dashboard pages that are available that provide basic video analytics.</p>
+        <ul>
+          <li><a href="/docs/dashboard/dashboard-overview.html">Overview of the Dashboard</a></li>
+          <li><a href="/docs/dashboard/reviewing-adv-dashboard.html">Advanced Dashboard</a></li>
+          <li><a href="/docs/dashboard/reviewing-basic-dashboard.html">Basic Dashboard</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname= '/docs/analytics/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-chart-bar"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="analytics"><a href="/docs/analytics/">Reviewing Analytics</a></h2>
+        <p>Learn how to view video analytics to see how your videos are performing.</p>
+        <ul>
+          <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+          <li><a href="/docs/analytics/using-hud.html">Using the Chrome Extension</a></li>
+          <li><a href="/docs/analytics/index.html">View All...</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname= '/docs/admin/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="fal fa-tools"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="admin"><a href="/docs/admin/">Administering Accounts</a></h2>
+        <p>Learn how to create users and configure other account settings.</p>
+        <ul>
+          <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
+          <li><a href="/docs/admin/viewing-billing-information.html">Billing Information</a></li>
+          <li><a href="/docs/admin/configuring-map-connections.html">Configuring MAP Connections</a></li>
+          <li><a href="/docs/admin/index.html">View all...</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname= '/release-notes/index.html';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-bell"></i>
+      </div>
+      <div class="card-content">
+        <h2><a href="/release-notes/index.html">Release Notes</a></h2>
+        <p>Learn about new product features</p>
+      </div>
+    </section>
+    <section onclick="window.location.pathname= '/support/index.html';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-question-circle"></i>
+      </div>
+      <div class="card-content">
+        <h2><a href="/support/index.html">Support</a></h2>
+        <p>Have a question or need help?</p>
+        <ul>
+          <li><a href="/support/viewing-brightcove-system-status-page.html">View Brightcove System Status</a></li>
+          <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+        </ul>
+      </div>
+    </section>
   </section>
 </article>
 
