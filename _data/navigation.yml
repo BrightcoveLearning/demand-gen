@@ -1,6 +1,8 @@
-- section: Home
+- section: 
+  name: Home
   url: /index.html
-- section: Getting Started
+- section: 
+  name: Getting Started
   url: /get-started/
   docs:
     - name: Getting Started with your Brightcove Campaign Trial
@@ -11,7 +13,8 @@
       url: /get-started/overview-video-content-types.html
     - name: Uploading and Publishing Your First Video
       url: /get-started/uploading-publishing-your-first-video.html
-- section: Documentation
+- section: 
+  name: Documentation
   url: /docs/
   docs:
     - name: Managing Videos
@@ -88,12 +91,14 @@
         url: /docs/admin/connecting-to-marketo-munchkin.html
       - name: Connecting to Oracle Eloqua
         url: /docs/admin/connecting-to-oracle-eloqua.html
-- section: Release Notes
+- section: 
+  name: Release Notes
   url: /release-notes/
   docs:
     - name: 2020
       url: /release-notes/2020.html
-- section: Support
+- section: 
+  name: Support
   url: /support/
   docs:
     - name: Open a Support Case
