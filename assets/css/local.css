@@ -17,3 +17,8 @@ h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
   color: {{site.product_color}};
 }
 
+div.card-content > ul {
+  margin-left: -2.5rem;
+}
+
+
