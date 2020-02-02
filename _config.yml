@@ -38,7 +38,9 @@ site_url: "https://campaign.support.brightcove.com"
 product: Brightcove Campaign
 color: rgb(51, 51, 51)
 product_color: rgb(193, 66, 217)
-search_id: 017969773216783359937:6sd3di5mwuw
+product_icon: "campaign-logo.svg"
+search_id: "017969773216783359937:6sd3di5mwuw"
+feedbackify_id: "14985"
 defaults:
   - 
     scope:
