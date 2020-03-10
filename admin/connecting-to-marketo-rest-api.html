@@ -1,0 +1,50 @@
+---
+title: Connecting to Marketo using the REST APIs
+parent: Administering Accounts
+---
+<article class="bcls-article">
+  <h1>Connecting to Marketo using the REST APIs</h1>
+  <summary>In this topic you will learn how to configure Brightcove Campaign&trade; for use with Marketo using the REST APIs.</summary>
+  <section class="bcls-section">
+    <p>Brightcove Campaign can be configured to integrate with  Marketo. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  Marketo. Once in Marketo, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: For information on how to configure Brightcove Campaign for use with Marketo using the Munchkin ID, see <a href="connecting-to-marketo-munchkin.html">Connecting to Marketo using Munchkin</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="requirements">Requirements</h2>
+    <p>To use Brightcove Campaign with the Marketo REST integration, you must:</p>
+    <ul>
+      <li>Create a role in Marketo which has access to all of the API permissions</li>
+      <li>Create a LaunchPoint Service</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="api">Creating an API-only user and LaunchPoint service</h2>
+    <p>Before you can make a call to the Marketo REST API, you need to create a new API role with access to all of the APIs, create an API-only user and then create a service that uniquely identifies your client application. The steps to complete these tasks are outlined in the <a href="https://developers.marketo.com/blog/quick-start-guide-for-marketo-rest-api/">Marketo documentation</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setupConnection">Setting up the connection</h2>
+    <p>Once the configuration steps on the Marketo side have been completed, follow these steps to setup the connection between Brightcove Campaign and Marketo.</p>
+    <h3 id="establishConnection">Establishing the connection between Brightcove Campaign and Marketo</h3>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li> Login to Brightcove Campaign.</li>
+      <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
+      <li>Click <strong>Add New Connection</strong>.</li>
+      <li>Select <strong>Marketo</strong> from the dropdown list.</li>
+      <li>Select the <strong>Standard (REST API) </strong>integration type. You will required to paste in several values from your Marketo account. Note that you must be logged in as a Marketo administrator to complete the following steps. </li>
+      <li>Enter your <strong>Marketo Account ID</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Munchkin</strong>.</li>
+      <li>Enter your <strong>Marketo REST API Endpoint URL</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Web Services</strong>. Copy the <strong>Endpoint</strong> in the <strong>REST API</strong> section.</li>
+      <li>Enter your <strong>Marketo REST API Identity URL</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> Web Services</strong>.</li>
+      <li>Enter <strong>Marketo LaunchPoint Client ID</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>LaunchPoint</strong> and then click the <strong>View Details</strong> link for the LaunchPoint you created earlier as part of this setup.</li>
+      <li>Enter <strong>Marketo LaunchPoint Client Secret</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> LaunchPoint</strong> and then click the <strong>View Details</strong> link for the LaunchPoint you created earlier as part of this setup.</li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+    <p>The connection to Marketo is now set up and ready to use.
+      By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if video engagement data is sent to Marketo:</p>
+    <ul>
+      <li><strong>Enabled</strong> - Data is collected and will be sent to Marketo</li>
+      <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
+    </ul>
+    <p>Click <strong>Save</strong> to save changes. To remove the integration, click <strong>Delete</strong>.</p>
+  </section>
+</article>
+</body></html>

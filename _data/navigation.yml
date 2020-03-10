@@ -16,83 +16,83 @@
     - name: Campaign Training Videos
       url: /get-started/brightcove-campaign-training-videos.html
 - section: 
-  name: Documentation
-  url: /docs/
+  name: Managing Videos
+  url: /videos/
   docs:
+    - name: Uploading Videos
+      url: /videos/uploading-videos.html
     - name: Managing Videos
-      url: /docs/videos/
-      docs:
-        - name: Uploading Videos
-          url: /docs/videos/uploading-videos.html
-        - name: Managing Videos
-          url: /docs/videos/managing-videos.html
-        - name: Editing Video Properties
-          url: /docs/videos/editing-video-properties.html
-        - name: Capturing Poster and Thumbnail Images
-          url: /docs/videos/capturing-poster-and-thumbnail-images.html
-        - name: Uploading Poster and Thumbnail Images
-          url: /docs/videos/uploading-poster-and-thumbnail-images.html
-        - name: Search for Videos
-          url: /docs/videos/how-to-search-for-videos.html
-        - name: Publishing Videos
-          url: /docs/videos/publishing-videos.html
-        - name: Driving Video Views Through Email
-          url: /docs/videos/driving-video-views-email.html
-        - name: Working with Shared Videos
-          url: /docs/videos/working-with-shared-videos.html
-        - name: Adding Text Tracks
-          url: /docs/videos/adding-text-tracks-to-a-video.html
-    - name: Dashboard
-      url: /docs/dashboard/
-      docs:
-        - name: Dashboard Overview
-          url: /docs/dashboard/dashboard-overview.html
-        - name: Reviewing the Advanced Dashboard
-          url: /docs/dashboard/reviewing-adv-dashboard.html
-        - name: Reviewing the Basic Dashboard
-          url: /docs/dashboard/reviewing-basic-dashboard.html
-    - name: Analytics
-      url: /docs/analytics/
-      docs:
-        - name: Reviewing Video Analytics
-          url: /docs/analytics/reviewing-video-analytics.html
-        - name: Using the Heads-Up Display Chrome Extension
-          url: /docs/analytics/using-hud.html
-        - name: How Video Benchmark Score is Calculated
-          url: /docs/analytics/how-vbs-calculated.html
-    - name: Administering Accounts
-      url: /docs/admin/
-      docs:
-      - name: Managing Users
-        url: /docs/admin/managing-users.html
-      - name: Managing Account Information
-        url: /docs/admin/managing_account_information.html
-      - name: Managing Account Settings
-        url: /docs/admin/managing_account_settings.html
-      - name: Managing Media Sharing Settings
-        url: /docs/admin/managing-media-sharing-settings.html
-      - name: Managing Profile Information
-        url: /docs/admin/managing_profile_information.html
-      - name: Viewing Billing Information
-        url: /docs/admin/viewing-billing-information.html
-      - name: Configuring Google Analytics Event Tracking
-        url: /docs/admin/configuring-google-analytics-event-tracking.html
-      - name: Reviewing Player Event Data in Google Analytics
-        url: /docs/admin/reviewing-player-event-data-in-google-analytics.html
-      - name: Configuring Adobe Analytics Event Tracking
-        url: /docs/admin/configuring-adobe-analytics-event-tracking.html
-      - name: Configuring MAP Connections
-        url: /docs/admin/configuring-map-connections.html
-      - name: Connecting to HubSpot using the REST APIs
-        url: /docs/admin/connecting-to-hubspot-rest-api.html
-      - name: Connecting to HubSpot using the Client-Side APIs
-        url: /docs/admin/connecting-to-hubspot-client-side-api.html
-      - name: Connecting to Marketo using the REST APIs
-        url: /docs/admin/connecting-to-marketo-rest-api.html
-      - name: Connecting to Marketo using Munchkin
-        url: /docs/admin/connecting-to-marketo-munchkin.html
-      - name: Connecting to Oracle Eloqua
-        url: /docs/admin/connecting-to-oracle-eloqua.html
+      url: /videos/managing-videos.html
+    - name: Editing Video Properties
+      url: /videos/editing-video-properties.html
+    - name: Capturing Poster and Thumbnail Images
+      url: /videos/capturing-poster-and-thumbnail-images.html
+    - name: Uploading Poster and Thumbnail Images
+      url: /videos/uploading-poster-and-thumbnail-images.html
+    - name: Search for Videos
+      url: /videos/how-to-search-for-videos.html
+    - name: Publishing Videos
+      url: /videos/publishing-videos.html
+    - name: Driving Video Views Through Email
+      url: /videos/driving-video-views-email.html
+    - name: Working with Shared Videos
+      url: /videos/working-with-shared-videos.html
+    - name: Adding Text Tracks
+      url: /videos/adding-text-tracks-to-a-video.html
+- section: 
+  name: Dashboard
+  url: /dashboard/
+  docs:
+    - name: Dashboard Overview
+      url: /dashboard/dashboard-overview.html
+    - name: Reviewing the Advanced Dashboard
+      url: /dashboard/reviewing-adv-dashboard.html
+    - name: Reviewing the Basic Dashboard
+      url: /dashboard/reviewing-basic-dashboard.html
+- section: 
+  name: Analytics
+  url: /analytics/
+  docs:
+    - name: Reviewing Video Analytics
+      url: /docs/analytics/reviewing-video-analytics.html
+    - name: Using the Heads-Up Display Chrome Extension
+      url: /docs/analytics/using-hud.html
+    - name: How Video Benchmark Score is Calculated
+      url: /docs/analytics/how-vbs-calculated.html
+- section: 
+  name: Administering Accounts
+  url: /admin/
+  docs:
+    - name: Managing Users
+      url: /admin/managing-users.html
+    - name: Managing Account Information
+      url: /admin/managing_account_information.html
+    - name: Managing Account Settings
+      url: /admin/managing_account_settings.html
+    - name: Managing Media Sharing Settings
+      url: /admin/managing-media-sharing-settings.html
+    - name: Managing Profile Information
+      url: /admin/managing_profile_information.html
+    - name: Viewing Billing Information
+      url: /admin/viewing-billing-information.html
+    - name: Configuring Google Analytics Event Tracking
+      url: /admin/configuring-google-analytics-event-tracking.html
+    - name: Reviewing Player Event Data in Google Analytics
+      url: /admin/reviewing-player-event-data-in-google-analytics.html
+    - name: Configuring Adobe Analytics Event Tracking
+      url: /admin/configuring-adobe-analytics-event-tracking.html
+    - name: Configuring MAP Connections
+      url: /admin/configuring-map-connections.html
+    - name: Connecting to HubSpot using the REST APIs
+      url: /admin/connecting-to-hubspot-rest-api.html
+    - name: Connecting to HubSpot using the Client-Side APIs
+      url: /admin/connecting-to-hubspot-client-side-api.html
+    - name: Connecting to Marketo using the REST APIs
+      url: /admin/connecting-to-marketo-rest-api.html
+    - name: Connecting to Marketo using Munchkin
+      url: /admin/connecting-to-marketo-munchkin.html
+    - name: Connecting to Oracle Eloqua
+      url: /admin/connecting-to-oracle-eloqua.html
 - section: 
   name: Release Notes
   url: /release-notes/
