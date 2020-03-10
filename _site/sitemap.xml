@@ -20,14 +20,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/videos/adding-text-tracks-to-a-video.html</loc>
+        <loc>https://campaign.support.brightcove.com/videos/adding-text-tracks-to-a-video.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/videos/adding-text-tracks-to-a-video.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/videos/adding-text-tracks-to-a-video.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -41,13 +41,6 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/videos/capturing-poster-and-thumbnail-images.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/videos/capturing-poster-and-thumbnail-images.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
@@ -55,7 +48,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/configuring-adobe-analytics-event-tracking.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/videos/capturing-poster-and-thumbnail-images.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -63,6 +56,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/admin/configuring-adobe-analytics-event-tracking.html</loc>
+        <lastmod>2020-03-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/configuring-adobe-analytics-event-tracking.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -125,13 +125,6 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/connecting-to-marketo-munchkin.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/admin/connecting-to-marketo-munchkin.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
@@ -139,7 +132,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/connecting-to-marketo-rest-api.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/admin/connecting-to-marketo-munchkin.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -147,6 +140,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/admin/connecting-to-marketo-rest-api.html</loc>
+        <lastmod>2020-03-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/connecting-to-marketo-rest-api.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -167,13 +167,6 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/creating-lead-forms-hubspot.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/admin/creating-lead-forms-hubspot.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
@@ -182,20 +175,6 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/admin/creating-lead-forms-marketo.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/creating-lead-forms-marketo.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/creating-lead-forms-oracle-eloqua.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -216,28 +195,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/creating-lead-forms-salesforce.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/admin/creating-lead-forms.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/creating-lead-forms.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/dashboard/dashboard-overview.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -251,7 +209,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/videos/driving-video-views-email.html</loc>
+        <loc>https://campaign.support.brightcove.com/dashboard/dashboard-overview.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -259,6 +217,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/videos/driving-video-views-email.html</loc>
+        <lastmod>2020-03-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/videos/driving-video-views-email.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -300,14 +265,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/videos/how-to-search-for-videos.html</loc>
+        <loc>https://campaign.support.brightcove.com/videos/how-to-search-for-videos.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/videos/how-to-search-for-videos.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/videos/how-to-search-for-videos.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -342,7 +307,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/admin/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/admin/</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -356,7 +321,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/</loc>
+        <loc>https://campaign.support.brightcove.com/docs/dashboard/</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -370,21 +335,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/dashboard/</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/docs/videos/</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://campaign.support.brightcove.com/get-started/</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -398,7 +349,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/support/</loc>
+        <loc>https://campaign.support.brightcove.com/get-started/</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -420,6 +371,20 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/dashboard/</loc>
+        <lastmod>2020-03-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/admin/</loc>
+        <lastmod>2020-03-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/support/</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -468,13 +433,6 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/managing-media-sharing-settings.html</loc>
-        <lastmod>2020-03-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://campaign.support.brightcove.com/admin/managing-media-sharing-settings.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
@@ -482,7 +440,7 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/managing-profile-information.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing-media-sharing-settings.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -490,6 +448,13 @@
     
     <url>
         <loc>https://campaign.support.brightcove.com/admin/managing-profile-information.html</loc>
+        <lastmod>2020-03-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://campaign.support.brightcove.com/docs/admin/managing-profile-information.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -566,14 +531,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/dashboard/reviewing-basic-dashboard.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/dashboard/reviewing-basic-dashboard.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/dashboard/reviewing-basic-dashboard.html</loc>
+        <loc>https://campaign.support.brightcove.com/dashboard/reviewing-basic-dashboard.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -594,14 +559,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/analytics/reviewing-video-analytics.html</loc>
+        <loc>https://campaign.support.brightcove.com/analytics/reviewing-video-analytics.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/analytics/reviewing-video-analytics.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/analytics/reviewing-video-analytics.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -622,14 +587,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/videos/uploading-poster-and-thumbnail-images.html</loc>
+        <loc>https://campaign.support.brightcove.com/videos/uploading-poster-and-thumbnail-images.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/videos/uploading-poster-and-thumbnail-images.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/videos/uploading-poster-and-thumbnail-images.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -643,14 +608,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/videos/uploading-videos.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/videos/uploading-videos.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/videos/uploading-videos.html</loc>
+        <loc>https://campaign.support.brightcove.com/videos/uploading-videos.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -671,14 +636,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/admin/viewing-billing-information.html</loc>
+        <loc>https://campaign.support.brightcove.com/admin/viewing-billing-information.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/admin/viewing-billing-information.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/admin/viewing-billing-information.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -692,14 +657,14 @@
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/docs/videos/working-with-shared-videos.html</loc>
+        <loc>https://campaign.support.brightcove.com/videos/working-with-shared-videos.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://campaign.support.brightcove.com/videos/working-with-shared-videos.html</loc>
+        <loc>https://campaign.support.brightcove.com/docs/videos/working-with-shared-videos.html</loc>
         <lastmod>2020-03-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>

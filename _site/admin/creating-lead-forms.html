@@ -323,26 +323,26 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <summary>In this topic, you will learn how to create a lead form.</summary>
   <section class="bcls-section">
     <aside class="bcls-aside bcls-aside--information">Note: For publishers using Internet Explorer, version 9 or newer is required.</aside>
-    <p>Lead forms can be used to capture viewer information during video playback. When creating a lead form, you will be required to paste in  the lead form HTML  from a marketing automation platform and then configure the form timing and display.  For more information on creating the lead form HTML, see the appropriate document for your platform:</p>
+    <p>Lead forms can be used to capture viewer information during video playback. When creating a lead form, you will be required to paste in  the lead form HTML  from a marketing automation platform and then configure the form timing and display.  For more information on creating the lead form HTML, see the appropriate document for your marketing automation platform:</p>
     <ul>
-      <li><a href="/docs/admin/creating-lead-forms-oracle-eloqua.html">Oracle Eloqua</a></li>
-      <li><a href="/docs/admin/creating-lead-forms-marketo.html">Marketo</a></li>
-      <li><a href="/docs/admin/creating-lead-forms-hubspot.html">HubSpot</a></li>
-      <li><a href="/docs/admin/creating-lead-forms-salesforce.html">Salesforce</a></li>
+      <li><a href="/admin/creating-lead-forms-oracle-eloqua.html">Oracle Eloqua</a></li>
+      <li><a href="/admin/creating-lead-forms-marketo.html">Marketo</a></li>
+      <li><a href="/admin/creating-lead-forms-hubspot.html">HubSpot</a></li>
+      <li><a href="/admin/creating-lead-forms-salesforce.html">Salesforce</a></li>
     </ul>
   </section>
   <section class="bcls-section">
     <h2 id="leadform">Creating a lead form</h2>
     <p>To create a lead form, follow these steps.</p>
-    <h3>Configure the form contents</h3>
     <ol class="bcls-tasklist">
       <li>Login to Brightcove Campaign.</li>
       <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>Lead Forms</strong>. A list of all lead forms (if any) will appear.
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="manage lead forms section" src="/assets/images/admin/lead-form-manage-lead-forms.png" /></figure></li>
-      <li>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="manage lead forms section" src="/assets/images/admin/lead-form-list.png" /></figure>
       </li>
-      <li></li>
-      <li>Click <strong>Create Lead Form</strong>.</li>
+      <li> Click <strong>Create Lead Form</strong>.</li>
+      <li>Paste in your <strong>Lead Form Code</strong>. This is the form HTML generated from your marketing automation platform software.</li>
+      <li>Select a <strong>Close Confirmation</strong> display time. This determines how long the close confirmation message will display (if entered).</li>
+      <li><strong>(Optional)</strong> Enter the <strong>Confirmation Screen Code</strong>. This is the message that will display when the lead form is submitted.</li>
       <li>Give the lead form a descriptive <strong>Name</strong>.</li>
       <li>Select a <strong>Lead Form Status</strong>.
         <ul>
@@ -350,39 +350,17 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           <li><strong>Inactive</strong></li>
         </ul>
       </li>
-      <li>Select a <strong>Form Language</strong>.</li>
-      <li>Select the <strong>Form Timing</strong>. The form timing determines when the lead form will be displayed.</li>
+      <li>Select the form<strong> Timing</strong>. The  timing determines when the lead form will be displayed.</li>
       <li>Check <strong>Require submission to watch video</strong> to require that the lead form be submitted to watch a video.</li>
       <li>Checking <strong>Always show the lead form even if the lead is already known</strong> will always show the lead form even if the lead is already known. If not checked, the lead form is not displayed if the lead is known.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="edit lead form" src="/assets/images/admin/lead-form-edit-lead-form-1.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="edit lead form" src="/assets/images/admin/lead-form-edit.png" /></figure>
       </li>
-      <li>Select the form type.
-        <ul>
-          <li><strong>Audience Lead Form</strong> - Form is built using a default layout and set of fields, data is saved locally in Video Cloud</li>
-          <li><strong>Custom Lead Form</strong> - Provides the ability to enter custom HTML (typically from a marketing automation platform), data is saved in the marketing automation platform</li>
-        </ul>
-      </li>
-      <li>Enter a <strong>Top Message</strong>. The top message is what will be displayed at the top of the lead form.</li>
-      <li>Select the fields to display on the lead form. A maximum of 4 fields can be selected.</li>
-      <li>Enter the <strong>Privacy Policy Text</strong> and <strong>Privacy Policy URL</strong>. These fields are required to save the lead form.</li>
-      <li>Enter the button text to be used for the <strong>Cancel</strong> and <strong>Submit Button</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="edit lead form" src="/assets/images/admin/lead-form-edit-lead-form-2.png" /></figure>
-      </li>
-      <li><strong>(Optional)</strong> Click <strong>Preview Form</strong> to open a preview of the form. The preview dialog can be used to preview the form on mobile, tablet or desktop devices. Click <strong>Close</strong> when done.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="preview lead form" src="/assets/images/admin/lead-form-preview-lead-form.png" /></figure>
+      <li><strong>(Optional)</strong> Click <strong>Preview Form</strong> to open a preview of the form in a new browser tab. The preview dialog can be used to preview the form on mobile, tablet or desktop devices.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="preview lead form" src="/assets/images/admin/lead-form-preview.png" /></figure>
       </li>
       <li>Click <strong>Save</strong> to save the lead form.</li>
     </ol>
-    <p>The lead form can be edited by clicking the <strong>Edit</strong> button.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="assign">Assigning a lead form to a player</h2>
-    <p>To assign a lead form to a player, follow these steps:</p>
-    <ol class="bcls-tasklist">
-      <li>Click <strong>Audience Players</strong> in the left navigation.</li>
-      <li>Locate your player and use the <strong>Lead Form</strong> dropdown list to select the lead form.</li>
-    </ol>
-    <p>The setup is now complete and you are ready to capture lead information. When a video is published using an Audience-enabled player, the lead form will appear according to the form timing settings.</p>
+    <p>The lead form can be edited by clicking on the lead form name or by checking the box next to the lead form and then clicking <strong>Edit</strong>.</p>
   </section>
 </article>
 
@@ -401,7 +379,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 09 Mar 2020
+  Page last updated on 10 Mar 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
