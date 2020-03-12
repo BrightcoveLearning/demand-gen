@@ -66,13 +66,13 @@
     - name: Managing Users
       url: /admin/managing-users.html
     - name: Managing Account Information
-      url: /admin/managing_account_information.html
+      url: /admin/managing-account-information.html
     - name: Managing Account Settings
-      url: /admin/managing_account_settings.html
+      url: /admin/managing-account-settings.html
     - name: Managing Media Sharing Settings
       url: /admin/managing-media-sharing-settings.html
     - name: Managing Profile Information
-      url: /admin/managing_profile_information.html
+      url: /admin/managing-profile-information.html
     - name: Viewing Billing Information
       url: /admin/viewing-billing-information.html
     - name: Configuring Google Analytics Event Tracking
