@@ -40,7 +40,7 @@
     - name: Adding Text Tracks
       url: /videos/adding-text-tracks-to-a-video.html
 - section: 
-  name: Dashboard
+  name: Reviewing the Dashboard
   url: /dashboard/
   docs:
     - name: Dashboard Overview
@@ -50,7 +50,7 @@
     - name: Reviewing the Basic Dashboard
       url: /dashboard/reviewing-basic-dashboard.html
 - section: 
-  name: Analytics
+  name: Reviewing Analytics
   url: /analytics/
   docs:
     - name: Reviewing Video Analytics
