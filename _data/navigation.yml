@@ -5,40 +5,40 @@
   name: Getting Started
   url: /get-started/
   docs:
-    - name: Getting Started with your Brightcove Campaign Trial
-      url: /get-started/getting-started-brightcove-campaign-trial.html
+    - name: Campaign Training Videos
+      url: /get-started/brightcove-campaign-training-videos.html
     - name: Getting Started with Brightcove Campaign
       url: /get-started/getting-started-brightcove-campaign.html
+    - name: Getting Started with your Brightcove Campaign Trial
+      url: /get-started/getting-started-brightcove-campaign-trial.html
     - name: Overview of Video Content Types
       url: /get-started/overview-video-content-types.html
     - name: Uploading and Publishing Your First Video
       url: /get-started/uploading-publishing-your-first-video.html
-    - name: Campaign Training Videos
-      url: /get-started/brightcove-campaign-training-videos.html
 - section: 
   name: Managing Videos
   url: /videos/
   docs:
-    - name: Uploading Videos
-      url: /videos/uploading-videos.html
-    - name: Managing Videos
-      url: /videos/managing-videos.html
-    - name: Editing Video Properties
-      url: /videos/editing-video-properties.html
-    - name: Capturing Poster and Thumbnail Images
-      url: /videos/capturing-poster-and-thumbnail-images.html
-    - name: Uploading Poster and Thumbnail Images
-      url: /videos/uploading-poster-and-thumbnail-images.html
-    - name: Search for Videos
-      url: /videos/how-to-search-for-videos.html
-    - name: Publishing Videos
-      url: /videos/publishing-videos.html
-    - name: Driving Video Views Through Email
-      url: /videos/driving-video-views-email.html
-    - name: Working with Shared Videos
-      url: /videos/working-with-shared-videos.html
     - name: Adding Text Tracks
       url: /videos/adding-text-tracks-to-a-video.html
+    - name: Capturing Poster and Thumbnail Images
+      url: /videos/capturing-poster-and-thumbnail-images.html
+    - name: Driving Video Views Through Email
+      url: /videos/driving-video-views-email.html
+    - name: Editing Video Properties
+      url: /videos/editing-video-properties.html
+    - name: Managing Videos
+      url: /videos/managing-videos.html
+    - name: Publishing Videos
+      url: /videos/publishing-videos.html
+    - name: Search for Videos
+      url: /videos/how-to-search-for-videos.html
+    - name: Uploading Poster and Thumbnail Images
+      url: /videos/uploading-poster-and-thumbnail-images.html
+    - name: Uploading Videos
+      url: /videos/uploading-videos.html
+    - name: Working with Shared Videos
+      url: /videos/working-with-shared-videos.html
 - section: 
   name: Reviewing the Dashboard
   url: /dashboard/
@@ -53,18 +53,32 @@
   name: Reviewing Analytics
   url: /analytics/
   docs:
+    - name: How Video Benchmark Score is Calculated
+      url: /analytics/how-vbs-calculated.html
     - name: Reviewing Video Analytics
       url: /analytics/reviewing-video-analytics.html
     - name: Using the Heads-Up Display Chrome Extension
       url: /analytics/using-hud.html
-    - name: How Video Benchmark Score is Calculated
-      url: /analytics/how-vbs-calculated.html
 - section: 
   name: Administering Accounts
   url: /admin/
   docs:
-    - name: Managing Users
-      url: /admin/managing-users.html
+    - name: Configuring Adobe Analytics Event Tracking
+      url: /admin/configuring-adobe-analytics-event-tracking.html
+    - name: Configuring Google Analytics Event Tracking
+      url: /admin/configuring-google-analytics-event-tracking.html
+    - name: Configuring MAP Connections
+      url: /admin/configuring-map-connections.html
+    - name: Connecting to HubSpot using the Client-Side APIs
+      url: /admin/connecting-to-hubspot-client-side-api.html
+    - name: Connecting to HubSpot using the REST APIs
+      url: /admin/connecting-to-hubspot-rest-api.html
+    - name: Connecting to Marketo using Munchkin
+      url: /admin/connecting-to-marketo-munchkin.html
+    - name: Connecting to Marketo using the REST APIs
+      url: /admin/connecting-to-marketo-rest-api.html
+    - name: Connecting to Oracle Eloqua
+      url: /admin/connecting-to-oracle-eloqua.html 
     - name: Managing Account Information
       url: /admin/managing-account-information.html
     - name: Managing Account Settings
@@ -73,26 +87,12 @@
       url: /admin/managing-media-sharing-settings.html
     - name: Managing Profile Information
       url: /admin/managing-profile-information.html
-    - name: Viewing Billing Information
-      url: /admin/viewing-billing-information.html
-    - name: Configuring Google Analytics Event Tracking
-      url: /admin/configuring-google-analytics-event-tracking.html
+    - name: Managing Users
+      url: /admin/managing-users.html
     - name: Reviewing Player Event Data in Google Analytics
       url: /admin/reviewing-player-event-data-in-google-analytics.html
-    - name: Configuring Adobe Analytics Event Tracking
-      url: /admin/configuring-adobe-analytics-event-tracking.html
-    - name: Configuring MAP Connections
-      url: /admin/configuring-map-connections.html
-    - name: Connecting to HubSpot using the REST APIs
-      url: /admin/connecting-to-hubspot-rest-api.html
-    - name: Connecting to HubSpot using the Client-Side APIs
-      url: /admin/connecting-to-hubspot-client-side-api.html
-    - name: Connecting to Marketo using the REST APIs
-      url: /admin/connecting-to-marketo-rest-api.html
-    - name: Connecting to Marketo using Munchkin
-      url: /admin/connecting-to-marketo-munchkin.html
-    - name: Connecting to Oracle Eloqua
-      url: /admin/connecting-to-oracle-eloqua.html
+    - name: Viewing Billing Information
+      url: /admin/viewing-billing-information.html
 - section: 
   name: Release Notes
   url: /release-notes/
