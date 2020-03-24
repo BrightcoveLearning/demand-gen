@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Creating Lead Forms in Marketo</title>
+  <title>Using the Heads-Up Display Chrome Extension</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -85,9 +85,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/admin/">Administering Accounts</a></li>
+      <li class="breadcrumb-item"><a href="/analytics/">Reviewing Analytics</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Creating Lead Forms in Marketo</li>
+      <li class="breadcrumb-item active" aria-current="page">Using the Heads-Up Display Chrome Extension</li>
     </ol>
   </nav>
 </header>
@@ -319,96 +319,91 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 </div>
 
 <article class="bcls-article">
-  <h1>Creating Lead Forms in Marketo</h1>
-  <summary>In this topic you will learn how to create a Marketo form that can be used to capture lead data during video playback.</summary>
+  <h1>Using the Heads-Up Display Chrome Extension</h1>
+  <summary>In this topic you will learn how to install and use the Heads-Up Display (HUD) Chrome browser extension.</summary>
   <section class="bcls-section">
-    <p>Brightcove Campaign provides the ability to create lead forms which allow you to capture viewer information during video playback. Forms give you the ability to include whatever fields you need (visible or hidden) and also give you the ability to take advantage of features like progressive profiling (if available). The lead data is sent to, and processed by, Marketo. </p>
+    <p>The Heads-Up Display (HUD) is a Chrome extension that provides the ability to:</p>
+    <ul>
+      <li> View performance metrics of videos on a live page</li>
+      <li>Publish, edit and delete videos in your account</li>
+    </ul>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/hud-analytics.png" /></figure>
+    </p>
   </section>
   <section class="bcls-section">
-    <h2 id="form">Creating a form in Marketo</h2>
-    <p>Marketo provides the ability to create forms that can be used to capture viewer information. The form HTML that is generated will be used when creating a lead form inside Brightcove Campaign. The data that is captured can then be used in customizing future communications. The steps below will create a simple form to capture first name, last name and email address.  For complete details on Marketo Forms, see the <a href="https://docs.marketo.com/display/public/DOCS/Forms">Marketo documentation</a>.</p>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Sign in to your Marketo account.</li>
-      <li class="language-editable">Navigate to <strong>Design Studio </strong> &gt; <strong>Forms</strong> and then click <strong>New &gt; New Form</strong>. The New Form dialog opens.</li>
-      <li class="language-editable">Enter a <strong>Name</strong> for the form and click <strong>CREATE</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-new-form.png" /></figure>
-      </li>
-      <li class="language-editable">The form properties page will open. Click <strong>Edit Form</strong> at the top of the page.</li>
-      <li class="language-editable">The form designer will open. By default, first name, last name and email address fields will be on the form. Edit the field properties and behavior as needed. Click <strong>NEXT</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-form-design.png" /></figure>
-      </li>
-      <li class="language-editable">Click the arrow icons to select a form theme. The form theme controls the styling of the form. Click <strong>Preview Draft</strong> to see a preview of the form. In this example, the <strong>Dark</strong> theme was selected.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-form-preview.png" /></figure>
-      </li>
-      <li class="language-editable">Click <strong>Edit Draft</strong> to return to the form editor.</li>
-      <li class="language-editable">Click <strong>NEXT</strong>.</li>
-      <li class="language-editable">Configure any additional form settings and click <strong>FINISH</strong>.</li>
-      <li class="language-editable">Click <strong>APPROVE AND CLOSE</strong>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="formcss">Optional - Styling the form using CSS</h2>
-    <p>When creating a form, Marketo provides the ability to select a form theme to provide some basic form styling. You can also customize the form using your own custom CSS. In this section, we will customize the Dark theme and make the label text white and bold. For complete details on Marketo Forms, see the <a href="https://docs.marketo.com/display/public/DOCS/Edit+the+CSS+of+a+Form+Theme">Marketo documentation</a>.</p>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Navigate to <strong>Design Studio </strong> &gt; <strong>Forms</strong> and then click on your form.</li>
-      <li class="language-editable">Click <strong>Edit Form</strong>.</li>
-      <li class="language-editable">Click <strong>Form Settings</strong> and then click the gear icon.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-edit-form-css.png" /></figure>
-      </li>
-      <li class="language-editable">Clicking <strong>View Theme CSS</strong> will display the current theme CSS. Click <strong>Edit Custom CSS</strong>. Paste in the following CSS code to make the label text white and bold.
-        <pre>
-.mktoForm label {
-	font-weight: bold;
-	color: #FFF;
-}</pre>
-        <aside class="bcls-aside bcls-aside--information">Note: Enter only your custom CSS (just the parts that are different). You don't have to paste in the entire theme CSS.</aside>
-      </li>
-      <li class="language-editable">Click <strong>SAVE</strong>.</li>
-      <li class="language-editable">Click <strong>Preview Draft</strong> to see a preview of the form. The label text should be white and bolded.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-form-preview-css.png" /></figure>
-      </li>
-      <li class="language-editable">Click <strong>Edit Draft</strong> to return to the form editor.</li>
-      <li class="language-editable">Click <strong>FINISH</strong> and then <strong>APPROVE AND CLOSE</strong>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="edit">Copying the form embed code</h2>
-    <p>To use the form inside of Brightcove Campaign, you will need to copy the form HTML. Follow these steps to copy the form HTML.</p>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable">In the left navigation, right click the form and click <strong>Embed Code</strong>.</li>
-      <li class="language-editable">Set the <strong>Code Type</strong> to <strong>Normal</strong> and then copy the <strong>Code</strong> to the clipboard. Click <strong>Close</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-form-embed-code.png" /></figure>
+    <h2 id="install">Installing the Chrome extension</h2>
+    <p>To install the Heads-Up Display Chrome extension, follow these steps:</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Using the Google Chrome web browser, access the  Brightcove Campaign extension page <a href="https://chrome.google.com/webstore/detail/brightcove-campaign/bgffgogohphibnhbmfdlldmbidlodkop">here</a>.</li>
+      <li>Click on <strong>Add to Chrome</strong>.</li>
+      <li>When prompted, click <strong>Add extension</strong>.</li>
+      <li>Confirm that the extension was installed by locating the Brightcove logo next to the address bar.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/browser-hud-icon.png" /></figure>
       </li>
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="createform">Creating a Brightcove Campaign lead form</h2>
-    <p>Once the  form has been created and styled, the form HTML will be used inside Brightcove Campaign when creating a lead form. For information on creating a lead form, see <a href="/admin/creating-lead-forms.html">Creating Lead Forms</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="formdata">Validating the form data in Marketo</h2>
-    <p>There are several ways to validate that the form data has been passed to Marketo. Follow these steps to view the form data in Marketo.</p>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Sign in to your Marketo account.</li>
-      <li class="language-editable">Click <strong>Lead Database</strong>.</li>
-      <li class="language-editable">In the left navigation, expand Group Smart Lists and then click <strong>Form Capture SL</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-form-capture-sl.png" /></figure>
+    <h2 id="using">Using the Heads-Up Display</h2>
+    <p>The Heads-Up Display is useful for viewing video analytics and for publishing, editing and deleting videos in your account. To use the HUD, follow these steps:</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Open Google Chrome.</li>
+      <li>Click the Brightcove logo next to the address bar to open the extension.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/browser-hud-icon.png" /></figure>
       </li>
-      <li class="language-editable">Click the <strong>Smart List</strong> tab.</li>
-      <li class="language-editable">In the list of <strong>Filters</strong> on the right side of the page, locate the <strong>Filled Out Form</strong> filter. Click and drag the filter to the page.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-add-filter.png" /></figure>
-      </li>
-      <li class="language-editable">Enter the name of your form. You can also click the <strong>+</strong> to browse for your form.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/marketo-constraint.png" /></figure>
-      </li>
-      <li class="language-editable">Click <strong>Leads</strong> at the top of the page to see the filtered lead data.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="lead form data" src="/assets/images/admin/marketo-form-data.png" /></figure>
-      </li>
-      <li class="language-editable">Click an <strong> Id</strong> to open the lead detail.</li>
-      <li class="language-editable">Click the <strong>Activity Log</strong> tab. Confirm that the form was filled out.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="lead form data" src="/assets/images/admin/marketo-form-activity.png" /></figure>
+      <li>If you don't have an active session with the Brightcove Campaign application, you will be prompted to login. Enter your email address and password.  Click <strong>Sign In</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/hud-login.png" /></figure>
       </li>
     </ol>
+    <p>Icons at the top of the HUD can be used to:</p>
+    <ul>
+      <li><a href="#analytics">Review analytics</a></li>
+      <li><a href="#videos">Manage videos</a></li>
+    </ul>
+    <p>To sign out of the HUD, click <strong>Sign Out</strong> at the top of the HUD. Clicking <strong>Go To Web</strong> will open the Brightcove Campaign application in a browser window.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="analytics">Reviewing video analytics</h2>
+    <p>When the HUD is opened, it displays video analytics. You can also click on the analytics icon (<img class="bcls-image--no-border" alt="" src="/assets/images/analytics/hud-analytics-icon.png" />) to go to analytics mode. The HUD will only display analytics for video(s) on the page that  have been published using Brightcove Campaign™.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/hud-analytics.png" /></figure>
+    <p>The HUD will display basic information about the video(s) on the page:</p>
+    <ul>
+      <li>Video name</li>
+      <li>Video ID</li>
+      <li>Video Content Type</li>
+      <li>Created date</li>
+    </ul>
+    <p>If there are multiple videos on the page, <strong>Previous Video</strong> and <strong>Next Video</strong> buttons will be enabled.</p>
+    <p>Video analytics on the HUD are &quot;close to real-time&quot;. Analytics are typically delayed a few minutes but the delay can increase during traffic spikes. The following analytics data for the past 30 days will be displayed:</p>
+    <ul>
+      <li><strong>Video Impressions</strong> - The number of times the video was loaded and ready for playback</li>
+      <li><strong>Video Starts</strong> - The number of times the video started playing</li>
+      <li><strong>Avg Time Viewed</strong> - Total Time Viewed / Video Starts</li>
+      <li><strong>Video Benchmark Score</strong> - Overall rating that measures how your video is performing (<a href="/analytics/how-vbs-calculated.html">learn more...</a>)</li>
+      <li><strong>Play Rate</strong> - Video Starts / Video Impressions</li>
+      <li><strong>Avg % Viewed</strong> - Average Time Viewed / Video length</li>
+      <li><strong>Tips</strong> - Coming Soon</li>
+    </ul>
+    <p>To see all analytics for the video, click the <strong>See all analytics</strong> link.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="videos">Managing videos</h2>
+    <p>To use the HUD to manage and publish videos in your account, click on the videos icon (<img class="bcls-image--no-border" alt="" src="/assets/images/analytics/hud-video-icon.png" />) . A list of videos in the account will appear.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/hud-videos.png" /></figure>
+    <p>Hovering over a video will display a series of buttons which provide the ability to:</p>
+    <ul>
+      <li>Publish the video</li>
+      <li>Edit the video</li>
+      <li>Delete the video</li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/hud-videos-hover.png" /></figure>
+    <h3 id="publish">Publishing videos</h3>
+    <p>Hover over a video and click <strong>Publish</strong>. Select a destination, <strong>Web Page</strong> or <strong>Email</strong>. The wizard will walk you through the process to generate the embed code or to get the video thumbnail for use in an email message. For more information on the publishing options, see <a href="/videos/publishing-videos.html">Publishing Videos</a>.</p>
+    <h3 id="edit">Editing videos</h3>
+    <p>Hover over a video and click <strong>Edit</strong>. Edit the video properties as needed and then click <strong>Save</strong>.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/hud-video-edit.png" /></figure>
+    <h3 id="delete">Deleting videos</h3>
+    <p>Hover over a video and click <strong>Delete</strong>. You will be prompted to confirm the delete.</p>
   </section>
 </article>
 
