@@ -1,0 +1,130 @@
+---
+title: Connecting to Salesforce
+parent: Administering Accounts
+---
+<article class="bcls-article">
+  <h1>Connecting to Salesforce</h1>
+  <summary>In this topic you will learn how to configure Brightcove Campaign&trade; for use with Salesforce.</summary>
+  <section class="bcls-section">
+    <p>Brightcove Campaign can be configured to integrate with  Salesforce. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  Salesfroce. Once in Salesforce, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="requirements">Requirements</h2>
+    <p>To use the Audience module with Salesforce, you must:</p>
+    <ul>
+      <li>Have a Salesforce account, Salesforce sandbox accounts are not supported</li>
+      <li>Have a Salesforce.com account with the <strong>API Enabled</strong> permission and belong to a role which allows you to read and write to the Salesforce object you choose to send viewing data to</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="features">Features</h2>
+    <p>Some of the key features of the Brightcove Campaign - Salesforce integration are:</p>
+    <ul>
+      <li><strong>Data format</strong> - Viewing data is mapped to a Salesforce object</li>
+      <li><strong>Data transfer</strong> - Viewing data is sent from Brightcove Campaign to Salesforce every hour</li>
+      <li><strong>Lead forms</strong> - Create Salesforce forms that will appear automatically as viewers watch videos. For information, see <a href="/admin/creating-lead-forms-salesforce.html">Creating  Lead Forms in Salesforce</a>.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setupconnection">Setting up the connection</h2>
+    <p>Follow these steps to setup the connection between Brightcove Campaign and Salesforce.</p>
+   <aside class="bcls-aside bcls-aside--information language-editable">Note: The connection process will open popup windows in your browser. You should disable any browser popup blockers before setting up the connection.</aside>
+      <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Salesforce user account to use when configuring the integration with Brightcove Campaign.</aside>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Campaign.</li>
+      <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
+      <li>Click <strong>Add New Connection</strong>.</li>
+      <li>Select <strong>Salesforce</strong> from the dropdown list and click <strong>Connect to Salesforce</strong>.</li>
+        <li>On the login screen that appears, enter your Salesforce <strong>Username </strong>and <strong>Password</strong>. Click <strong>Log In</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Salesforce login" src="/assets/images/admin/salesforce-login.png" /></figure>
+      </li>
+        <li>If the login is successful, you will prompted to install the <strong>Brightcove Video Connect for Salesforce</strong> app. Click <strong>Allow</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-bc-connect-salesforce.png" /></figure>
+      </li>
+      <li>Verify that you receive a message that the connection was successful. You will be redirected back to Brightcove Campaign.</li>
+      <li>(Optional) Enter a <strong>Connection Name</strong>.</li>
+      <li>Select an integration type.</li>
+      <ul>
+        <li>Pardot - Pardot is used to identify viewers. See</li>
+        <li>Manual - Your development staff will be responsible for adding logic to identify viewers</li>
+      </ul>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Click the <strong>Back to MAP Connections</strong> link at the top of the page to return to the MAP Connections page.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: If you create a connection without configuring an integration type, the connection will have a status of <strong>Connection Incomplete</strong> on the MAP Connections page.</aside>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: If you create a connection without configuring an integration type, the connection will have a status of <strong>Connection Incomplete</strong> on the MAP Connections page.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pardot">Configuring a Pardot integration</h2>
+    <p>Once the Brightcove Campaign to Salesforce connection has been made, you need to configure an integration type. This section covers using a <strong>Manual</strong> integration type. Note that with a Manual integration, your development staff will be responsible for adding logic to identify viewers.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Select <strong>Manual</strong> for the integration type.</li>
+      <li></li>
+      <li>By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if Video Cloud video engagement data is sent to Salesforce.
+        <ul>
+          <li><strong>Enabled</strong> - Data is collected and will be sent to Salesforce</li>
+          <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
+        </ul>
+      </li>
+      <li>Select a data retention policy. The data retention policy determines how long the viewing data and lead form data (if using an Audience lead form) will be retained in your Video Cloud account. Retaining data in Video Cloud allows you to recover from interrupted synchronizations. Also, Audience will continue to retry events that fail to sync (usually because the viewer isn't a known contact at the time they viewed a video) until the event ages past the data retention period. <strong>You should adjust the retention settings according to your privacy policy</strong> - it is not required to retain any user data in Video Cloud.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="data retention options" src="/assets/images/admin/salesforce-data-retention-options.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configuredata">Configuring data mapping</h2>
+    <p>Data mapping determines how video data is mapped to fields in a Salesforce object. By default, the integration will be configured using <strong>Simple</strong> mapping which maps some video data to the <strong>Task</strong> object in Salesforce.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-simple-mapping.png" /></figure>
+    <p>Follow these steps to customize the data mapping.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the <strong>Mappings</strong> link.</li>
+      <li>For the <strong>Mapping Type</strong>, select <strong>Advanced</strong>.</li>
+      <li>In the <strong>Salesforce Object</strong> dropdown list, select an object to map the video data to.</li>
+      <li>Map the appropriate <strong>View Field</strong> to Salesforce fields.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong> to save the changes.</li>
+    </ol>
+    <p>To remove the integration with Salesforce, click <strong>Disconnect</strong>. The Audience module supports multiple connections to marketing platforms. Click <strong>Add New Connection</strong> to configure additional integrations.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="trackingid2">Passing a tracking ID</h2>
+    <p>The Audience module supports the ability to pass a tracking ID value to Salesforce. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the URL that displays the Audience-enabled player or added to the player embed code.</p>
+    <ul>
+      <li>Example: Appended to URL</li>
+    </ul>
+    <pre>
+  http://www.myurl.com/video.html?<strong>bctrackingid=12345</strong></pre>
+    <ul>
+      <li>Example: Added to player embed code</li>
+    </ul>
+    <pre>
+  &lt;video data-video-id="6033402539001" 
+         data-account="1486906377" 
+         data-player="default" 
+         data-embed="default" 
+         data-application-id 
+         class="video-js"
+         <strong>data-bc-trackingid="12345"</strong> 
+         controls&gt;&lt;/video&gt;
+  &lt;script src="//players.brightcove.net/1486906377/default_default/index.min.js"&gt;&lt;/script&gt;</pre>
+    <p>Audience will then pass the value along to Salesforce as another field that is synced.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="identify">Identifying viewers</h2>
+    <p>For viewer tracking to occur, the user id should be passed as a URL parameter on the page that is displaying the video. Two URL parameters are supported:</p>
+    <ul>
+      <li><strong>bcemail</strong> - To pass the viewer's email address</li>
+      <li><strong>bcsfid</strong> - To pass the viewer's Salesforce ID</li>
+    </ul>
+    <p>In this scenario, video landing pages would be generated with a URL that’s been uniquely generated for tracking purposes. The Audience module will then use the URL parameter to look up the user server-side and sync viewing data.</p>
+    <p>In order for the player/plugin to read the URL parameters, the Advanced Embed (in-page) publishing code should be used. The Standard Embed (iframe) publishing code will not work as the plugin will be running inside of an iframe and therefore is unable to access the parent page URL which has the parameter.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sfdata">Viewing video data in Salesforce</h2>
+    <p>As videos are viewed in Audience-enabled players, video viewing data will be synced to Salesforce. If the <strong>Simple</strong> data mapping option was selected, video view data will appear as a <strong>Task</strong> entry inside Salesforce. If the <strong>Advanced</strong> data mapping option was used, viewing data will appear as part of the Salesforce object that was selecting when the mapping was configured. In the following example, <strong>Simple</strong> data mapping was used. Viewing data appears as part of the contact's <strong>Activity History</strong>. The <strong>Subject</strong> will display <strong>BC Video View</strong> along with the video name and percent watched.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="task record" src="/assets/images/admin/salesforce-task-record.png" /></figure>
+    <p>Clicking the <strong>Task</strong> will display additional information in the <strong>Comments</strong> field.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="task detail" src="/assets/images/admin/salesforce-task-detail.png" /></figure>
+  </section>
+</article>
