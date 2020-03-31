@@ -28,47 +28,62 @@ parent: Administering Accounts
   <section class="bcls-section">
     <h2 id="setupconnection">Setting up the connection</h2>
     <p>Follow these steps to setup the connection between Brightcove Campaign and Salesforce.</p>
-   <aside class="bcls-aside bcls-aside--information language-editable">Note: The connection process will open popup windows in your browser. You should disable any browser popup blockers before setting up the connection.</aside>
-      <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Salesforce user account to use when configuring the integration with Brightcove Campaign.</aside>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The connection process will open popup windows in your browser. You should disable any browser popup blockers before setting up the connection.</aside>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Salesforce user account to use when configuring the integration with Brightcove Campaign.</aside>
     <ol class="bcls-tasklist-restart">
       <li>Login to Brightcove Campaign.</li>
       <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
       <li>Click <strong>Add New Connection</strong>.</li>
       <li>Select <strong>Salesforce</strong> from the dropdown list and click <strong>Connect to Salesforce</strong>.</li>
-        <li>On the login screen that appears, enter your Salesforce <strong>Username </strong>and <strong>Password</strong>. Click <strong>Log In</strong>.
+      <li>On the login screen that appears, enter your Salesforce <strong>Username </strong>and <strong>Password</strong>. Click <strong>Log In</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Salesforce login" src="/assets/images/admin/salesforce-login.png" /></figure>
       </li>
-        <li>If the login is successful, you will prompted to install the <strong>Brightcove Video Connect for Salesforce</strong> app. Click <strong>Allow</strong>.
+      <li>If the login is successful, you will prompted to install the <strong>Brightcove Video Connect for Salesforce</strong> app. Click <strong>Allow</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-bc-connect-salesforce.png" /></figure>
       </li>
       <li>Verify that you receive a message that the connection was successful. You will be redirected back to Brightcove Campaign.</li>
       <li>(Optional) Enter a <strong>Connection Name</strong>.</li>
-      <li>Select an integration type.</li>
-      <ul>
-        <li>Pardot - Pardot is used to identify viewers. See</li>
-        <li>Manual - Your development staff will be responsible for adding logic to identify viewers</li>
-      </ul>
+      <li>Select an integration type.
+        <ul>
+          <li><strong>Pardot</strong> - Pardot is used to identify viewers. See the <a href="#pardot">Configuring a Pardot integration</a> section below.</li>
+          <li><strong>Manual</strong> - Your development staff will be responsible for adding logic to <a href="#identify">identify viewers</a>.</li>
+        </ul>
+      </li>
       <li>Click <strong>Save</strong>.</li>
       <li>Click the <strong>Back to MAP Connections</strong> link at the top of the page to return to the MAP Connections page.</li>
     </ol>
     <aside class="bcls-aside bcls-aside--information language-editable">Note: If you create a connection without configuring an integration type, the connection will have a status of <strong>Connection Incomplete</strong> on the MAP Connections page.</aside>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: If you create a connection without configuring an integration type, the connection will have a status of <strong>Connection Incomplete</strong> on the MAP Connections page.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="pardot">Configuring a Pardot integration</h2>
-    <p>Once the Brightcove Campaign to Salesforce connection has been made, you need to configure an integration type. This section covers using a <strong>Manual</strong> integration type. Note that with a Manual integration, your development staff will be responsible for adding logic to identify viewers.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Select <strong>Manual</strong> for the integration type.</li>
-      <li></li>
-      <li>By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if Video Cloud video engagement data is sent to Salesforce.
-        <ul>
-          <li><strong>Enabled</strong> - Data is collected and will be sent to Salesforce</li>
-          <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
-        </ul>
+    <p>Once the Brightcove Campaign to Salesforce connection has been made, you need to configure an integration type. This section covers the steps to use a <strong>Pardot</strong> integration type.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Pardot user account to use when configuring the integration with Brightcove Campaign.</aside>
+    <ol class="bcls-tasklist">
+      <li>Select <strong>Pardot</strong> for the integration type.</li>
+      <li>Enter your <strong>Email</strong> and <strong>Password</strong> you use to login to Pardot.</li>
+    </ol>
+    <h3 id="pardot-api-key">Get the Pardot API key</h3>
+    <p>To get the value for the API Key field, follow these steps.</p>
+    <ol  class="bcls-tasklist">
+      <li>Login to Pardot.</li>
+      <li> Click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-gear-icon.png" />) and then <strong>Settings</strong>.</li>
+      <li> Click the <strong>My Profile</strong> link at the top of the page.</li>
+      <li> Copy the value in the <strong>API User Key</strong> field and paste it into the <strong>User Key</strong> field.</li>
+    </ol>
+    <h3>Get the tracking IDs</h3>
+    <p>To get the value for the <strong>Tracking piAld</strong> and <strong>Tracking piCld</strong> fields, follow these steps.</p>
+    <ol class="bcls-tasklist">
+      <li><strong>C</strong>lick the <strong>Marketing</strong> icon in the left navigation and then click <strong>Campaigns</strong>.</li>
+      <li> Click on a Campaign Name (or add a campaign if there are no campaigns).
+        <aside class="bcls-aside bcls-aside--information">Note: It doesn’t matter which campaign you select, Brightcove Campaign needs both values to get the cookie to identify the viewer.</aside>
       </li>
-      <li>Select a data retention policy. The data retention policy determines how long the viewing data and lead form data (if using an Audience lead form) will be retained in your Video Cloud account. Retaining data in Video Cloud allows you to recover from interrupted synchronizations. Also, Audience will continue to retry events that fail to sync (usually because the viewer isn't a known contact at the time they viewed a video) until the event ages past the data retention period. <strong>You should adjust the retention settings according to your privacy policy</strong> - it is not required to retain any user data in Video Cloud.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="data retention options" src="/assets/images/admin/salesforce-data-retention-options.png" /></figure>
+      <li> Click <strong>View Tracking Code</strong>. The <strong>piAId</strong> and <strong>piCId</strong> values will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-tracking-code.png" /></figure>
       </li>
+      <li>Copy the values and paste them into their respective fields.
+        <aside class="bcls-aside bcls-aside--information">Note: Brightcove Campaign doesn’t validate the piAId and piCId fields,  but if wrong values are entered, Brightcove Campaign will not be able to identify the viewer.</aside>
+      </li>
+      <li>Click <strong>Connect to Pardot</strong>.</li>
     </ol>
   </section>
   <section class="bcls-section">
@@ -77,19 +92,18 @@ parent: Administering Accounts
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-simple-mapping.png" /></figure>
     <p>Follow these steps to customize the data mapping.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Click the <strong>Mappings</strong> link.</li>
       <li>For the <strong>Mapping Type</strong>, select <strong>Advanced</strong>.</li>
-      <li>In the <strong>Salesforce Object</strong> dropdown list, select an object to map the video data to.</li>
+      <li>In the <strong>Salesforce Object</strong> dropdown list, select a Salesforce object to map the video data to.</li>
       <li>Map the appropriate <strong>View Field</strong> to Salesforce fields.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>
       </li>
       <li>Click <strong>Save</strong> to save the changes.</li>
     </ol>
-    <p>To remove the integration with Salesforce, click <strong>Disconnect</strong>. The Audience module supports multiple connections to marketing platforms. Click <strong>Add New Connection</strong> to configure additional integrations.</p>
+    <p>To remove the integration with Salesforce, click <strong>Delete</strong>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="trackingid2">Passing a tracking ID</h2>
-    <p>The Audience module supports the ability to pass a tracking ID value to Salesforce. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the URL that displays the Audience-enabled player or added to the player embed code.</p>
+    <p>Brightcove Campaign supports the ability to pass a tracking ID value to Salesforce. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the page URL that displays the video  or added to the  embed code.</p>
     <ul>
       <li>Example: Appended to URL</li>
     </ul>
@@ -108,21 +122,20 @@ parent: Administering Accounts
          <strong>data-bc-trackingid="12345"</strong> 
          controls&gt;&lt;/video&gt;
   &lt;script src="//players.brightcove.net/1486906377/default_default/index.min.js"&gt;&lt;/script&gt;</pre>
-    <p>Audience will then pass the value along to Salesforce as another field that is synced.</p>
+    <p>Brightcove Campaign will then pass the value along to Salesforce as another field that is synced.</p>
   </section>
   <section class="bcls-section">
     <h2 id="identify">Identifying viewers</h2>
-    <p>For viewer tracking to occur, the user id should be passed as a URL parameter on the page that is displaying the video. Two URL parameters are supported:</p>
+    <p>If your Salesforce connection is configured with a <strong>Manual</strong> integration type, it's up to you to identify viewers. For viewer tracking to occur, the user id should be passed as a URL parameter on the page that is displaying the video. Two URL parameters are supported:</p>
     <ul>
       <li><strong>bcemail</strong> - To pass the viewer's email address</li>
       <li><strong>bcsfid</strong> - To pass the viewer's Salesforce ID</li>
     </ul>
-    <p>In this scenario, video landing pages would be generated with a URL that’s been uniquely generated for tracking purposes. The Audience module will then use the URL parameter to look up the user server-side and sync viewing data.</p>
-    <p>In order for the player/plugin to read the URL parameters, the Advanced Embed (in-page) publishing code should be used. The Standard Embed (iframe) publishing code will not work as the plugin will be running inside of an iframe and therefore is unable to access the parent page URL which has the parameter.</p>
+    <p>In this scenario, video landing pages would be generated with a URL that’s been uniquely generated for tracking purposes. Brightcove Campaign will then use the URL parameter to look up the user server-side and sync viewing data. </p>
   </section>
   <section class="bcls-section">
     <h2 id="sfdata">Viewing video data in Salesforce</h2>
-    <p>As videos are viewed in Audience-enabled players, video viewing data will be synced to Salesforce. If the <strong>Simple</strong> data mapping option was selected, video view data will appear as a <strong>Task</strong> entry inside Salesforce. If the <strong>Advanced</strong> data mapping option was used, viewing data will appear as part of the Salesforce object that was selecting when the mapping was configured. In the following example, <strong>Simple</strong> data mapping was used. Viewing data appears as part of the contact's <strong>Activity History</strong>. The <strong>Subject</strong> will display <strong>BC Video View</strong> along with the video name and percent watched.</p>
+    <p>As videos are viewed, video viewing data will be synced to Salesforce. If the <strong>Simple</strong> data mapping option was selected, video view data will appear as a <strong>Task</strong> entry inside Salesforce. If the <strong>Advanced</strong> data mapping option was used, viewing data will appear as part of the Salesforce object that was selecting when the mapping was configured. In the following example, <strong>Simple</strong> data mapping was used. Viewing data appears as part of the contact's <strong>Activity History</strong>. The <strong>Subject</strong> will display <strong>BC Video View</strong> along with the video name and percent watched.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="task record" src="/assets/images/admin/salesforce-task-record.png" /></figure>
     <p>Clicking the <strong>Task</strong> will display additional information in the <strong>Comments</strong> field.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="task detail" src="/assets/images/admin/salesforce-task-detail.png" /></figure>
