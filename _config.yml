@@ -41,6 +41,9 @@ product_color: rgb(193, 66, 217)
 product_icon: "campaign-logo.svg"
 search_id: "017969773216783359937:tynvaqmi3xs"
 feedbackify_id: "14985"
+talla_appID: "00c26be3-4421-41e6-bb00-1dee68740f67"
+talla_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODI4MDQzNDF9.RYf2x65FXvdDURzM h00i76KfUrYlsDLsw6mVuEv6zmE'
+talla_knowledgegroup: '2447d476-7eee-49ab-ba69-7fc34312a98b'
 defaults:
   - 
     scope:
