@@ -39,7 +39,7 @@ parent: Administering Accounts
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Salesforce login" src="/assets/images/admin/salesforce-login.png" /></figure>
       </li>
       <li>If the login is successful, you will prompted to install the <strong>Brightcove Video Connect for Salesforce</strong> app. Click <strong>Allow</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-bc-connect-salesforce.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce allow access" src="/assets/images/admin/salesforce-bc-connect-salesforce.png" /></figure>
       </li>
       <li>Verify that you receive a message that the connection was successful. You will be redirected back to Brightcove Campaign.</li>
       <li>(Optional) Enter a <strong>Connection Name</strong>.</li>
@@ -83,7 +83,7 @@ parent: Administering Accounts
       </li>
       <li>Copy the values and paste them into their respective fields.
         <aside class="bcls-aside bcls-aside--information">Note: Brightcove Campaign doesn’t validate the piAId and piCId fields,  but if wrong values are entered, Brightcove Campaign will not be able to identify the viewer.</aside>
-                  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-credentials.png" /></figure>
+                  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce integration type" src="/assets/images/admin/pardot-credentials.png" /></figure>
       </li>
       <li>Click <strong>Connect to Pardot</strong>.</li>
     </ol>
@@ -91,13 +91,13 @@ parent: Administering Accounts
   <section class="bcls-section">
     <h2 id="configuredata">Configuring data mapping</h2>
     <p>Data mapping determines how video data is mapped to fields in a Salesforce object. By default, the integration will be configured using <strong>Simple</strong> mapping which maps some video data to the <strong>Task</strong> object in Salesforce.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-simple-mapping.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce mappping type" src="/assets/images/admin/salesforce-simple-mapping.png" /></figure>
     <p>Follow these steps to customize the data mapping.</p>
     <ol class="bcls-tasklist-restart">
       <li>For the <strong>Mapping Type</strong>, select <strong>Advanced</strong>.</li>
       <li>In the <strong>Salesforce Object</strong> dropdown list, select a Salesforce object to map the video data to.</li>
       <li>Map the appropriate <strong>View Field</strong> to Salesforce fields.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce advanced mapping" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>
       </li>
       <li>Click <strong>Save</strong> to save the changes.</li>
     </ol>
@@ -138,8 +138,8 @@ parent: Administering Accounts
   <section class="bcls-section">
     <h2 id="sfdata">Viewing video data in Salesforce</h2>
     <p>As videos are viewed, video viewing data will be synced to Salesforce. If the <strong>Simple</strong> data mapping option was selected, video view data will appear as a <strong>Task</strong> entry inside Salesforce. If the <strong>Advanced</strong> data mapping option was used, viewing data will appear as part of the Salesforce object that was selecting when the mapping was configured. In the following example, <strong>Simple</strong> data mapping was used. Viewing data appears as part of the contact's <strong>Activity History</strong>. The <strong>Subject</strong> will display <strong>BC Video View</strong> along with the video name and percent watched.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="task record" src="/assets/images/admin/salesforce-task-record.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce task record" src="/assets/images/admin/salesforce-task-record.png" /></figure>
     <p>Clicking the <strong>Task</strong> will display additional information in the <strong>Comments</strong> field.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="task detail" src="/assets/images/admin/salesforce-task-detail.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce task detail" src="/assets/images/admin/salesforce-task-detail.png" /></figure>
   </section>
 </article>
