@@ -79,14 +79,14 @@
       url: /admin/connecting-to-marketo-rest-api.html
     - name: Connecting to Oracle Eloqua
       url: /admin/connecting-to-oracle-eloqua.html
+    - name: Creating Lead Forms
+      url: /admin/creating-lead-forms.html
     - name: Creating Lead Forms in HubSpot
       url: /admin/creating-lead-forms-hubspot.html
     - name: Creating Lead Forms in Marketo
       url: /admin/creating-lead-forms-marketo.html
     - name: Creating Lead Forms in Oracle Eloqua
       url: /admin/creating-lead-forms-oracle-eloqua.html
-    - name: Creating Lead Forms
-      url: /admin/creating-lead-forms.html
     - name: Managing Account Information
       url: /admin/managing-account-information.html
     - name: Managing Account Settings
