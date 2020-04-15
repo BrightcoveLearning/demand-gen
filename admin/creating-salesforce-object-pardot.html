@@ -12,81 +12,45 @@ parent: Administering Accounts
     <h2 id="requirements">Requirements</h2>
     <p>To use the Salesforce - Pardot integration, you must:</p>
     <ul>
-      <li>You must have the Salesforce and Pardot Connector installed and configured. Contact your Pardot Account Manager if you need assistance.
-</li>
+      <li>You must have the Salesforce and Pardot Connector installed and configured. Contact your Pardot Account Manager if you need assistance. </li>
       <li>You must have an available Custom Object mapping available in your Pardot account. Contact your Salesforce Account Manager if you need to purchase additional object mappings. </li>
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="features">Features</h2>
-    <p>Some of the key features of the Brightcove Campaign - Salesforce integration are:</p>
+    <h2 id="sf-objects">Salesforce objects</h2>
+    <p>Objects are database tables that allows you to store data specific to the organization in Salesforce.
+      There are two type of objects in Salesforce:</p>
     <ul>
-      <li><strong>Data format</strong> - Viewing data is mapped to a Salesforce object</li>
-      <li><strong>Data transfer</strong> - Viewing data is sent from Brightcove Campaign to Salesforce every hour</li>
-      <li><strong>Lead forms</strong> - Create Salesforce forms that will appear automatically as viewers watch videos. For information, see <a href="/admin/creating-lead-forms-salesforce.html">Creating  Lead Forms in Salesforce</a>.</li>
+      <li> <strong>Standard Objects</strong> - 
+        The objects provided by salesforce.com are called standard objects. Examples of standard objects are Accounts, Contacts, Opportunities, Leads, Products, Campaigns, Cases, Users, Contracts, Reports, and Dashboards</li>
+      <li><strong>Custom Object</strong> - 
+        The objects created by  users are called custom objects. Custom objects store information that is unique and important to your organization and provide a structure for sharing data.
+        Video viewing data can be sent from Brightcove Players to Salesforce using custom objects. Different fields with different data types can be added to the object. A lookup relationship essentially links two objects together so that you can “look up” one object from the related items on another object. We can create a look up relationship between the custom object and a Contact.</li>
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="setupconnection">Setting up the connection</h2>
-    <p>Follow these steps to setup the connection between Brightcove Campaign and Salesforce.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: The connection process will open popup windows in your browser. You should disable any browser popup blockers before setting up the connection.</aside>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Salesforce user account to use when configuring the integration with Brightcove Campaign.</aside>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Brightcove Campaign.</li>
-      <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
-      <li>Click <strong>Add New Connection</strong>.</li>
-      <li>Select <strong>Salesforce</strong> from the dropdown list and click <strong>Connect to Salesforce</strong>.</li>
-      <li>On the login screen that appears, enter your Salesforce <strong>Username </strong>and <strong>Password</strong>. Click <strong>Log In</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Salesforce login" src="/assets/images/admin/salesforce-login.png" /></figure>
-      </li>
-      <li>If the login is successful, you will prompted to install the <strong>Brightcove Video Connect for Salesforce</strong> app. Click <strong>Allow</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce allow access" src="/assets/images/admin/salesforce-bc-connect-salesforce.png" /></figure>
-      </li>
-      <li>Verify that you receive a message that the connection was successful. You will be redirected back to Brightcove Campaign.</li>
-      <li>(Optional) Enter a <strong>Connection Name</strong>.</li>
-      <li>Select an integration type.
-        <ul>
-          <li><strong>Pardot</strong> - Pardot is used to identify viewers. See the <a href="#pardot">Configuring a Pardot integration</a> section below.</li>
-          <li><strong>Manual</strong> - Your development staff will be responsible for adding logic to <a href="#identify">identify viewers</a>.</li>
-        </ul>
-      </li>
-      <li>Select a <strong>Mapping Type</strong> and <a href="#configuredata">configure data mapping</a>.</li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Click the <strong>Back to MAP Connections</strong> link at the top of the page to return to the MAP Connections page.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: If you create a connection without configuring an integration type, the connection will have a status of <strong>Connection Incomplete</strong> on the MAP Connections page.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="pardot">Configuring a Pardot integration</h2>
-    <p>Once the Brightcove Campaign to Salesforce connection has been made, you need to configure an integration type. This section covers the steps to use a <strong>Pardot</strong> integration type.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Pardot user account to use when configuring the integration with Brightcove Campaign.</aside>
+    <h2 id="object-creation">Creating a custom object</h2>
+    <p>Contacts are the users whose behavior you wish to track or keep records in Salesforce. There should be a relationship between the custom object that is created above and the Contact object in order to get data related to the correct user. To create this unique object, follow these steps:</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The screen images below were taken using the Salesforce Lightning interface.</aside>
     <ol class="bcls-tasklist">
-      <li>Select <strong>Pardot</strong> for the integration type.</li>
-      <li>Enter your <strong>Email</strong> and <strong>Password</strong> you use to login to Pardot.</li>
-    </ol>
-    <h3 id="pardot-api-key">Get the Pardot API key</h3>
-    <p>To get the value for the API Key field, follow these steps.</p>
-    <ol  class="bcls-tasklist">
+      <li>Click on the gear icon in the top right corner to open the <strong>Setup</strong> menu.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-setup-menu.png" /></figure>
+      </li>
+      <li>In the left navigation, in the <strong>PLATFORM TOOLS</strong> section, click <strong>Objects and Fields &gt; Object Manager</strong>.</li>
       <li>Login to Pardot.</li>
-      <li> Click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-gear-icon.png" />) and then <strong>Settings</strong>.</li>
-      <li> Click the <strong>My Profile</strong> link at the top of the page.</li>
-      <li> Copy the value in the <strong>API User Key</strong> field and paste it into the <strong>User Key</strong> field.</li>
-    </ol>
-    <h3>Get the tracking IDs</h3>
-    <p>To get the value for the <strong>Tracking piAld</strong> and <strong>Tracking piCld</strong> fields, follow these steps.</p>
-    <ol class="bcls-tasklist">
-      <li><strong>C</strong>lick the <strong>Marketing</strong> icon in the left navigation and then click <strong>Campaigns</strong>.</li>
-      <li> Click on a Campaign Name (or add a campaign if there are no campaigns).
-        <aside class="bcls-aside bcls-aside--information">Note: It doesn’t matter which campaign you select, Brightcove Campaign needs both values to get the cookie to identify the viewer.</aside>
+      <li>At the top of the <strong>Object Manager</strong> page, click <strong>Create &gt; Custom Object</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-create-custom-object.png" /></figure>
       </li>
-      <li> Click <strong>View Tracking Code</strong>. The <strong>piAId</strong> and <strong>piCId</strong> values will be displayed.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-tracking-code.png" /></figure>
+      <li>Enter a <strong>Label</strong>. Brightcove recommends using <code>BC Video View</code>. </li>
+      <li>Enter a <strong>Plural Label</strong>. Brightcove recommends using <code>BC Video Views</code>.</li>
+      <li>Enter an <strong>Object Name</strong>. An initial value will be generated based upon the <strong>Label</strong> value.</li>
+      <li>Enter a <strong>Record Name</strong>. An initial value will be generated based upon the <strong>Label</strong> value. Confirm the <strong>Data Type</strong> is <strong>Text</strong>.</li>
+      <li>Select any <strong>Optional Features</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-new-custom-object.png" /></figure>
       </li>
-      <li>Copy the values and paste them into their respective fields.
-        <aside class="bcls-aside bcls-aside--information">Note: Brightcove Campaign doesn’t validate the piAId and piCId fields,  but if wrong values are entered, Brightcove Campaign will not be able to identify the viewer.</aside>
-                  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce integration type" src="/assets/images/admin/pardot-credentials.png" /></figure>
-      </li>
-      <li>Click <strong>Connect to Pardot</strong>.</li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>On the <strong>Custom Object Detail</strong> page, locate the <strong>Custom Fields & Relationships</strong> section.</li>
+      <li></li>
     </ol>
   </section>
   <section class="bcls-section">

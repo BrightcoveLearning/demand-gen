@@ -383,6 +383,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <ul>
       <li>Have a Salesforce account, Salesforce sandbox accounts are not supported</li>
       <li>Have a Salesforce.com account with the <strong>API Enabled</strong> permission and belong to a role which allows you to read and write to the Salesforce object you choose to send viewing data to</li>
+      <li>If you will be using the Pardot integration, you should complete the steps outlined in the <a href="/admin/creating-salesforce-object-pardot.html">Creating a Custom Salesforce Object for Pardot Integration</a> topic.</li>
     </ul>
   </section>
   <section class="bcls-section">
@@ -427,6 +428,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="pardot">Configuring a Pardot integration</h2>
     <p>Once the Brightcove Campaign to Salesforce connection has been made, you need to configure an integration type. This section covers the steps to use a <strong>Pardot</strong> integration type.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Before configuring the Pardot integration, you should complete the steps outlined in the <a href="/admin/creating-salesforce-object-pardot.html">Creating a Custom Salesforce Object for Pardot Integration</a> topic.</aside>
     <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Pardot user account to use when configuring the integration with Brightcove Campaign.</aside>
     <ol class="bcls-tasklist">
       <li>Select <strong>Pardot</strong> for the integration type.</li>
@@ -452,7 +454,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </li>
       <li>Copy the values and paste them into their respective fields.
         <aside class="bcls-aside bcls-aside--information">Note: Brightcove Campaign doesn’t validate the piAId and piCId fields,  but if wrong values are entered, Brightcove Campaign will not be able to identify the viewer.</aside>
-                  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce integration type" src="/assets/images/admin/pardot-credentials.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce integration type" src="/assets/images/admin/pardot-credentials.png" /></figure>
       </li>
       <li>Click <strong>Connect to Pardot</strong>.</li>
     </ol>
@@ -528,7 +530,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 09 Apr 2020
+  Page last updated on 15 Apr 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
