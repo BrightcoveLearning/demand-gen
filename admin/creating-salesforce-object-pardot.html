@@ -50,61 +50,96 @@ parent: Administering Accounts
       </li>
       <li>Click <strong>Save</strong>.</li>
       <li>On the <strong>Custom Object Detail</strong> page, locate the <strong>Custom Fields & Relationships</strong> section.</li>
-      <li>Create the following custom fields</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="configuredata">Configuring data mapping</h2>
-    <p>Data mapping determines how video data is mapped to fields in a Salesforce object. By default, the integration will be configured using <strong>Simple</strong> mapping which maps some video data to the <strong>Task</strong> object in Salesforce.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce mappping type" src="/assets/images/admin/salesforce-simple-mapping.png" /></figure>
-    <p>Follow these steps to customize the data mapping.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>For the <strong>Mapping Type</strong>, select <strong>Advanced</strong>.</li>
-      <li>In the <strong>Salesforce Object</strong> dropdown list, select a Salesforce object to map the video data to.</li>
-      <li>Map the appropriate <strong>View Field</strong> to Salesforce fields.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce advanced mapping" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>
+      <li>Click <strong>New</strong>.</li>
+      <li>Create the following custom fields. For all fields, set the <strong>Data Type</strong> to <strong>Text</strong> and keep the default field-level security and page layout options.
+        <table width="92%" class="bcls-table">
+          <thead class="bcls-table__head">
+            <tr>
+              <th width="40%">Field Label</th>
+              <th width="20%"><strong>Length</strong></th>
+              <th width="40%"><strong>Field Name</strong></th>
+            </tr>
+          </thead>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td>Video ID</td>
+              <td valign="top"><p>200</p></td>
+              <td valign="top"><p>Video_ID</p></td>
+            </tr>
+            <tr>
+              <td>Player ID</td>
+              <td valign="top"><p>200</p></td>
+              <td valign="top"><p>Player_ID</p></td>
+            </tr>
+            <tr>
+              <td>Page URL</td>
+              <td valign="top">200</td>
+              <td valign="top">Page_URL</td>
+            </tr>
+            <tr>
+              <td>Time Stamp</td>
+              <td valign="top">200</td>
+              <td valign="top">Time_Stamp</td>
+            </tr>
+            <tr>
+              <td>Total Time Watched</td>
+              <td valign="top">200</td>
+              <td valign="top">Total_Time_Watched</td>
+            </tr>
+            <tr>
+              <td>Percentage Watched</td>
+              <td valign="top">200</td>
+              <td valign="top">Percentage_Watched</td>
+            </tr>
+          </tbody>
+        </table>
       </li>
-      <li>Click <strong>Save</strong> to save the changes.</li>
+      <li>Confirm all the fields have been created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-all-custom-fields.png" /></figure>
+      </li>
+      <li>In the <strong>Custom Fields &amp; Relationships</strong> section, click <strong>New</strong>.</li>
+      <li>Select <strong>Lookup Relationship</strong> and click <strong>Next</strong>.</li>
+      <li>In the <strong>Related To</strong> dropdown, select <strong>Contact</strong>. Click <strong>Next</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-related-to.png" /></figure>
+      </li>
+      <li>For the <strong>Field Name</strong>, enter <strong>Contact</strong>. Click <strong>Next</strong>.</li>
+      <li>Keep the default field-level security options. Click <strong>Next</strong>.</li>
+      <li>On the reference field page (step 5) click <strong>Next</strong>.</li>
+      <li>On the custom related lists page (step 6) click <strong>Save</strong>.</li>
     </ol>
-    <p>To remove the integration with Salesforce, click <strong>Delete</strong>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="trackingid2">Passing a tracking ID</h2>
-    <p>Brightcove Campaign supports the ability to pass a tracking ID value to Salesforce. The tracking ID might be used to track a campaign ID for example. The tracking ID can be appended to the page URL that displays the video  or added to the  embed code.</p>
-    <ul>
-      <li>Example: Appended to URL</li>
-    </ul>
-    <pre>
-  http://www.myurl.com/video.html?<strong>bctrackingid=12345</strong></pre>
-    <ul>
-      <li>Example: Added to player embed code</li>
-    </ul>
-    <pre>
-  &lt;video data-video-id="6033402539001" 
-         data-account="1486906377" 
-         data-player="default" 
-         data-embed="default" 
-         data-application-id 
-         class="video-js"
-         <strong>data-bc-trackingid="12345"</strong> 
-         controls&gt;&lt;/video&gt;
-  &lt;script src="//players.brightcove.net/1486906377/default_default/index.min.js"&gt;&lt;/script&gt;</pre>
-    <p>Brightcove Campaign will then pass the value along to Salesforce as another field that is synced.</p>
+    <h2 id="connect-sf-pardot">Configuring Salesforce connector in Pardot</h2>
+    <p>Integrating Salesforce and Pardot allows you to sync information between them. When you update a record in your Salesforce account,  it automatically updates in Pardot. This keeps sales and marketing on the same page. To  setup a Salesforce connector in Pardot, follow these steps. </p>
+    <ol class="bcls-tasklist-restart">
+      <li>Sign in to Pardot.</li>
+      <li>In the left navigation, hover over <strong>Admin</strong> and click <strong>Connectors</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-admin-menu.png" /></figure>
+      </li>
+      <li>Click <strong>+ Add Connector</strong>.</li>
+      <li>Click <strong>Salesforce</strong> and click <strong>Create Connector</strong>.</li>
+      <li>Enter your Salesforce credentials. </li>
+      <li>Click on <strong>Save Connector</strong>.</li>
+      <li>Click on <strong>Verify</strong>. Once the connector is verified, the newly added data will be synced.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="identify">Identifying viewers</h2>
-    <p>If your Salesforce connection is configured with a <strong>Manual</strong> integration type, it's up to you to identify viewers. For viewer tracking to occur, the user id should be passed as a URL parameter on the page that is displaying the video. Two URL parameters are supported:</p>
-    <ul>
-      <li><strong>bcemail</strong> - To pass the viewer's email address</li>
-      <li><strong>bcsfid</strong> - To pass the viewer's Salesforce ID</li>
-    </ul>
-    <p>In this scenario, video landing pages would be generated with a URL that’s been uniquely generated for tracking purposes. Brightcove Campaign will then use the URL parameter to look up the user server-side and sync viewing data. </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sfdata">Viewing video data in Salesforce</h2>
-    <p>As videos are viewed, video viewing data will be synced to Salesforce. If the <strong>Simple</strong> data mapping option was selected, video view data will appear as a <strong>Task</strong> entry inside Salesforce. If the <strong>Advanced</strong> data mapping option was used, viewing data will appear as part of the Salesforce object that was selecting when the mapping was configured. In the following example, <strong>Simple</strong> data mapping was used. Viewing data appears as part of the contact's <strong>Activity History</strong>. The <strong>Subject</strong> will display <strong>BC Video View</strong> along with the video name and percent watched.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce task record" src="/assets/images/admin/salesforce-task-record.png" /></figure>
-    <p>Clicking the <strong>Task</strong> will display additional information in the <strong>Comments</strong> field.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce task detail" src="/assets/images/admin/salesforce-task-detail.png" /></figure>
+    <h2 id="pardot-data">Viewing data in Pardot</h2>
+    <p>Once the data is synced, you can view the objects and data in Pardot.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the left navigation, hover over <strong>Admin</strong> and click <strong>Custom Objects</strong>. </li>
+      <li>Click <strong>+ Add Custom Object</strong>.</li>
+      <li>Select the <strong>BC Video View</strong> custom object.</li>
+      <li>In the left navigation, hover over <strong>Prospects</strong> and click <strong>Prospect List</strong>. The contacts which have been created in Salesforce will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-prospect-list.png" /></figure>
+      </li>
+      <li>Click on a prospect name.</li>
+      <li>Click on the <strong>Related Objects</strong> tab. Confirm that the custom object data appears (this is the same data that is in Salesforce).
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-related-objects.png" /></figure>
+      </li>
+      <li>Click on video name to view the details.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-video-details.png" /></figure>
+      </li>
+    </ol>
   </section>
 </article>
