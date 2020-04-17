@@ -6,7 +6,7 @@ parent: Administering Accounts
   <h1>Connecting to Salesforce</h1>
   <summary>In this topic you will learn how to configure Brightcove Campaign&trade; for use with Salesforce.</summary>
   <section class="bcls-section">
-    <p>Brightcove Campaign can be configured to integrate with  Salesforce. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  Salesfroce. Once in Salesforce, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
+    <p>Brightcove Campaign can be configured to integrate with  Salesforce. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  Salesforce. Once in Salesforce, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
   </section>
   <section class="bcls-section">
     <h2 id="requirements">Requirements</h2>
@@ -76,7 +76,7 @@ parent: Administering Accounts
     <h3 id="tracking-ids">Get the tracking IDs</h3>
     <p>To get the value for the <strong>Tracking piAld</strong> and <strong>Tracking piCld</strong> fields, follow these steps.</p>
     <ol class="bcls-tasklist">
-      <li><strong>C</strong>lick the <strong>Marketing</strong> icon in the left navigation and then click <strong>Campaigns</strong>.</li>
+      <li>In the left navigation, click the <strong>Marketing</strong> icon and then click <strong>Campaigns</strong>.</li>
       <li> Click on a Campaign Name (or add a campaign if there are no campaigns).
         <aside class="bcls-aside bcls-aside--information">Note: It doesn’t matter which campaign you select, Brightcove Campaign needs both values to get the cookie to identify the viewer.</aside>
       </li>
@@ -89,6 +89,7 @@ parent: Administering Accounts
       </li>
       <li>Click <strong>Connect to Pardot</strong>.</li>
     </ol>
+    <p>Typically, when using the Pardot integration type, you will select the <strong>Advanced</strong> Mapping Type and then map the view fields to the <a href="/admin/creating-salesforce-object-pardot.html">Salesforce custom object</a> you created.</p>
   </section>
   <section class="bcls-section">
     <h2 id="configuredata">Configuring data mapping</h2>
@@ -97,7 +98,9 @@ parent: Administering Accounts
     <p>Follow these steps to customize the data mapping.</p>
     <ol class="bcls-tasklist-restart">
       <li>For the <strong>Mapping Type</strong>, select <strong>Advanced</strong>.</li>
-      <li>In the <strong>Salesforce Object</strong> dropdown list, select a Salesforce object to map the video data to.</li>
+      <li>In the <strong>Salesforce Object</strong> dropdown list, select a Salesforce object to map the video data to. Typically, when using the Pardot integration type, you will map the view fields to the <a href="/admin/creating-salesforce-object-pardot.html">Salesforce custom object</a> you created.
+        </p>
+      </li>
       <li>Map the appropriate <strong>View Field</strong> to Salesforce fields.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce advanced mapping" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>
       </li>

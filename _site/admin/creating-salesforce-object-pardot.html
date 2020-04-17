@@ -399,14 +399,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="object-creation">Creating a custom object</h2>
-    <p>Contacts are the users whose behavior you wish to track or keep records in Salesforce. There should be a relationship between the custom object that is created above and the Contact object in order to get data related to the correct user. To create this unique object, follow these steps:</p>
+    <p>Contacts are the users whose behavior you wish to track or keep records in Salesforce. There should be a relationship between the custom object that is created below and the Contact object in Salesforce in order to get data related to the correct user. To create this custom object, follow these steps:</p>
     <aside class="bcls-aside bcls-aside--information language-editable">Note: The screen images below were taken using the Salesforce Lightning interface.</aside>
     <ol class="bcls-tasklist">
+      <li>Login to Salesforce.</li>
       <li>Click on the gear icon in the top right corner to open the <strong>Setup</strong> menu.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-setup-menu.png" /></figure>
       </li>
       <li>In the left navigation, in the <strong>PLATFORM TOOLS</strong> section, click <strong>Objects and Fields &gt; Object Manager</strong>.</li>
-      <li>Login to Pardot.</li>
       <li>At the top of the <strong>Object Manager</strong> page, click <strong>Create &gt; Custom Object</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-create-custom-object.png" /></figure>
       </li>
@@ -470,27 +470,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Select <strong>Lookup Relationship</strong> and click <strong>Next</strong>.</li>
       <li>In the <strong>Related To</strong> dropdown, select <strong>Contact</strong>. Click <strong>Next</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-related-to.png" /></figure>
+        <p>This will associate the BC Video View custom object with a Contact in Salesforce.</p>
       </li>
       <li>For the <strong>Field Name</strong>, enter <strong>Contact</strong>. Click <strong>Next</strong>.</li>
       <li>Keep the default field-level security options. Click <strong>Next</strong>.</li>
       <li>On the reference field page (step 5) click <strong>Next</strong>.</li>
       <li>On the custom related lists page (step 6) click <strong>Save</strong>.</li>
     </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="connect-sf-pardot">Configuring Salesforce connector in Pardot</h2>
-    <p>Integrating Salesforce and Pardot allows you to sync information between them. When you update a record in your Salesforce account,  it automatically updates in Pardot. This keeps sales and marketing on the same page. To  setup a Salesforce connector in Pardot, follow these steps. </p>
-    <ol class="bcls-tasklist-restart">
-      <li>Sign in to Pardot.</li>
-      <li>In the left navigation, hover over <strong>Admin</strong> and click <strong>Connectors</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/sf-pardot-admin-menu.png" /></figure>
-      </li>
-      <li>Click <strong>+ Add Connector</strong>.</li>
-      <li>Click <strong>Salesforce</strong> and click <strong>Create Connector</strong>.</li>
-      <li>Enter your Salesforce credentials. </li>
-      <li>Click on <strong>Save Connector</strong>.</li>
-      <li>Click on <strong>Verify</strong>. Once the connector is verified, the newly added data will be synced.</li>
-    </ol>
+    <p>Typically, when using the Pardot integration type, you will select the <strong>Advanced</strong> Mapping Type in Brightcove Campaign and then map the view fields to the Salesforce custom object you created.</p>
   </section>
   <section class="bcls-section">
     <h2 id="pardot-data">Viewing data in Pardot</h2>
@@ -528,7 +515,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 15 Apr 2020
+  Page last updated on 16 Apr 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
