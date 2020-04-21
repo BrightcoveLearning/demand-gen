@@ -343,6 +343,26 @@
       
         <url>
           
+            <loc>https://campaign.support.brightcove.com/admin/connecting-to-salesforce.html</loc>
+          
+            <lastmod>2020-04-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://campaign.support.brightcove.com/admin/creating-salesforce-object-pardot.html</loc>
+          
+            <lastmod>2020-04-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://campaign.support.brightcove.com/admin/creating-lead-forms.html</loc>
           
             <lastmod>2020-04-21</lastmod>
@@ -374,6 +394,16 @@
         <url>
           
             <loc>https://campaign.support.brightcove.com/admin/creating-lead-forms-oracle-eloqua.html</loc>
+          
+            <lastmod>2020-04-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://campaign.support.brightcove.com/admin/creating-lead-forms-salesforce.html</loc>
           
             <lastmod>2020-04-21</lastmod>
             <changefreq>daily</changefreq>
