@@ -101,7 +101,7 @@ parent: Administering Accounts
       <li>In the <strong>Salesforce Object</strong> dropdown list, select a Salesforce object to map the video data to. Typically, when using the Pardot integration type, you will map the view fields to the <a href="/admin/creating-salesforce-object-pardot.html">Salesforce custom object</a> you created.
         </p>
       </li>
-      <li>Map the appropriate <strong>View Field</strong> to Salesforce fields.
+      <li>Map the appropriate <strong>View Field</strong> to Salesforce fields. The following example shows the video fields being mapped to a custom object.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce advanced mapping" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>
       </li>
       <li>Click <strong>Save</strong> to save the changes.</li>
@@ -142,9 +142,9 @@ parent: Administering Accounts
   </section>
   <section class="bcls-section">
     <h2 id="sfdata">Viewing video data in Salesforce</h2>
-    <p>As videos are viewed, video viewing data will be synced to Salesforce. If the <strong>Simple</strong> data mapping option was selected, video view data will appear as a <strong>Task</strong> entry inside Salesforce. If the <strong>Advanced</strong> data mapping option was used, viewing data will appear as part of the Salesforce object that was selecting when the mapping was configured. In the following example, <strong>Simple</strong> data mapping was used. Viewing data appears as part of the contact's <strong>Activity History</strong>. The <strong>Subject</strong> will display <strong>BC Video View</strong> along with the video name and percent watched.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce task record" src="/assets/images/admin/salesforce-task-record.png" /></figure>
-    <p>Clicking the <strong>Task</strong> will display additional information in the <strong>Comments</strong> field.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce task detail" src="/assets/images/admin/salesforce-task-detail.png" /></figure>
+    <p>As videos are viewed, video viewing data will be synced to Salesforce. If the <strong>Simple</strong> data mapping option was selected, video view data will appear as a <strong>Task</strong> entry inside Salesforce. If the <strong>Advanced</strong> data mapping option was used, viewing data will appear as part of the Salesforce object that was selecting when the mapping was configured. In the following example, <strong>Advanced</strong> data mapping was used and the video fields were mapped to a custom <strong>BC Video View</strong> Salesforce object.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce task record" src="/assets/images/admin/salesforce-bc-video-view-record.png" /></figure>
+    <p>Clicking the video name will display detailed information.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce task detail" src="/assets/images/admin/salesforce-bc-video-view-detail.png" /></figure>
   </section>
 </article>
