@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Reviewing the Advanced Dashboard</title>
+  <title>Styling Players</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -119,9 +119,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/docs/dashboard/">Dashboard</a></li>
+      <li class="breadcrumb-item"><a href="/admin/">Administering Accounts</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Reviewing the Advanced Dashboard</li>
+      <li class="breadcrumb-item active" aria-current="page">Styling Players</li>
     </ol>
   </nav>
 </header>
@@ -379,98 +379,72 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Reviewing the Advanced Dashboard</h1>
-  <summary>In this topic you will learn about the information presented in the Advanced Dashboard.</summary>
+  <h1>Styling Players</h1>
+  <summary>This topic provides an overview of the player styling settings that can be configured using the Players module.</summary>
   <section class="bcls-section">
-    <p>The Advanced Dashboard provides an overview of the best and worst performing videos in the account. If there are less than 10 videos in the account, only 10 best performing video will be displayed. This dashboard provides a Video Benchmark Score (VBS) for each video. The VBS compares the performance of your videos to the performance of other, similar videos of the same type. The Advanced Dashboard is only displayed when the Video Content Type metadata field for videos has been enabled.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="advanced dashboard" src="/assets/images/dashboard/dashboard-adv.png" /></figure>
-    <p>To view the Dashboard page, click <strong>Dashboard</strong> in the navigation header.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="timespan" class="BCL_conceptTitle">Selecting a time span</h2>
-    <p>To specify the time period for the dashboard, you can click on a quick date or use the calendar control.</p>
-    <h3>Using a quick date</h3>
-    <p>A series of quick dates are at the top of the page. The following quick dates are available:</p>
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="4805928382001">&nbsp;</div>
+    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+    <p>Some basic player styling options can be configured using the Players module. For complete customization of the Brightcove Player, you need to use Cascading Style Sheets (CSS). For more information on using CSS to customize the player appearance, see the <a href="https://player.support.brightcove.com/getting-started/step-step-player-customization.html">Step-by-Step: Player Customization</a> developer document.</p>
+    <p>To configure the player <strong>Styling</strong> settings, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Players</strong> in the navigation header to open the Players module.</li>
+      <li>Click the link for the player you want to configure.</li>
+      <li>Click <strong>Styling</strong> in the left navigation menu.</li>
+    </ol>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="style menu" src="/assets/images/admin/styling-settings.png" /></figure>
+    <p>The following style settings can be configured:</p>
     <ul>
-      <li>Today</li>
-      <li>Yesterday</li>
-      <li>Last 7 days</li>
-      <li>Last 30 days</li>
-      <li>This month - The calendar month to date - for example, if today is March 17, this report will display March 1 - March 17</li>
-      <li>Last month - The previous calendar month - for example, if today is February 14, this report will display January 1 - January 31.</li>
+      <li><a href="#title_desc">Title and description</a></li>
+      <li><a href="#play_button_shape">Play Button Shape</a></li>
+      <li><a href="#play_button_pos">Play Button Position</a></li>
+      <li><a href="#color_theme">Color Theme</a></li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="quick dates" src="/assets/images/dashboard/dashboard-quick-dates.png" /></figure>
-    <p>Click on a quick date to update the dashboard.</p>
-    <h3>Using the calendar control</h3>
-    <p>You can also select a start and end dates by clicking on the calendar control.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="date selector" src="/assets/images/dashboard/dashboard-calendar-control.png" /></figure>
-    <p>Click <strong>Apply</strong> to update the dashboard.</p>
-    <h3>Reporting time zone</h3>
-    <p>Data in the dashboard  is shown using the account's reporting time zone. The time zone is displayed below the calendar control.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="time zone" src="/assets/images/dashboard/dashboard-time-zone.png" /></figure>
-    <p>The reporting time zone is used to calculate day boundaries for reporting data. Changing the reporting time zone setting only affects data going forward, and changes are not applied retroactively. If you change this setting, you may see a flat spot or a spike in your data when looking at day boundaries where the change was applied. Updates to this setting may not take effect immediately, and analytics data may continue to refer to the old setting until the system processes the changes.</p>
-    <p>The reporting time zone can be configured as part of the <a href="file:///Macintosh HD/private/var/folders/x9/6htkrrb16s3gfz3j3dd3p9d40000gn/T/TemporaryItems/Adobe/admin/managing_account_settings.html#account_settings">account settings</a>. </p>
+    <p>After any changes have been made, make sure to click <strong> Save</strong> for the changes to be visible.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="terms">Terms used on the dashboard</h2>
-    <p>Reviewing the following video terms will be helpful before viewing the  advanced dashboard.</p>
+    <h2 id="title_desc">Title and description</h2>
+    <p>Select <strong>Show title and description </strong> to display the video title and description on the player.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="video title" src="/assets/images/admin/styling-player-title.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="play_button_shape">Play button shape</h2>
+    <p>The <strong>Play Button Shape </strong> setting controls the shape of the play button. The following shapes are supported:</p>
     <ul>
-      <li><strong>Video Starts</strong> - The number of times a video started playing</li>
-      <li><strong>Video Impressions</strong> - Number of times a video was loaded and ready for interaction</li>
-      <li><strong>Play Rate</strong> - The percentage of videos that were loaded that were actually played (video views / video impressions)</li>
-      <li><strong>Video Benchmark Score (VBS)</strong> - The VBS compares the performance of your videos to the performance of other, similar videos of the same type (<a href="/docs/analytics/how-vbs-calculated.html">how is VBS calculated?</a>)</li>
-      <li><strong>Average Percent Viewed</strong> - Average Time Viewed / Video length</li>
+      <li>Circle</li>
+      <li>Square</li>
+      <li>Rectangle</li>
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="analytics">Reviewing dashboard analytics</h2>
-    <p>The body of the page will display the advanced analytics. The page is divided into <strong>Best Performing Videos</strong> and <strong>Worst Performing Videos</strong> sections. Each section will display the same information.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: For accounts with less than 10 videos, only the <strong>Best Performing Videos </strong>section will display.</aside>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: Only videos with a designated <strong>Video Content Type</strong> will be included in the dashboard view.</aside>
-    <p>The <strong>Best Performing Videos</strong> list will display the five videos with the highest VBS. The list will contain:</p>
+    <h2 id="play_button_pos">Play button position</h2>
+    <p>The <strong>Play Button Position </strong> setting controls the location of the play button within the player. The following positions are supported:</p>
     <ul>
-      <li>Video name</li>
-      <li>Video content type</li>
-      <li>Published date</li>
-      <li>Video Benchmark Score</li>
+      <li>Center</li>
+      <li>Top Left</li>
+      <li>Top Right</li>
     </ul>
-    <p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="best videos" src="/assets/images/dashboard/dashboard-adv-best-videos-list.png" /></figure>
-    </p>
-    <p>Selecting a video in the list will display the VBS details for the video.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="time zone" src="/assets/images/dashboard/dashboard-adv-vbs-details.png" /></figure>
-    <p>Clicking <strong>More Analytics for This Video</strong> will open the <strong>Analytics</strong> page with detailed analytics for the selected video.</p>
-    <p>The Play Rate graph will show the play rate for the selected video and the play rate for other videos with the same video content type. Based upon the Play Rate of your video compared to other videos of the same type, a Performance rating is displayed.</p>
-    <table class="bcls-table">
-      <thead class="bcls-table__head">
-        <tr>
-          <th>Performance Rating</th>
-          <th>VBS Range</th>
-        </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-        <tr>
-          <td>Great</td>
-          <td>80 - 100</td>
-        </tr>
-        <tr>
-          <td>Good</td>
-          <td>60 - 79</td>
-        </tr>
-        <tr>
-          <td>Average</td>
-          <td>40 - 59</td>
-        </tr>
-        <tr>
-          <td>Low</td>
-          <td>20 - 39</td>
-        </tr>
-        <tr>
-          <td>Poor</td>
-          <td>0 - 19</td>
-        </tr>
-      </tbody>
-    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="color_theme">Color theme</h2>
+    <p>The <strong>Color Theme</strong> settings control the colors used in the player including the play/pause buttons, elapsed time and volume, captions, full screen and sharing icons.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/styling-player-controls.png" /></figure>
+    <p>The following theme colors can be configured:</p>
+    <ul>
+      <li><strong>Main</strong> - Controls the color of the big play button, progress bar and volume level</li>
+      <li><strong>Background</strong> - Controls the background color of the player controls</li>
+      <li><strong>Icons</strong> - Controls the color of the arrow in the play button and the icons in the player control bar</li>
+    </ul>
+    <p>To change a theme color:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click a theme color to open the color picker.</li>
+      <li>Click a color on the ride side of the control.</li>
+      <li>Click in the square to select a shade of the desired color. Color can also be set using the hue, saturation, value (HSV) color model into the text control.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="icon color" src="/assets/images/admin/styling-choose-icon-color.png" /></figure>
+      </li>
+      <li>The slider below the color square can be used to set the opacity of the controls.</li>
+      <li>Click outside of the color picker to modify another theme color.</li>
+    </ol>
   </section>
 </article>
 
@@ -489,7 +463,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated" id="talla_wrapper">
-  Page last updated on 20 Feb 2020
+  Page last updated on 07 May 2020
 </div>
 <p style="text-align: right;position: relative;"><button style="background:rgb(193, 66, 217);color:Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">Have a question? </button> </p>
     
