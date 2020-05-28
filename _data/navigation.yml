@@ -103,6 +103,8 @@
       url: /admin/managing-profile-information.html
     - name: Managing Users
       url: /admin/managing-users.html
+    - name: Styling Players
+      url: /admin/styling-players.html
     - name: Reviewing Player Event Data in Google Analytics
       url: /admin/reviewing-player-event-data-in-google-analytics.html
     - name: Viewing Billing Information
