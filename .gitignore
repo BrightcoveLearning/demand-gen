@@ -26,3 +26,4 @@ images/.DS_Store
 .vscode/settings.json
 .vscode/settings.json
 campaign.code-workspace
+_site/feed.xml
