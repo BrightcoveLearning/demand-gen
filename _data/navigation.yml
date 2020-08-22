@@ -3,7 +3,7 @@
   url: /index.html
 - section: 
   name: Getting Started
-  url: /get-started/
+  url: /get-started/index.html
   docs:
     - name: Campaign Training Videos
       url: /get-started/brightcove-campaign-training-videos.html
@@ -17,7 +17,7 @@
       url: /get-started/uploading-publishing-your-first-video.html
 - section: 
   name: Managing Videos
-  url: /videos/
+  url: /videos/index.html
   docs:
     - name: Adding Text Tracks
       url: /videos/adding-text-tracks-to-a-video.html
@@ -41,7 +41,7 @@
       url: /videos/working-with-shared-videos.html
 - section: 
   name: Reviewing the Dashboard
-  url: /dashboard/
+  url: /dashboard/index.html
   docs:
     - name: Dashboard Overview
       url: /dashboard/dashboard-overview.html
@@ -51,7 +51,7 @@
       url: /dashboard/reviewing-basic-dashboard.html
 - section: 
   name: Reviewing Analytics
-  url: /analytics/
+  url: /analytics/index.html
   docs:
     - name: How Video Benchmark Score is Calculated
       url: /analytics/how-vbs-calculated.html
@@ -61,7 +61,7 @@
       url: /analytics/using-hud.html
 - section: 
   name: Administering Accounts
-  url: /admin/
+  url: /admin/index.html
   docs:
     - name: Configuring Adobe Analytics
       url: /admin/configuring-adobe-analytics-event-tracking.html
@@ -111,13 +111,13 @@
       url: /admin/viewing-billing-information.html
 - section: 
   name: Release Notes
-  url: /release-notes/
+  url: /release-notes/index.html
   docs:
     - name: 2020
       url: /release-notes/2020.html
 - section: 
   name: Support
-  url: /support/
+  url: /support/index.html
   docs:
     - name: 'Brightcove Answers'
       url: '/support/brightcove-answer.html'
