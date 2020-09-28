@@ -134,9 +134,9 @@ parent: Administering Accounts
     <p>To begin sending data to Adobe Analytics, data must be sent to a report suite to display in reporting. To successfully implement a page with code to collect data, you must have access to your hosting servers to upload new content to your website. It is also useful to have an existing site to implement code.</p>
     <p>The following steps walk through a basic Adobe Analytics implementation.</p>
     <ol class="bcls-tasklist__restart">
-      <li>Download <strong>AppMeasurement</strong> for JavaScript and the <strong>Visitor ID</strong> service. The download is available in Code Manager (<strong>Analytics &gt; Admin &gt; Code Manager</strong>). The download zip contains several files. <code>AppMeasurement.js</code> and <code>VisitorAPI.js</code> are the relevant files when implementing Analytics.</li>
-      <li>Host&nbsp;<code>AppMeasurement.js</code>&nbsp;and&nbsp;<code>VisitorAPI.js</code>. These core JavaScript files must be hosted on a web server that is accessible to all pages on your site. You need the path to these files when adding them to your pages.</li>
-      <li>Reference&nbsp;<code>AppMeasurement.js</code>&nbsp;and&nbsp;<code>VisitorAPI.js</code>&nbsp;on all site pages with a Brightcove Player by adding the following lines of code in the&nbsp;<code>&lt;head&gt;</code>&nbsp;or <code>&lt;body&gt;</code> tag on each page. <code>VisitorAPI.js</code>&nbsp;must be included before&nbsp;<code>AppMeasurement.js</code>.
+      <li>Download <strong>AppMeasurement</strong> for JavaScript and the <strong>Visitor ID</strong> service. The download is available in Code Manager (<strong>Analytics &gt; Admin &gt; Code Manager</strong>). The download zip contains several files. <code translate="No">AppMeasurement.js</code> and <code translate="No">VisitorAPI.js</code> are the relevant files when implementing Analytics.</li>
+      <li>Host&nbsp;<code translate="No">AppMeasurement.js</code>&nbsp;and&nbsp;<code translate="No">VisitorAPI.js</code>. These core JavaScript files must be hosted on a web server that is accessible to all pages on your site. You need the path to these files when adding them to your pages.</li>
+      <li>Reference&nbsp;<code translate="No">AppMeasurement.js</code>&nbsp;and&nbsp;<code translate="No">VisitorAPI.js</code>&nbsp;on all site pages with a Brightcove Player by adding the following lines of code in the&nbsp;<code translate="No">&lt;head&gt;</code>&nbsp;or <code translate="No">&lt;body&gt;</code> tag on each page. <code translate="No">VisitorAPI.js</code>&nbsp;must be included before&nbsp;<code translate="No">AppMeasurement.js</code>.
         <pre>
   &lt;script&nbsp;language="JavaScript"&nbsp;type="text/javascript"&nbsp; src="https://Insert Domain and path to file here/VisitorAPI.js"&gt;&lt;/script&gt;
   &lt;script&nbsp;language="JavaScript"&nbsp;type="text/javascript"&nbsp; src="https://Insert Domain and path to file here/AppMeasurement.js"&gt;&lt;/script&gt;</pre>
@@ -166,7 +166,7 @@ parent: Administering Accounts
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/adobe-report.png" /></figure>
       </li>
     </ol>
-    <p>If data is not appearing, verify that the URLs to the &nbsp;<code>AppMeasurement.js</code>&nbsp;and&nbsp;<code>VisitorAPI.js</code>&nbsp;files are valid. Check the browser console to make sure no 404 errors are appearing. Also, ad blockers may prevent data from being sent to Adobe Analytics.</p>
+    <p>If data is not appearing, verify that the URLs to the &nbsp;<code translate="No">AppMeasurement.js</code>&nbsp;and&nbsp;<code translate="No">VisitorAPI.js</code>&nbsp;files are valid. Check the browser console to make sure no 404 errors are appearing. Also, ad blockers may prevent data from being sent to Adobe Analytics.</p>
   </section>
 </article>
 </body>

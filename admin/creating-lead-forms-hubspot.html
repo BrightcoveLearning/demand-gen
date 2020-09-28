@@ -43,13 +43,13 @@ parent: Administering Accounts
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot form embed code" src="/assets/images/admin/hubspot-copy-form-embed.png" /></figure>
       </li>
       <li>Paste the embed code into your HTML editor of choice.</li>
-      <li>The embed code needs a small change so Brightcove Campaign knows to close the form when it is submitted. Locate the line that has <strong><code> formId:</code></strong> Add a comma at the end of the line.</li>
-      <li>Add this line below the <strong><code> formId:</code></strong> line.
+      <li>The embed code needs a small change so Brightcove Campaign knows to close the form when it is submitted. Locate the line that has <strong><code translate="No"> formId:</code></strong> Add a comma at the end of the line.</li>
+      <li>Add this line below the <strong><code translate="No"> formId:</code></strong> line.
         <pre>
-<code>onFormSubmit: bcLeadForm.submit</code></pre>
+<code translate="No">onFormSubmit: bcLeadForm.submit</code></pre>
       </li>
       <li>By default, when the form is displayed inside of a Brightcove Player, the form will display on a transparent background over the player. Add the following CSS to the embed code to change the background color to grey.<br />
-        <code>&lt;style&gt;<br />
+        <code translate="No">&lt;style&gt;<br />
         body {<br />
         background-color: rgba(204,204,204,0.9);<br />
         margin: 0;<br />

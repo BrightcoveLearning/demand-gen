@@ -411,7 +411,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>The VBS starts by comparing  the Play Rate and Engagement Rate of your video to  all videos with the same Video Content Type (Product Overview, Product Details, etc.). We then determine where your video ranks within this grouping: is it in the 10th percentile, 20th percentile, etc. These two percentiles are then averaged. So if you're video is in the 60th percentile for Play rate and 70th percentile in engagement rate, you're VBS would be 65.</p>
     <p>There is  additional downward weighting of the VBS if either Play Rate or Engagement Rate is at or below the 30th percentile. This is to emphasize the poor performance and the need to improve.</p>
     <p>The formula for downward weighting is as follows, written in pseudo-code: </p>
-    <pre><code>
+    <pre><code translate="No">
 If either rate is &lt;=30
    lower_rate = smaller of the two rates
    multiple = (1.1-(1/(lower_rate/10)))
