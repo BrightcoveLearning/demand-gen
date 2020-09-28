@@ -407,23 +407,23 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="form">Creating a form in Eloqua</h2>
     <p>Eloqua provides the ability to create forms that can be used to capture viewer information. The form HTML that is generated will be used when creating a lead form inside Brightcove Campaign. The data that is captured can then be used in customizing future communications. The steps below will create a simple form to capture first name, last name and email address. For complete details on Eloqua Forms, see the <a href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAA/Help/Forms/Forms.htm">Eloqua documentation</a>.</p>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Sign in to your Eloqua account.</li>
-      <li class="language-editable">Navigate to <strong>Assets</strong> &gt; <strong>Forms</strong> and then click <strong>Create a Form</strong>. The form Template Chooser opens.</li>
-      <li class="language-editable">Click <strong>Blank Form</strong> and then click <strong>Choose</strong>.</li>
-      <li class="language-editable">In the left navigation, expand the <strong>Field Groups</strong> panel.</li>
-      <li class="language-editable">In the <strong>Field Groups</strong> panel, click <strong>Basic Contact Info</strong> and drag it to the form template.
+      <li >Sign in to your Eloqua account.</li>
+      <li >Navigate to <strong>Assets</strong> &gt; <strong>Forms</strong> and then click <strong>Create a Form</strong>. The form Template Chooser opens.</li>
+      <li >Click <strong>Blank Form</strong> and then click <strong>Choose</strong>.</li>
+      <li >In the left navigation, expand the <strong>Field Groups</strong> panel.</li>
+      <li >In the <strong>Field Groups</strong> panel, click <strong>Basic Contact Info</strong> and drag it to the form template.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="eloqua drag element" src="/assets/images/admin/eloqua-form-add-fields.png" /></figure>
       </li>
-      <li class="language-editable">Confirm that the fields have been added to the form.
+      <li >Confirm that the fields have been added to the form.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="eloqua form fields" src="/assets/images/admin/eloqua-form-fields-on-form.png" /></figure>
       </li>
-      <li class="language-editable">By default, the fields are added using a field merge. This will cause strange text to appear in the fields when used in Brightcove Campaign. To remove the field merge, select the <strong>First Name</strong> field by clicking on it.</li>
-      <li class="language-editable">In the left navigation panel, locate the <strong>General Properties</strong> section and set the <strong>Prepopulate field data</strong> property to <strong>None</strong>.
+      <li >By default, the fields are added using a field merge. This will cause strange text to appear in the fields when used in Brightcove Campaign. To remove the field merge, select the <strong>First Name</strong> field by clicking on it.</li>
+      <li >In the left navigation panel, locate the <strong>General Properties</strong> section and set the <strong>Prepopulate field data</strong> property to <strong>None</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="eloqua form properties" src="/assets/images/admin/eloqua-form-pre-pop.png" /></figure>
       </li>
-      <li class="language-editable">Repeat the process for the <strong>Last Name</strong> and <strong>Email Address</strong> fields.</li>
-      <li class="language-editable">Click <strong>Save</strong>.</li>
-      <li class="language-editable">Give the form a name and then click <strong>Save</strong>.
+      <li >Repeat the process for the <strong>Last Name</strong> and <strong>Email Address</strong> fields.</li>
+      <li >Click <strong>Save</strong>.</li>
+      <li >Give the form a name and then click <strong>Save</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="eloqua form list" src="/assets/images/admin/eloqua-form-save-form.png" /></figure>
       </li>
     </ol>
@@ -432,11 +432,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="edit">Copying the form HTML</h2>
     <p>To use the form inside of Brightcove Campaign, you will need to copy the form HTML. Follow these steps to copy the form HTML.</p>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Click <strong>Actions &gt; View Form HTML...</strong> The form HTML will be displayed.
+      <li >Click <strong>Actions &gt; View Form HTML...</strong> The form HTML will be displayed.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="eloqua form html" src="/assets/images/admin/eloqua-form-html.png" /></figure>
       </li>
-      <li class="language-editable">Copy the entire HTML to the clipboard. Click <strong>Close</strong>.</li>
-      <li class="language-editable">Paste the form HTML into your HTML editor of choice. You may want to use the code formatting feature of your editor to format the code so that it is easier to read.</li>
+      <li >Copy the entire HTML to the clipboard. Click <strong>Close</strong>.</li>
+      <li >Paste the form HTML into your HTML editor of choice. You may want to use the code formatting feature of your editor to format the code so that it is easier to read.</li>
     </ol>
   </section>
   <section class="bcls-section">
@@ -496,11 +496,11 @@ body {
     <h2 id="formdata">Validating the form data in Eloqua</h2>
     <p>There are several ways to validate that the form data has been passed to Eloqua. Follow these steps to view the form data in Eloqua.</p>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Sign in to your Eloqua account.</li>
-      <li class="language-editable">Navigate to <strong>Assets</strong> &gt; <strong>Forms</strong>.</li>
-      <li class="language-editable">In the left navigation, click the <strong>All Files</strong> link to display all the forms.</li>
-      <li class="language-editable">Double-click the form name to open it.</li>
-      <li class="language-editable">Click <strong>Actions &gt; View Submission Data...</strong> The form data will be displayed.
+      <li >Sign in to your Eloqua account.</li>
+      <li >Navigate to <strong>Assets</strong> &gt; <strong>Forms</strong>.</li>
+      <li >In the left navigation, click the <strong>All Files</strong> link to display all the forms.</li>
+      <li >Double-click the form name to open it.</li>
+      <li >Click <strong>Actions &gt; View Submission Data...</strong> The form data will be displayed.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="eloqua lead form data" src="/assets/images/admin/eloqua-form-data.png" /></figure>
       </li>
     </ol>

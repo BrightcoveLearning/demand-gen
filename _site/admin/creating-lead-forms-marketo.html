@@ -407,34 +407,34 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="form">Creating a form in Marketo</h2>
     <p>Marketo provides the ability to create forms that can be used to capture viewer information. The form HTML that is generated will be used when creating a lead form inside Brightcove Campaign. The data that is captured can then be used in customizing future communications. The steps below will create a simple form to capture first name, last name and email address.  For complete details on Marketo Forms, see the <a href="https://docs.marketo.com/display/public/DOCS/Forms">Marketo documentation</a>.</p>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Sign in to your Marketo account.</li>
-      <li class="language-editable">Navigate to <strong>Design Studio </strong> &gt; <strong>Forms</strong> and then click <strong>New &gt; New Form</strong>. The New Form dialog opens.</li>
-      <li class="language-editable">Enter a <strong>Name</strong> for the form and click <strong>CREATE</strong>.
+      <li >Sign in to your Marketo account.</li>
+      <li >Navigate to <strong>Design Studio </strong> &gt; <strong>Forms</strong> and then click <strong>New &gt; New Form</strong>. The New Form dialog opens.</li>
+      <li >Enter a <strong>Name</strong> for the form and click <strong>CREATE</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo new form" src="/assets/images/admin/marketo-new-form.png" /></figure>
       </li>
-      <li class="language-editable">The form properties page will open. Click <strong>Edit Form</strong> at the top of the page.</li>
-      <li class="language-editable">The form designer will open. By default, first name, last name and email address fields will be on the form. Edit the field properties and behavior as needed. Click <strong>NEXT</strong>.
+      <li >The form properties page will open. Click <strong>Edit Form</strong> at the top of the page.</li>
+      <li >The form designer will open. By default, first name, last name and email address fields will be on the form. Edit the field properties and behavior as needed. Click <strong>NEXT</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo field details" src="/assets/images/admin/marketo-form-design.png" /></figure>
       </li>
-      <li class="language-editable">Click the arrow icons to select a form theme. The form theme controls the styling of the form. Click <strong>Preview Draft</strong> to see a preview of the form. In this example, the <strong>Dark</strong> theme was selected.
+      <li >Click the arrow icons to select a form theme. The form theme controls the styling of the form. Click <strong>Preview Draft</strong> to see a preview of the form. In this example, the <strong>Dark</strong> theme was selected.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo form preview" src="/assets/images/admin/marketo-form-preview.png" /></figure>
       </li>
-      <li class="language-editable">Click <strong>Edit Draft</strong> to return to the form editor.</li>
-      <li class="language-editable">Click <strong>NEXT</strong>.</li>
-      <li class="language-editable">Configure any additional form settings and click <strong>FINISH</strong>.</li>
-      <li class="language-editable">Click <strong>APPROVE AND CLOSE</strong>.</li>
+      <li >Click <strong>Edit Draft</strong> to return to the form editor.</li>
+      <li >Click <strong>NEXT</strong>.</li>
+      <li >Configure any additional form settings and click <strong>FINISH</strong>.</li>
+      <li >Click <strong>APPROVE AND CLOSE</strong>.</li>
     </ol>
   </section>
   <section class="bcls-section">
     <h2 id="formcss">Optional - Styling the form using CSS</h2>
     <p>When creating a form, Marketo provides the ability to select a form theme to provide some basic form styling. You can also customize the form using your own custom CSS. In this section, we will customize the Dark theme and make the label text white and bold. For complete details on Marketo Forms, see the <a href="https://docs.marketo.com/display/public/DOCS/Edit+the+CSS+of+a+Form+Theme">Marketo documentation</a>.</p>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Navigate to <strong>Design Studio </strong> &gt; <strong>Forms</strong> and then click on your form.</li>
-      <li class="language-editable">Click <strong>Edit Form</strong>.</li>
-      <li class="language-editable">Click <strong>Form Settings</strong> and then click the gear icon.
+      <li >Navigate to <strong>Design Studio </strong> &gt; <strong>Forms</strong> and then click on your form.</li>
+      <li >Click <strong>Edit Form</strong>.</li>
+      <li >Click <strong>Form Settings</strong> and then click the gear icon.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo style form" src="/assets/images/admin/marketo-edit-form-css.png" /></figure>
       </li>
-      <li class="language-editable">Clicking <strong>View Theme CSS</strong> will display the current theme CSS. Click <strong>Edit Custom CSS</strong>. Paste in the following CSS code to make the label text white and bold.
+      <li >Clicking <strong>View Theme CSS</strong> will display the current theme CSS. Click <strong>Edit Custom CSS</strong>. Paste in the following CSS code to make the label text white and bold.
         <pre>
 .mktoForm label {
 	font-weight: bold;
@@ -442,20 +442,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 }</pre>
         <aside class="bcls-aside bcls-aside--information">Note: Enter only your custom CSS (just the parts that are different). You don't have to paste in the entire theme CSS.</aside>
       </li>
-      <li class="language-editable">Click <strong>SAVE</strong>.</li>
-      <li class="language-editable">Click <strong>Preview Draft</strong> to see a preview of the form. The label text should be white and bolded.
+      <li >Click <strong>SAVE</strong>.</li>
+      <li >Click <strong>Preview Draft</strong> to see a preview of the form. The label text should be white and bolded.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo preview draft" src="/assets/images/admin/marketo-form-preview-css.png" /></figure>
       </li>
-      <li class="language-editable">Click <strong>Edit Draft</strong> to return to the form editor.</li>
-      <li class="language-editable">Click <strong>FINISH</strong> and then <strong>APPROVE AND CLOSE</strong>.</li>
+      <li >Click <strong>Edit Draft</strong> to return to the form editor.</li>
+      <li >Click <strong>FINISH</strong> and then <strong>APPROVE AND CLOSE</strong>.</li>
     </ol>
   </section>
   <section class="bcls-section">
     <h2 id="edit">Copying the form embed code</h2>
     <p>To use the form inside of Brightcove Campaign, you will need to copy the form HTML. Follow these steps to copy the form HTML.</p>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">In the left navigation, right click the form and click <strong>Embed Code</strong>.</li>
-      <li class="language-editable">Set the <strong>Code Type</strong> to <strong>Normal</strong> and then copy the <strong>Code</strong> to the clipboard. Click <strong>Close</strong>.
+      <li >In the left navigation, right click the form and click <strong>Embed Code</strong>.</li>
+      <li >Set the <strong>Code Type</strong> to <strong>Normal</strong> and then copy the <strong>Code</strong> to the clipboard. Click <strong>Close</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo embed code" src="/assets/images/admin/marketo-form-embed-code.png" /></figure>
       </li>
     </ol>
@@ -468,23 +468,23 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="formdata">Validating the form data in Marketo</h2>
     <p>There are several ways to validate that the form data has been passed to Marketo. Follow these steps to view the form data in Marketo.</p>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Sign in to your Marketo account.</li>
-      <li class="language-editable">Click <strong>Lead Database</strong>.</li>
-      <li class="language-editable">In the left navigation, expand Group Smart Lists and then click <strong>Form Capture SL</strong>.
+      <li >Sign in to your Marketo account.</li>
+      <li >Click <strong>Lead Database</strong>.</li>
+      <li >In the left navigation, expand Group Smart Lists and then click <strong>Form Capture SL</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo navigation" src="/assets/images/admin/marketo-form-capture-sl.png" /></figure>
       </li>
-      <li class="language-editable">Click the <strong>Smart List</strong> tab.</li>
-      <li class="language-editable">In the list of <strong>Filters</strong> on the right side of the page, locate the <strong>Filled Out Form</strong> filter. Click and drag the filter to the page.
+      <li >Click the <strong>Smart List</strong> tab.</li>
+      <li >In the list of <strong>Filters</strong> on the right side of the page, locate the <strong>Filled Out Form</strong> filter. Click and drag the filter to the page.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo filter" src="/assets/images/admin/marketo-add-filter.png" /></figure>
       </li>
-      <li class="language-editable">Enter the name of your form. You can also click the <strong>+</strong> to browse for your form.
+      <li >Enter the name of your form. You can also click the <strong>+</strong> to browse for your form.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo form filter" src="/assets/images/admin/marketo-constraint.png" /></figure>
       </li>
-      <li class="language-editable">Click <strong>Leads</strong> at the top of the page to see the filtered lead data.
+      <li >Click <strong>Leads</strong> at the top of the page to see the filtered lead data.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo leads" src="/assets/images/admin/marketo-form-data.png" /></figure>
       </li>
-      <li class="language-editable">Click an <strong> Id</strong> to open the lead detail.</li>
-      <li class="language-editable">Click the <strong>Activity Log</strong> tab. Confirm that the form was filled out.
+      <li >Click an <strong> Id</strong> to open the lead detail.</li>
+      <li >Click the <strong>Activity Log</strong> tab. Confirm that the form was filled out.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="marketo lead details" src="/assets/images/admin/marketo-form-activity.png" /></figure>
       </li>
     </ol>
