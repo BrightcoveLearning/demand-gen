@@ -30,7 +30,7 @@
   <div class="div-header">
     <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/campaign-logo.svg" alt="product logo" style="max-height: 100px;max-width: 232px;"></a>
 <!-- GTranslate: https://gtranslate.io/ -->
-<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en">English</option><option value="en|zh-TW">繁體中文</option><option value="en|fr">Français</option><option value="en|de">Deutsch</option><option value="en|ja">日本語</option><option value="en|ko">한국어</option><option value="en|es">Español</option></select>
+<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
 
 <script>
 /* <![CDATA[ */
@@ -94,11 +94,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         
       
         
-          <option value="https://integrations.support.brightcove.com">Integration / CMS Connectors</option>
+          <option value="https://integrations.support.brightcove.com">Integrations and CMS Connectors</option>
         
       
         
-          <option value="https://general.support.brightcove.com">Video Cloud General</option>
+          <option value="https://general.support.brightcove.com">Video Cloud General Information</option>
         
       
         
@@ -528,9 +528,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>To begin sending data to Adobe Analytics, data must be sent to a report suite to display in reporting. To successfully implement a page with code to collect data, you must have access to your hosting servers to upload new content to your website. It is also useful to have an existing site to implement code.</p>
     <p>The following steps walk through a basic Adobe Analytics implementation.</p>
     <ol class="bcls-tasklist__restart">
-      <li>Download <strong>AppMeasurement</strong> for JavaScript and the <strong>Visitor ID</strong> service. The download is available in Code Manager (<strong>Analytics &gt; Admin &gt; Code Manager</strong>). The download zip contains several files. <code>AppMeasurement.js</code> and <code>VisitorAPI.js</code> are the relevant files when implementing Analytics.</li>
-      <li>Host&nbsp;<code>AppMeasurement.js</code>&nbsp;and&nbsp;<code>VisitorAPI.js</code>. These core JavaScript files must be hosted on a web server that is accessible to all pages on your site. You need the path to these files when adding them to your pages.</li>
-      <li>Reference&nbsp;<code>AppMeasurement.js</code>&nbsp;and&nbsp;<code>VisitorAPI.js</code>&nbsp;on all site pages with a Brightcove Player by adding the following lines of code in the&nbsp;<code>&lt;head&gt;</code>&nbsp;or <code>&lt;body&gt;</code> tag on each page. <code>VisitorAPI.js</code>&nbsp;must be included before&nbsp;<code>AppMeasurement.js</code>.
+      <li>Download <strong>AppMeasurement</strong> for JavaScript and the <strong>Visitor ID</strong> service. The download is available in Code Manager (<strong>Analytics &gt; Admin &gt; Code Manager</strong>). The download zip contains several files. <code translate="No">AppMeasurement.js</code> and <code translate="No">VisitorAPI.js</code> are the relevant files when implementing Analytics.</li>
+      <li>Host&nbsp;<code translate="No">AppMeasurement.js</code>&nbsp;and&nbsp;<code translate="No">VisitorAPI.js</code>. These core JavaScript files must be hosted on a web server that is accessible to all pages on your site. You need the path to these files when adding them to your pages.</li>
+      <li>Reference&nbsp;<code translate="No">AppMeasurement.js</code>&nbsp;and&nbsp;<code translate="No">VisitorAPI.js</code>&nbsp;on all site pages with a Brightcove Player by adding the following lines of code in the&nbsp;<code translate="No">&lt;head&gt;</code>&nbsp;or <code translate="No">&lt;body&gt;</code> tag on each page. <code translate="No">VisitorAPI.js</code>&nbsp;must be included before&nbsp;<code translate="No">AppMeasurement.js</code>.
         <pre>
   &lt;script&nbsp;language="JavaScript"&nbsp;type="text/javascript"&nbsp; src="https://Insert Domain and path to file here/VisitorAPI.js"&gt;&lt;/script&gt;
   &lt;script&nbsp;language="JavaScript"&nbsp;type="text/javascript"&nbsp; src="https://Insert Domain and path to file here/AppMeasurement.js"&gt;&lt;/script&gt;</pre>
@@ -560,7 +560,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/adobe-report.png" /></figure>
       </li>
     </ol>
-    <p>If data is not appearing, verify that the URLs to the &nbsp;<code>AppMeasurement.js</code>&nbsp;and&nbsp;<code>VisitorAPI.js</code>&nbsp;files are valid. Check the browser console to make sure no 404 errors are appearing. Also, ad blockers may prevent data from being sent to Adobe Analytics.</p>
+    <p>If data is not appearing, verify that the URLs to the &nbsp;<code translate="No">AppMeasurement.js</code>&nbsp;and&nbsp;<code translate="No">VisitorAPI.js</code>&nbsp;files are valid. Check the browser console to make sure no 404 errors are appearing. Also, ad blockers may prevent data from being sent to Adobe Analytics.</p>
   </section>
 </article>
 </body>
@@ -581,7 +581,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 10 Mar 2020
+  Page last updated on 28 Sep 2020
 </div>
 
 
