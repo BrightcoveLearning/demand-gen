@@ -558,12 +558,17 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="identify">Identifying viewers</h2>
+    <p>The process to identify viewers will differ based upon the integration type that was selected when the connection was made.</p>
+    <h3>Manual integration</h3>
     <p>If your Salesforce connection is configured with a <strong>Manual</strong> integration type, it's up to you to identify viewers. For viewer tracking to occur, the user id should be passed as a URL parameter on the page that is displaying the video. Two URL parameters are supported:</p>
     <ul>
       <li><strong>bcemail</strong> - To pass the viewer's email address</li>
       <li><strong>bcsfid</strong> - To pass the viewer's Salesforce ID</li>
     </ul>
-    <p>In this scenario, video landing pages would be generated with a URL that’s been uniquely generated for tracking purposes. Brightcove Campaign will then use the URL parameter to look up the user server-side and sync viewing data. </p>
+    <p>In this scenario, video landing pages would be generated with a URL that’s been uniquely generated for tracking purposes. Brightcove Campaign will then use the URL parameter to look up the user server-side and sync viewing data.</p>
+    <h3>Pardot integration</h3>
+    <p>If your Salesforce connection is configured with a <strong>Pardot</strong> integration type, the integration will try to use the Pardot cookie
+      for the viewer.  It is also possible to identify the user using their email address.  To do this, a <strong>bcemail</strong> URL parameter with the viewer's email address should be passed on the page that is displaying the video.</p>
   </section>
   <section class="bcls-section">
     <h2 id="sfdata">Viewing video data in Salesforce</h2>
@@ -589,7 +594,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 06 Oct 2020
+  Page last updated on 07 Jan 2021
 </div>
 
 
