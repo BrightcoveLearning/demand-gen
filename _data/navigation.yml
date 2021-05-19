@@ -125,6 +125,8 @@
       url: '/support/contact-sales.html'
     - name: 'Opening a Support Case'
       url: '/support/opening-case-with-brightcove-support.html'
+    - name: 'Reset Your Support Portal Password'
+      url: '/support/reset-support-portal-password.html'
 
 # TODO correct and add additional sections/pages
 # TODO note that the order of items here determines the order in navigation
