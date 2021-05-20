@@ -1,0 +1,72 @@
+---
+title: Exporting Audience Data from the Audience Module
+parent: Administering Audience
+---
+<article class="bcls-article">
+  <h1>Exporting Audience Data from the Audience Module</h1>
+  <summary>In this topic you will learn how to export view event data and lead form data.</summary>
+  <section class="bcls-section">
+    <p>View events are recorded as videos are watched using Audience-enabled players. Lead data is captured as users enter data into Audience lead forms. The Audience module offers two types of lead forms:</span></p>
+    <ul>
+      <li><strong>Audience lead forms</strong> - These forms are built by selecting from a set of predefined fields in the Audience module. These forms save lead data in Video Cloud. For information on creating Audience lead forms, see <a href="/general/creating-audience-lead-form.html">Creating an Audience Lead Form</a>.</li>
+      <li><strong>Custom lead forms</strong> - These forms are built using your marketing automation platform. The form embed code is then used in the Audience module to create a custom lead form. These forms send lead data to the marketing automation platform. For information on creating lead forms, see the document for your marketing platform:
+        <ul>
+          <li><a href="/integrations/eloqua/creating-custom-lead-forms-oracle-eloqua.html">Eloqua</a></li>
+          <li><a href="/integrations/marketo/creating-custom-lead-forms-marketo.html">Marketo</a></li>
+          <li><a href="/integrations/salesforce/creating-custom-lead-forms-salesforce.html">Salesforce</a></li>
+          <li><a href="/integrations/hubspot/creating-custom-lead-forms-hubspot.html">HubSpot</a></li>
+        </ul>
+      </li>
+    </ul>
+    <p>When exporting lead data from the Audience module, only data captured using Audience lead forms will be exported. Lead data from custom lead forms will be stored in your marketing automation software.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="export lead data" src="/assets/images/module/admin/node15862-export.png" /></figure>
+    <p>To export data, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Audience module.</li>
+      <li>Click <strong>Export Audience&nbsp;Data</strong> in the left navigation.
+        <aside class="bcls-aside bcls-aside--information">Note: You must be an account administrator to access to the Export Data menu.</aside>
+      </li>
+      <li>Select a <strong>Data Connection</strong> to export data from. The <strong>Data Connection</strong> dropdown will list all the integrations that have been configured.</li>
+      <li>Select the data to export.
+        <ul>
+          <li><strong>View Events</strong> - Recorded by Audience-enabled players</li>
+          <li><strong>Leads</strong> - Captured using lead forms</li>
+        </ul>
+      </li>
+      <li>Use the date picker to select a <strong>Start Date</strong> and <strong>End Date</strong>.</li>
+      <li>Select an&nbsp;<strong>Export Format</strong>.
+        <ul>
+          <li>Comma-Separated Values (CSV)</li>
+          <li>Excel (XLS)</li>
+        </ul>
+      </li>
+      <li>Click <strong>Export</strong> to download the lead data.</li>
+      <li>Lead form and view event data will be downloaded in separate files. <strong>Leads</strong> data will contain the data that was entered on the lead form as well as the following fields:
+        <ul>
+          <li><strong>externalId</strong> - This is the External ID that shows up on the All Recent Activity page. In the case of Oracle Eloqua, it is the Eloqua guid. With Marketo, it is the Marketo guid</li>
+          <li><strong>playerId</strong> - Player ID of the player being used when form was displayed</li>
+          <li><strong>videoId</strong> - Video ID of the video being played when form was displayed</li>
+          <li><strong>pageURL</strong> - Page URL that displayed the lead form (Gallery experiences only)</li>
+          <li><strong>createdAt</strong> - Date and time the data was captured</li>
+          <li><strong>experience</strong> - Gallery experience that collected the data (Gallery experiences only)</li>
+        </ul>
+        <p><strong>View events</strong> data will contain the following fields:</p>
+        <ul>
+          <li><strong>externalId</strong> - This is the External ID that shows up on the All Recent Activity page. In the case of Oracle Eloqua, it is the Eloqua guid. With Marketo, it is the Marketo guid</li>
+          <li><strong>videoId</strong> - Video ID of the video</li>
+          <li><strong>videoName</strong> - Name of the video</li>
+          <li><strong>watched</strong> - Percentage of video watched (to nearest percent)</li>
+          <li><strong>timeWatched</strong> - Total time watched</li>
+          <li><strong>playerId</strong> - Player ID of the player used to watch video</li>
+          <li><strong>pageUrl</strong> - URL of page containing player</li>
+          <li><strong>createdAt</strong> - Date and time the data was captured</li>
+          <li><strong>updatedAt</strong> - Date and time the event was last saved, which translates roughly to when the viewer stopped watching; if the video is only a minute long, createdAt and updatedAt will be very close</li>
+          <li><strong>isSynced</strong> - Specifies whether this view event has been automatically exported to the publisher’s marketing automation tool</li>
+          <li><strong>trackingId</strong> - Tracking ID passed as a URL parameter. For information on working with a tracking ID, see <a href="/integrations/non-map/creating-custom-integrations-audience-module.html">Creating Custom Integrations with the Audience Module</a>.</li>
+          <li><strong>UTM fields</strong> - utmSource, utmMedium, utmCampaign, utmTerm and utmContent. For information on working with UTM fields see <a href="/general/working-utm-fields-audience-module.html">Working with UTM Fields in the Audience Module</a>.</li>
+          <li><strong>metric1-3</strong>, <strong>event1-3</strong> - Used when using <a href="/general/using-custom-metrics-and-events.html">custom metrics and events</a></li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+</article>

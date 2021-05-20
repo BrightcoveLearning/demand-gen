@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>Getting Started with the Audience Module</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2728311-17"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2728311-17');
+</script>
+  <script src="/assets/js/sajari-head.js"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/SVG/campaign-logo.svg" alt="Brightcove"></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><i data-feather="help-circle"></i> Contact Support</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><i data-feather="cloud"></i> System Status</a></span>
+    <br>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/module/get-started/">Getting Started</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Getting Started with the Audience Module</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+				<select id="site_select" class="bcls-select" style="margin-left: 1rem;">
+					<option value="">Other Brightcove Docs</option>
+					
+						
+							<option value="https://support.brightcove.com">Documentation Home</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD --</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
+						
+					
+						
+							<option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
+						
+					
+						
+							<option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
+						
+					
+						
+							<option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
+						
+					
+						
+							<option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
+						
+					
+						
+							<option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
+						
+					
+						
+							<option value="">-- VIDEO ESSENTIALS --</option>
+						
+					
+						
+							<option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon</option>
+						
+					
+						
+							<option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
+						
+					
+						
+							<option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD ADD-ONS --</option>
+						
+					
+						
+							<option value="https://audience.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience</option>
+						
+					
+						
+							<option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
+						
+					
+						
+							<option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
+						
+					
+						
+							<option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
+						
+					
+						
+							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+						
+					
+						
+							<option value="https://social.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+						
+					
+				</select>
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Getting Started</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/brightcove-campaign-training-videos.html">Campaign Training Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-campaign.html">Getting Started with Brightcove Campaign</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-campaign-trial.html">Getting Started with your Brightcove Campaign Trial</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-video-content-types.html">Overview of Video Content Types</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/uploading-publishing-your-first-video.html">Uploading and Publishing Your First Video</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/videos/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Videos</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/videos/adding-text-tracks-to-a-video.html">Adding Text Tracks</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/capturing-poster-and-thumbnail-images.html">Capturing Poster and Thumbnail Images</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/driving-video-views-email.html">Driving Video Views Through Email</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/editing-video-properties.html">Editing Video Properties</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/managing-videos.html">Managing Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/publishing-videos.html">Publishing Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/how-to-search-for-videos.html">Search for Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/uploading-poster-and-thumbnail-images.html">Uploading Poster and Thumbnail Images</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/uploading-videos.html">Uploading Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/working-with-shared-videos.html">Working with Shared Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/dashboard/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Reviewing the Dashboard</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/dashboard/dashboard-overview.html">Dashboard Overview</a></li>
+                  
+                
+                  
+                    <li><a href="/dashboard/reviewing-adv-dashboard.html">Reviewing the Advanced Dashboard</a></li>
+                  
+                
+                  
+                    <li><a href="/dashboard/reviewing-basic-dashboard.html">Reviewing the Basic Dashboard</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Reviewing Analytics</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/analytics/how-vbs-calculated.html">How Video Benchmark Score is Calculated</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/using-hud.html">Using the Heads-Up Display Chrome Extension</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/admin/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Administering Accounts</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/admin/configuring-adobe-analytics-event-tracking.html">Configuring Adobe Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/configuring-google-analytics-event-tracking.html">Configuring Google Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/configuring-map-connections.html">Configuring MAP Connections</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-hubspot-client-side-api.html">Connecting to HubSpot (Client-Side APIs)</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-hubspot-rest-api.html">Connecting to HubSpot (REST APIs)</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-marketo-munchkin.html">Connecting to Marketo (Munchkin)</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-marketo-rest-api.html">Connecting to Marketo (REST APIs)</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-oracle-eloqua.html">Connecting to Oracle Eloqua</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-salesforce.html">Connecting to Salesforce</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-salesforce-object-pardot.html">Creating a Salesforce Object for Pardot</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms.html">Creating Lead Forms</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms-hubspot.html">Creating Lead Forms in HubSpot</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms-marketo.html">Creating Lead Forms in Marketo</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms-oracle-eloqua.html">Creating Lead Forms in Oracle Eloqua</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms-salesforce.html">Creating Lead Forms in Salesforce</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-account-information.html">Managing Account Information</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-account-settings.html">Managing Account Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-profile-information.html">Managing Profile Information</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-users.html">Managing Users</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/styling-players.html">Styling Players</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/reviewing-player-event-data-in-google-analytics.html">Reviewing Player Event Data in Google Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/viewing-billing-information.html">Viewing Billing Information</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Release Notes</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/2020.html">2020</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Support</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing the Brightcove System Status Page</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">Contact Sales</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
+<ul id="in_prod_nav" class="pager" style="display: none;">
+  <li><a href="#"><img src="/assets/images/feather/chevron-left.svg" alt="back"></a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;Beacon Documentation&nbsp;&nbsp;&nbsp;&nbsp;</li>
+  <li><a href="#"><img src="/assets/images/feather/chevron-right.svg" alt="forward"></a></li>
+</ul>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Page Contents</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="open in new tab" style="margin-top:4em;"></a>
+
+
+
+  
+    
+
+
+<article class="bcls-article">
+  <h1>Getting Started with the Audience Module</h1>
+  <summary>This topic provides an overview of the Audience module which is used to track video engagement.</summary>
+  <section class="bcls-section">
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="4582289844001">&nbsp;</div>
+    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+    <p>The Audience module is used to track video engagement data for videos that are viewed inside of an Audience-enabled Brightcove Player. Viewing data is stored in Video Cloud and can optionally be synchronized to popular marketing automation platforms such as Eloqua, Marketo, HubSpot and Salesforce.</p>
+    <p>To access the Audience module, login to Video Cloud and click <strong>Audience</strong> in the navigation header. The Audience homepage displays video engagement data which provides insights into how long videos were watched, which videos were watched, and who watched them. This allows you to better engage and convert your audiences.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-audience-ui.png" /></figure>
+    <p>The homepage provides the ability to:</p>
+    <ul>
+      <li><a href="#performance">View video performance</a></li>
+      <li><a href="#leads">View leads performance</a></li>
+      <li><a href="#status">View the Audience module status</a></li>
+    </ul>
+    <p>The Audience module provides the ability to:</p>
+    <ul>
+      <li><a href="#connections">Setup data connections</a></li>
+      <li><a href="#players">Create Audience players</a></li>
+      <li><a href="#leadforms">Create and manage lead forms</a></li>
+      <li><a href="#email">Publish to Email </a></li>
+      <li><a href="#events">View player events</a></li>
+      <li><a href="#profiles">View viewer profiles</a></li>
+      <li><a href="#jobs">View synchronization activity</a></li>
+      <li><a href="#settings">Configure Audience settings</a></li>
+      <li><a href="#export">Export Audience data</a></li>
+      <li><a href="#gallery_leads">Export Gallery leads</a></li>
+      <li><a href="#manage">Manage viewer data</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="performance">Viewing video performance</h2>
+    <p>The video performance section provides high level video performance for videos that were played inside of Audience-enabled players.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The Audience analytics system is separate from the general Video Cloud analytics system, and the two track data differently. Therefore you will see differences in some metrics if you compare the two. For example, the Video Cloud analytics system counts views as soon as a video starts, while the Audience analytics system does not count views until 10 seconds into the video. So if 14 viewers start the video, but 6 of them stop it before 10 seconds have played, Video Cloud analytics would show 14 views, while the Audience module would show 8.</aside>
+    <p>Start by selecting a <strong>Time Period</strong> for the charts. The following options are available:</p>
+    <ul>
+      <li>7 Days</li>
+      <li>30 Days</li>
+      <li>90 Days</li>
+    </ul>
+    <p>The following charts are displayed:</p>
+    <ul>
+      <li><a href="#viewed">Most Viewed Videos</a></li>
+      <li><a href="#engage">Most Engaging Videos</a></li>
+      <li><a href="#trends">Viewer Trends</a></li>
+    </ul>
+    <div id="viewed" class="BCL-subsection">
+      <h3>Most Viewed Videos</h3>
+      <p>The Most Viewed Videos chart displays the most viewed videos in Audience-enabled players for the selected time period.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-most-viewed.png" /></figure>
+    </div>
+    <div id="engage" class="BCL-subsection">
+      <h3>Most Engaging Videos</h3>
+      <p>The Most Engaging Videos chart displays the most engaging videos in Audience-enabled players for the selected time period. Engagement is the average percent watched. For details on how we calculate video engagement, watch the training video <a href="https://studio.support.brightcove.com/analytics/calculating-video-engagement-score.html">Calculating Video Engagement Score</a>.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-most-engaging.png" /></figure>
+    </div>
+    <div id="trends" class="BCL-subsection">
+      <h3>Viewer Trends</h3>
+      <p>The Viewer Trends chart displays video views over time for the selected time period. Views from both known and anonymous viewers are displayed. Hovering over the graph will display the actual data points.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-viewer-trends.png" /></figure>
+      <aside class="bcls-aside bcls-aside--information">Note: When using a Marketo Munchkin connection, the Viewer Trends graph will only show data for Unknown Viewers. When using a Munchkin connection, user details are not collected. For more detailed user information, the Marketo REST connection should be used. For information, see <a href="/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">Integrating Video Cloud with Marketo Using the REST APIs</a>.</aside>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="leads">Viewing leads performance</h2>
+    <p>To view the leads information, click the <strong>Leads</strong> tab. Note that the Leads tab will only appear if your account has Audience lead forms created. The leads performance section provides high level leads performance for videos that were played inside of Audience-enabled players. Start by selecting a <strong>Time Period</strong> for the charts. The following options are available:</p>
+    <ul>
+      <li>7 Days</li>
+      <li>30 Days</li>
+      <li>90 Days</li>
+    </ul>
+    <p>The following charts are displayed:</p>
+    <ul>
+      <li><a href="#funnel">Audience Funnel</a></li>
+      <li><a href="#top">Top Converting Videos</a></li>
+      <li><a href="#leads">Leads Chart</a></li>
+    </ul>
+    <div id="funnel" class="BCL-subsection">
+      <h3>Audience Funnel</h3>
+      <p>The Audience Funnel displays metrics for videos in Audience-enabled players with Audience lead forms for the selected time period:</p>
+      <ul>
+        <li><strong>Video impressions</strong> - The number of videos that were loaded</li>
+        <li><strong>Video views</strong> - The number of times a video started playing, recorded when the stream is started (does not include rewind or replay); it is not a measure of individual viewers</li>
+        <li><strong>Lead form views</strong> - The total number of lead form views</li>
+        <li><strong>Conversions</strong> - The total number of lead forms that were submitted</li>
+      </ul>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-funnel.png" /></figure>
+    </div>
+    <div id="top" class="BCL-subsection">
+      <h3>Top Converting Videos</h3>
+      <p>The Top Converting Videos chart displays the videos with the highest conversion rate. The conversion rate is calculated by dividing the number of submitted lead forms divided by video impressions.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-top-conv.png" /></figure>
+    </div>
+    <div id="leads_chart" class="BCL-subsection">
+      <h3>Leads Chart</h3>
+      <p>The Leads Chart displays the number of submitted lead forms by day for the selected time period. Hovering over the graph will display the actual data points.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-leads-chart.png" /></figure>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="status">Viewing the Audience module status</h2>
+    <p>The Audience Status section displays the current status of the Audience module.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-audience-status.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="connections">Setting up data connections</h2>
+    <p>The <strong>Data Connections</strong> option is where you configure the Audience integrations. Audience can integrate with popular marketing automation platforms ("MAP&nbsp;integration") or the viewing data can be saved locally and then exported or extracted using the Audience API ("non-MAP" integration). The following table outlines the supported integrations.</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th width="300">MAP Integrations</th>
+          <th width="300">Non-MAP Integrations</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><ul>
+              <li><a href="/integrations/eloqua/integrating-video-cloud-oracle-eloqua.html">Oracle Eloqua</a></li>
+              <li><a href="/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">Marketo (REST APIs)</a></li>
+              <li><a href="/integrations/marketo/integrating-video-cloud-marketo-using-munchkin.html">Marketo (Munchkin)</a></li>
+              <li><a href="/integrations/salesforce/integrating-video-cloud-salesforce.html">Salesforce</a></li>
+              <li><a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">HubSpot (REST APIs)</a></li>
+              <li><a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-client-side-apis.html">HubSpot (Client-Side APIs)</a></li>
+            </ul></td>
+          <td><ul>
+              <li><a href="/integrations/non-map/creating-custom-integrations-audience-module.html">Custom integrations</a></li>
+              <li><a href="/integrations/non-map/integrating-audience-single-sign.html">Single sign-on</a></li>
+              <li><a href="/integrations/non-map/using-audience-module-track-viewers.html">Audience Tracking</a></li>
+            </ul></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>When publishing Audience-enabled players, use the Advanced Embed (in-page) publishing code. The Standard Embed (iframe) publishing code will not work as the Audience plugin will be running inside of an iframe and therefore will be unable to access any parent page URL parameters and may not get the correct cookies.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: The number of connections that can be configured is based upon your Video Cloud subscription.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="players">Creating Audience players</h2>
+    <p>The <strong>Audience Players</strong> option allows you to create Audience-enabled Brightcove Players. Video engagement data will only be recorded when video content is viewed inside of an Audience-enabled video player. For information on creating Audience-enabled players, see <a href="/general/creating-audience-enabled-player.html">Creating an Audience-enabled Player</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="leadforms">Creating and managing lead forms</h2>
+    <p>The <strong>Lead Forms</strong> option allows you to create lead forms for data capture. Once a lead form is created, it can be associated with an Audience-enabled player. For information on creating lead forms, see <a href="/general/creating-audience-lead-form.html">Creating an Audience&nbsp;Lead Form</a>. It is also possible to create and use lead forms that are created inside of a third-party marketing automation platform.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="email">Publishing a video to email</h2>
+    <p>The <strong>Publish to Email</strong> option allows you to select a player, video and then generate the HTML embed code to email the video. For information, see <a href="/general/publishing-video-email-using-audience-module.html">Publishing a Video to Email using the Audience Module</a>.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: The Media module also provides the ability to publish a video to email. For information, see <a href="https://studio.support.brightcove.com/publish/publishing-video-email.html">Publishing a Video to Email</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="events">Viewing player events</h2>
+    <p>The <strong>All Recent Activity</strong> option allows you to view the player view events that were recorded for the past 24 hours. For information, see <a href="/general/viewing-player-events-audience-module.html">Viewing Player Events in the Audience Module</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="videoactivity">Viewing video activity</h2>
+    <p>The <strong>Video (non-MAP)</strong> option allows you to view the viewing activity for a video. For information, see <a href="/general/viewing-video-activity.html">Viewing Video Activity</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="profiles">Viewing viewer profiles</h2>
+    <p>The <strong>Viewer Profile (non-MAP)</strong> option allows you to view the player view events by viewer. This option is enabled when using SSO or custom integrations, or Audience Tracking. For information, see <a href="/general/viewing-viewer-profile-information.html">Viewing Viewer Profile Information</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="jobs">Viewing synchronization activity</h2>
+    <p>The <strong>Synchronization Activity</strong> option displays the last 10 jobs that were synchronized from Audience to a marketing automation platform. Synchronization runs on an hourly basis. Select a connection and then click the <strong>Test Sync</strong> button to run a synchronization. This is helpful when testing new integrations to avoid having to wait to see if event data is being sent to your marketing automation platform. Test Sync can be executed once every 5 minutes up to 10 times per hour.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: When using custom integrations, no synchronization jobs are created. Synchronization jobs are created only when using integrations with a marketing automation platform.</aside>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/module/getting-started/node15634-jobs.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="settings">Configuring Audience settings</h2>
+    <p>The <strong>Settings</strong> option allows you to configure some default settings for the account. For information, see <a href="/general/configuring-audience-settings.html">Configuring Audience Settings</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="export">Exporting Audience data</h2>
+    <p>The <strong>Export Audience Data</strong> option is used to export view event and lead form data. This option will only appear for account administrators. For information on exporting Audience data, see <a href="/admin/exporting-audience-data-audience-module.html">Exporting Audience Data from the Audience Module</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="gallery_leads">Exporting Gallery leads</h2>
+    <p>The <strong>Export Gallery Leads</strong> option is used to export lead form data that was captured from Gallery experiences. This option will only appear for account administrators. For information on exporting Gallery lead data, see <a href="https://gallery.support.brightcove.com/experiences/portal/exporting-gallery-lead-data.html">Exporting Gallery Lead Data</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="manage">Managing viewer data</h2>
+    <p>The <strong>Manage Viewer Data</strong> option allows you to search for a user and then either remove that user or export that user's data. This option will only appear for account administrators. For information on managing viewer data, see <a href="/admin/managing-viewer-data.html">Managing Viewer Data</a>.</p>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 20 May 2021
+</div>
+
+
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">Register for a course</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Brightcove University</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin" style="margin-right: 1rem;"><i data-feather="linkedin" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter" style="margin-right: 1rem;"><i data-feather="twitter" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i data-feather="facebook" style="color:#8E9093;height: 1.25rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+	<script>
+  feather.replace()
+	</script>
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>

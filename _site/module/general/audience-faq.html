@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>Brightcove Audience FAQ</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2728311-17"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2728311-17');
+</script>
+  <script src="/assets/js/sajari-head.js"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/SVG/campaign-logo.svg" alt="Brightcove"></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><i data-feather="help-circle"></i> Contact Support</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><i data-feather="cloud"></i> System Status</a></span>
+    <br>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/module/general/">General Information</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Brightcove Audience FAQ</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+				<select id="site_select" class="bcls-select" style="margin-left: 1rem;">
+					<option value="">Other Brightcove Docs</option>
+					
+						
+							<option value="https://support.brightcove.com">Documentation Home</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD --</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
+						
+					
+						
+							<option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
+						
+					
+						
+							<option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
+						
+					
+						
+							<option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
+						
+					
+						
+							<option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
+						
+					
+						
+							<option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
+						
+					
+						
+							<option value="">-- VIDEO ESSENTIALS --</option>
+						
+					
+						
+							<option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon</option>
+						
+					
+						
+							<option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
+						
+					
+						
+							<option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD ADD-ONS --</option>
+						
+					
+						
+							<option value="https://audience.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience</option>
+						
+					
+						
+							<option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
+						
+					
+						
+							<option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
+						
+					
+						
+							<option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
+						
+					
+						
+							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+						
+					
+						
+							<option value="https://social.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+						
+					
+				</select>
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Getting Started</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/brightcove-campaign-training-videos.html">Campaign Training Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-campaign.html">Getting Started with Brightcove Campaign</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-campaign-trial.html">Getting Started with your Brightcove Campaign Trial</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-video-content-types.html">Overview of Video Content Types</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/uploading-publishing-your-first-video.html">Uploading and Publishing Your First Video</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/videos/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Videos</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/videos/adding-text-tracks-to-a-video.html">Adding Text Tracks</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/capturing-poster-and-thumbnail-images.html">Capturing Poster and Thumbnail Images</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/driving-video-views-email.html">Driving Video Views Through Email</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/editing-video-properties.html">Editing Video Properties</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/managing-videos.html">Managing Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/publishing-videos.html">Publishing Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/how-to-search-for-videos.html">Search for Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/uploading-poster-and-thumbnail-images.html">Uploading Poster and Thumbnail Images</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/uploading-videos.html">Uploading Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/working-with-shared-videos.html">Working with Shared Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/dashboard/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Reviewing the Dashboard</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/dashboard/dashboard-overview.html">Dashboard Overview</a></li>
+                  
+                
+                  
+                    <li><a href="/dashboard/reviewing-adv-dashboard.html">Reviewing the Advanced Dashboard</a></li>
+                  
+                
+                  
+                    <li><a href="/dashboard/reviewing-basic-dashboard.html">Reviewing the Basic Dashboard</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Reviewing Analytics</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/analytics/how-vbs-calculated.html">How Video Benchmark Score is Calculated</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/using-hud.html">Using the Heads-Up Display Chrome Extension</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/admin/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Administering Accounts</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/admin/configuring-adobe-analytics-event-tracking.html">Configuring Adobe Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/configuring-google-analytics-event-tracking.html">Configuring Google Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/configuring-map-connections.html">Configuring MAP Connections</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-hubspot-client-side-api.html">Connecting to HubSpot (Client-Side APIs)</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-hubspot-rest-api.html">Connecting to HubSpot (REST APIs)</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-marketo-munchkin.html">Connecting to Marketo (Munchkin)</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-marketo-rest-api.html">Connecting to Marketo (REST APIs)</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-oracle-eloqua.html">Connecting to Oracle Eloqua</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/connecting-to-salesforce.html">Connecting to Salesforce</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-salesforce-object-pardot.html">Creating a Salesforce Object for Pardot</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms.html">Creating Lead Forms</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms-hubspot.html">Creating Lead Forms in HubSpot</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms-marketo.html">Creating Lead Forms in Marketo</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms-oracle-eloqua.html">Creating Lead Forms in Oracle Eloqua</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-lead-forms-salesforce.html">Creating Lead Forms in Salesforce</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-account-information.html">Managing Account Information</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-account-settings.html">Managing Account Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-profile-information.html">Managing Profile Information</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-users.html">Managing Users</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/styling-players.html">Styling Players</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/reviewing-player-event-data-in-google-analytics.html">Reviewing Player Event Data in Google Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/viewing-billing-information.html">Viewing Billing Information</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Release Notes</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/2020.html">2020</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Support</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing the Brightcove System Status Page</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">Contact Sales</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
+<ul id="in_prod_nav" class="pager" style="display: none;">
+  <li><a href="#"><img src="/assets/images/feather/chevron-left.svg" alt="back"></a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;Beacon Documentation&nbsp;&nbsp;&nbsp;&nbsp;</li>
+  <li><a href="#"><img src="/assets/images/feather/chevron-right.svg" alt="forward"></a></li>
+</ul>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Page Contents</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="open in new tab" style="margin-top:4em;"></a>
+
+
+
+  
+    
+
+
+<article class="bcls-article">
+  <h1>Brightcove Audience FAQ</h1>
+  <summary>This topic contains some of the common questions asked about Brightcove Audience.</summary>
+  <section class="bcls-section" id="why-how">
+    <h2>Why Audience & How it Works</h2>
+    <dl>
+      <dt class="bcls-question language-editable">Why do I need to track video in my marketing automation solution?</dt>
+      <dd class="bcls-answer language-editable">Marketing automation solutions do not track video today. If you are investing in video as a powerful piece of content, you should make sure you are tracking its effectiveness and automating communications with leads/users who view your content. </dd>
+      <dt class="bcls-question language-editable">Does Brightcove and the Audience module make use of any cookies?</dt>
+      <dd class="bcls-answer language-editable">The Audience module creates and uses a 3rd party cookie to identify users when an integration is in place.  This way, viewers don't get asked to fill out a lead form a second time. The module also makes use of Marketo, HubSpot, and Eloqua APIs, which themselves use cookies to track viewers.  When using Audience Profiles, a Brightcove cookie is used.</dd>
+      <dt class="bcls-question language-editable">Is Brightcove Audience enabled for all customers?</dt>
+      <dd class="bcls-answer language-editable">No. Audience is available as a purchasable add-on to Video Marketing Suite (VMS).  Audience Profiles, however, is available to every Brightcove customer for free.  You can think of it as &quot;Audience-lite&quot;.</dd>
+      <dt class="bcls-question language-editable">Who is eligible for Audience Profiles.</dt>
+      <dd class="bcls-answer language-editable">Starting in Q4 2017, every VMS customer will have access to Audience Profiles at no cost. <a href="https://audience.support.brightcove.com/integrations/non-map/using-audience-module-track-viewers.html">Customers will need to activate it to start tracking data</a>.  Enterprise Video Suite (EVS) customers will also have Audience SSO tracking available.</dd>
+    </dl>
+  </section>
+  <section class="bcls-section" id="tracking-limitations">
+    <h2>Viewer Tracking & Limitations</h2>
+    <dl>
+      <dt class="bcls-question language-editable">What limitations does Audience Profiles have compared to the full-featured Audience module?</dt>
+      <dd class="bcls-answer language-editable">
+        <ul>
+          <li>No integrations with any third party systems</li>
+          <li>No API access</li>
+          <li>No custom lead forms (Audience lead forms only)</li>
+          <li>1000 views/24 hour period capture maximum</li>
+        </ul>
+        You can still manually export Audience data to a CSV or XLS file.</dd>
+      <dt class="bcls-question language-editable">What limitations/requirements does Audience have when connected to a marketing automation platform?</dt>
+      <dd class="bcls-answer language-editable">Limitations and requirements are outlined in the documentation for each platform:
+        <ul>
+          <li><a href="/integrations/eloqua/integrating-video-cloud-oracle-eloqua.html">Oracle Eloqua</a></li>
+          <li>HubSpot (<a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-client-side-apis.html">Client-Side APIs</a> or <a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">REST APIs</a>)</li>
+          <li>Marketo (<a href="/integrations/marketo/integrating-video-cloud-marketo-using-munchkin.html">Munchkin</a> or <a href="/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">REST APIs</a>)</li>
+          <li><a href="/integrations/salesforce/integrating-video-cloud-salesforce.html">Salesforce</a></li>
+        </ul>
+      </dd>
+      <dt class="bcls-question language-editable">Are there any limits on how often the Audience API can be polled? I know there's a 1000 cap on video search results, but are there other frequency related caps to that API endpoint? </dt>
+      <dd class="bcls-answer language-editable">The max # of view events per API call is actually 100. There's no rate-limiting in place, but if you try to call it too much, it will probably slow down  a bit.</dd>
+      <dt class="bcls-question language-editable">Is there any way to get Audience data faster than the 3 hour delay that is currently present? I'd like to get &quot;close to real-time&quot; metrics.</dt>
+      <dd class="bcls-answer language-editable">No. If you want real-time metrics, you'd need to write your own plugin and send data to your own system.</dd>
+      <dt class="bcls-question language-editable">What is the trigger for an event view to be sent to Audience? Is it when the video completes, when the player window is closed, or something else? What happens if the user never completes the video and doesn't close their player window?</dt>
+      <dd class="bcls-answer language-editable">It varies, but, basically, the Audience plugin sends a heartbeat back to the server every 10 seconds.</dd>
+      <dt class="bcls-question language-editable">When does Audience consider tracking on a view to be "completed"? Is it when the player window is closed or if they complete the video? What happens if they watch partway through, pause the video and never close the player window?</dt>
+      <dd class="bcls-answer language-editable">It is when 15 minutes have passed since we last saw a heartbeat, basically lack of activity.</dd>
+      <dt class="bcls-question language-editable">Is it possible for viewer data to change once it's available in the Audience viewing data? Will that event data ever be updated in the future by some kind of log consolidation? </dt>
+      <dd class="bcls-answer language-editable">Once the data is available in Audience via the UI or API, it's considered &quot;settled&quot;, and it's not going to change.</dd>
+    </dl>
+  </section>
+  <section class="bcls-section" id="data-protection">
+    <h2>Data protection & record retention</h2>
+    <dl>
+      <dt class="bcls-question language-editable">Is Audience GDPR compliant?</dt>
+      <dd class="bcls-answer language-editable">
+        <p>Yes, Audience gives customers the ability to act on behalf of their users, looking up and purging any data they've collected via Audience. </p>
+        <p><a href="https://audience.support.brightcove.com/admin/managing-viewer-data.html">https://audience.support.brightcove.com/admin/managing-viewer-data.html</a></p>
+      </dd>
+      <dt class="bcls-question language-editable">How long can data be retained in Audience?</dt>
+      <dd class="bcls-answer language-editable">MAP integrations can be set to a maximum of 6 months, and non-MAP integrations can be set to 3 years. </dd>
+      <dt class="bcls-question language-editable">How long are GUID lookups cached?</dt>
+      <dd class="bcls-answer language-editable">30 days for known and 7 days for unknown (only applies to MAP integrations, no lookups needed for non-MAP integrations)</dd>
+    </dl>
+  </section>
+  <section id="marketing-automation" class="bcls-section">
+    <h2>Marketing automation & viewer analytics</h2>
+    <dl>
+      <dt class="bcls-question language-editable">What is different about tracking video from any other media in my marketing automation platform?</dt>
+      <dd class="bcls-answer language-editable">As opposed to a web page or downloadable white paper, with a video, you can determine exactly how much of the video the viewer watched and, therefore, exactly what content they have been exposed to. </dd>
+      <dt class="bcls-question language-editable">How do you connect with my Eloqua/Marketo/HubSpot account?</dt>
+      <dd class="bcls-answer language-editable">You are able to log into your Eloqua/Marketo/HubSpot account directly through the Video Marketing Suite in the Audience module. From there, you are able to create players and lead forms with MAP tracking built-in, so you can start tracking video analytics immediately.</dd>
+      <dt class="bcls-question language-editable">Can I track views on my Eloqua/Marketo/HubSpot pages as well as my non-Eloqua/Marketo/HubSpot landing pages (Sitecore/WordPress/Gallery etc)? </dt>
+      <dd class="bcls-answer language-editable">Yes, as long as the player being used is “Audience enabled” (has the Audience plugin installed), all views will be tracked whether the player resides on a MAP landing page or any other landing page.</dd>
+      <dt class="bcls-question language-editable">What can I track with this integration?</dt>
+      <dd class="bcls-answer language-editable">With our integration, you can track video viewing analytics (video, video ID, percent viewed, time watched) for known contacts already in your database.</dd>
+      <dt class="bcls-question language-editable">What about unknown contacts?  Can I track them too?</dt>
+      <dd class="bcls-answer language-editable">With Brightcove Audience, you can track unknown contacts, and then when they submit an Eloqua/HubSpot form (become known), Audience is able to associate their viewership information with that new contact retroactively. Audience resubmits viewership information daily to match view data from unknown contacts back to your Oracle Eloqua/HubSpot instance. </dd>
+      <dt class="bcls-question language-editable">Where will my video-view data show up in my MAP?</dt>
+      <dd class="bcls-answer language-editable">This depends on which MAP you are using.  See the following documentation for <a href="https://audience.support.brightcove.com/integrations/eloqua/eloqua-integration-testing-guide.html">Oracle Eloqua</a>, <a href="https://audience.support.brightcove.com/integrations/marketo/marketo-rest-integration-testing-guide.html">Marketo</a> and <a href="https://audience.support.brightcove.com/integrations/hubspot/hubspot-rest-api-integration-testing-guide.html">HubSpot</a>.</dd>
+      <dt class="bcls-question language-editable">Where in Salesforce will my video viewing data show up?</dt>
+      <dd class="bcls-answer language-editable">Video views are delivered into Salesforce as a task under the viewer's contact in the Activity section. See <a href="https://audience.support.brightcove.com/integrations/salesforce/integrating-video-cloud-salesforce.html#sfdata">Viewing video data in Salesforce</a> for an example of this. </dd>
+      <dt class="bcls-question language-editable">Can I be notified with Salesforce when one of my contacts has watched videos?</dt>
+      <dd class="bcls-answer language-editable">Not directly.  However, you can run reports that would notify you of a contact's activity.</dd>
+      <dt class="bcls-question language-editable">Is there any difference between tracking with Salesforce vs. Oracle Eloqua/Marketo?</dt>
+      <dd class="bcls-answer language-editable">The biggest difference is that Salesforce does not use cookies to track users.  Therefore, a unique identifier should be passed to identify the viewer.  See <a href="https://audience.support.brightcove.com/integrations/salesforce/integrating-video-cloud-salesforce.html#identify">this document</a> for more info.  Additionally, Salesforce, being a CRM, does not offer automated follow-ups or lead scoring.  However, you can create tasks in Salesforce, which are then assigned to your sales team for real-life follow-ups.</dd>
+      <dt class="bcls-question language-editable">Audience has a “Custom” integration option, what other platforms can Audience integrate with using this?</dt>
+      <dd class="bcls-answer language-editable">
+        <p>Audience can “integrate” with any data platform that:</p>
+        <ol>
+          <li>Uses a unique identifier for each contact record</li>
+          <li>Has an API that can receive additional data from third-party platforms (like Audience)</li>
+        </ol>
+      </dd>
+    </dl>
+  </section>
+  <section id="lead-forms" class="bcls-section">
+    <h2>Player Lead Forms</h2>
+    <dl>
+      <dt class="bcls-question language-editable">When does Audience display a lead form?</dt>
+      <dd class="bcls-answer language-editable">The default setting only displays the lead form to an unknown user in your MAP database (the ones you want to convert into a known user).  You can override this in the settings if you choose to always display the lead form.  This is most useful for testing.  Known users are automatically tracked, and that data is associated with the contact in your MAP without the need to display a form.</dd>
+      <dt class="bcls-question language-editable">Can I customize lead forms?</dt>
+      <dd class="bcls-answer language-editable">You can adjust the text and fields displayed using the  UI.  You can not modify it beyond what is available in the UI (Gallery can update some styling to make the forms match the site) </dd>
+    </dl>
+  </section>
+  <section id="general" class="bcls-section">
+    <h2>General topics</h2>
+    <dl>
+      <dt class="bcls-question language-editable">Which embed code should I use? Iframe or in-page?</dt>
+      <dd class="bcls-answer language-editable">For Audience to work, it is required that the Advanced embed code is used.  If the Standard (iframe) embed code is used, then the player is isolated from the page, which means the Audience plugin cannot see the unique identifier, and thus, all users will be seen as “unknown”.</dd>
+      <dt class="bcls-question language-editable">What is marketing automation?</dt>
+      <dd class="bcls-answer language-editable">Marketing automation is a technology that tracks lead/user interaction with different online marketing channels (email, web, forms, content, video, social, etc.). Marketing automation helps marketers market more effectively across these channels and automates repetitive marketing tasks (such as email communications). Marketing automation allows the marketer to set up automated and personalized tasks based on predefined variables. 
+        For example, if a user watches 75% of a specific video, send them an email on that specific subject, but if they only watch 12%, send them something else. </dd>
+      <dt class="bcls-question language-editable">Is Brightcove a marketing automation company?</dt>
+      <dd class="bcls-answer language-editable">No, Brightcove provides a complete solution for video marketing. With our solution, you can get your videos online, organize your content, create players, create video portals, track analytics, and integrate with your own existing marketing automation platform. Brightcove integrates video analytics into marketing automation platforms.</dd>
+      <dt class="bcls-question language-editable">How can I check to see if a Marketo custom activity is set up correctly?</dt>
+      <dd class="bcls-answer language-editable">Audience has a hidden URL which offers some debugging tools for certain kinds of integrations, Marketo REST being one. <a href="https://studio.brightcove.com/products/videocloud/audience/debug">https://studio.brightcove.com/products/videocloud/audience/debug</a>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="audience settings " src="/assets/images/module/general/faq-debug.png" /></figure>
+      </dd>
+      <dt class="bcls-question language-editable">What needs to be done to configure a custom integration?</dt>
+      <dd class="bcls-answer language-editable">Three things need to be done:
+        <ol>
+          <li>You need to expose a unique identifier in the URL or code of the page that Audience can capture.</li>
+          <li> Create a script that makes use of the Audience API's to retrieve the data as a JSON file (Brightcove Global Services can help with this).</li>
+          <li> Map the data to fields  in your destination database (think spreadsheet merge).</li>
+        </ol>
+        The following support documentation covers these tasks:
+        <ul>
+          <li><a href="https://audience.support.brightcove.com/integrations/non-map/creating-custom-integrations-audience-module.html">Creating Custom Integrations with the Audience Module</a> - Covers how to provide a unique identifier that Audience can capture</li>
+          <li> <a href="https://audience.support.brightcove.com/develop/overview-audience-api.html">Audience API</a> -  Covers how to programmatically retrieve all the data as a JSON file which you can then import into your data processing system of choice</li>
+        </ul>
+      </dd>
+      <dt class="bcls-question language-editable">How does Audience push CDO data to Eloqua?</dt>
+      <dd class="bcls-answer language-editable">We use the custom object bulk API. <a href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAC/api-bulk-2.0-customobjects.html">https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAC/api-bulk-2.0-customobjects.html </a></dd>
+      <dt class="bcls-question language-editable">How does Audience push the external asset activity? How can I control the Campaign, External Asset, and Activity Types used?</dt>
+      <dd class="bcls-answer language-editable">We using the external activity API (<a href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAC/op-api-rest-2.0-data-activity-post.html">https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAC/op-api-rest-2.0-data-activity-post.html</a>). There's no control over the name of the campaign, asset name or type. We simply create a campaign on our own (named BrightcoveVideoPlay) and then proceed to create activities, also named BrightcoveVideoPlay. </dd>
+      <dt class="bcls-question language-editable">What IP addresses can I whitelist so that Audience can talk to service X?</dt>
+      <dd class="bcls-answer language-editable">Audience has established a set of IP addresses that should be used for IP whitelisting. To see the list, edit an Eloqua connection and click the <a ng-click="showInfo()" ng-if="::!ctrl.hideWhitelistInfo && ctrl.isEloqua(ctrl.integration)" context="troubleSeeing"><strong>Unable to see Audience data in Eloqua?</strong></a> link to see the list of IP addresses.</dd>
+    </dl>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 20 May 2021
+</div>
+
+
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">Register for a course</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Brightcove University</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin" style="margin-right: 1rem;"><i data-feather="linkedin" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter" style="margin-right: 1rem;"><i data-feather="twitter" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i data-feather="facebook" style="color:#8E9093;height: 1.25rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+	<script>
+  feather.replace()
+	</script>
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>

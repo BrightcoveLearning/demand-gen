@@ -1,0 +1,143 @@
+---
+title: Brightcove Audience FAQ
+parent: General Information
+---
+<article class="bcls-article">
+  <h1>Brightcove Audience FAQ</h1>
+  <summary>This topic contains some of the common questions asked about Brightcove Audience.</summary>
+  <section class="bcls-section" id="why-how">
+    <h2>Why Audience & How it Works</h2>
+    <dl>
+      <dt class="bcls-question language-editable">Why do I need to track video in my marketing automation solution?</dt>
+      <dd class="bcls-answer language-editable">Marketing automation solutions do not track video today. If you are investing in video as a powerful piece of content, you should make sure you are tracking its effectiveness and automating communications with leads/users who view your content. </dd>
+      <dt class="bcls-question language-editable">Does Brightcove and the Audience module make use of any cookies?</dt>
+      <dd class="bcls-answer language-editable">The Audience module creates and uses a 3rd party cookie to identify users when an integration is in place.  This way, viewers don't get asked to fill out a lead form a second time. The module also makes use of Marketo, HubSpot, and Eloqua APIs, which themselves use cookies to track viewers.  When using Audience Profiles, a Brightcove cookie is used.</dd>
+      <dt class="bcls-question language-editable">Is Brightcove Audience enabled for all customers?</dt>
+      <dd class="bcls-answer language-editable">No. Audience is available as a purchasable add-on to Video Marketing Suite (VMS).  Audience Profiles, however, is available to every Brightcove customer for free.  You can think of it as &quot;Audience-lite&quot;.</dd>
+      <dt class="bcls-question language-editable">Who is eligible for Audience Profiles.</dt>
+      <dd class="bcls-answer language-editable">Starting in Q4 2017, every VMS customer will have access to Audience Profiles at no cost. <a href="https://audience.support.brightcove.com/integrations/non-map/using-audience-module-track-viewers.html">Customers will need to activate it to start tracking data</a>.  Enterprise Video Suite (EVS) customers will also have Audience SSO tracking available.</dd>
+    </dl>
+  </section>
+  <section class="bcls-section" id="tracking-limitations">
+    <h2>Viewer Tracking & Limitations</h2>
+    <dl>
+      <dt class="bcls-question language-editable">What limitations does Audience Profiles have compared to the full-featured Audience module?</dt>
+      <dd class="bcls-answer language-editable">
+        <ul>
+          <li>No integrations with any third party systems</li>
+          <li>No API access</li>
+          <li>No custom lead forms (Audience lead forms only)</li>
+          <li>1000 views/24 hour period capture maximum</li>
+        </ul>
+        You can still manually export Audience data to a CSV or XLS file.</dd>
+      <dt class="bcls-question language-editable">What limitations/requirements does Audience have when connected to a marketing automation platform?</dt>
+      <dd class="bcls-answer language-editable">Limitations and requirements are outlined in the documentation for each platform:
+        <ul>
+          <li><a href="/integrations/eloqua/integrating-video-cloud-oracle-eloqua.html">Oracle Eloqua</a></li>
+          <li>HubSpot (<a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-client-side-apis.html">Client-Side APIs</a> or <a href="/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">REST APIs</a>)</li>
+          <li>Marketo (<a href="/integrations/marketo/integrating-video-cloud-marketo-using-munchkin.html">Munchkin</a> or <a href="/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">REST APIs</a>)</li>
+          <li><a href="/integrations/salesforce/integrating-video-cloud-salesforce.html">Salesforce</a></li>
+        </ul>
+      </dd>
+      <dt class="bcls-question language-editable">Are there any limits on how often the Audience API can be polled? I know there's a 1000 cap on video search results, but are there other frequency related caps to that API endpoint? </dt>
+      <dd class="bcls-answer language-editable">The max # of view events per API call is actually 100. There's no rate-limiting in place, but if you try to call it too much, it will probably slow down  a bit.</dd>
+      <dt class="bcls-question language-editable">Is there any way to get Audience data faster than the 3 hour delay that is currently present? I'd like to get &quot;close to real-time&quot; metrics.</dt>
+      <dd class="bcls-answer language-editable">No. If you want real-time metrics, you'd need to write your own plugin and send data to your own system.</dd>
+      <dt class="bcls-question language-editable">What is the trigger for an event view to be sent to Audience? Is it when the video completes, when the player window is closed, or something else? What happens if the user never completes the video and doesn't close their player window?</dt>
+      <dd class="bcls-answer language-editable">It varies, but, basically, the Audience plugin sends a heartbeat back to the server every 10 seconds.</dd>
+      <dt class="bcls-question language-editable">When does Audience consider tracking on a view to be "completed"? Is it when the player window is closed or if they complete the video? What happens if they watch partway through, pause the video and never close the player window?</dt>
+      <dd class="bcls-answer language-editable">It is when 15 minutes have passed since we last saw a heartbeat, basically lack of activity.</dd>
+      <dt class="bcls-question language-editable">Is it possible for viewer data to change once it's available in the Audience viewing data? Will that event data ever be updated in the future by some kind of log consolidation? </dt>
+      <dd class="bcls-answer language-editable">Once the data is available in Audience via the UI or API, it's considered &quot;settled&quot;, and it's not going to change.</dd>
+    </dl>
+  </section>
+  <section class="bcls-section" id="data-protection">
+    <h2>Data protection & record retention</h2>
+    <dl>
+      <dt class="bcls-question language-editable">Is Audience GDPR compliant?</dt>
+      <dd class="bcls-answer language-editable">
+        <p>Yes, Audience gives customers the ability to act on behalf of their users, looking up and purging any data they've collected via Audience. </p>
+        <p><a href="https://audience.support.brightcove.com/admin/managing-viewer-data.html">https://audience.support.brightcove.com/admin/managing-viewer-data.html</a></p>
+      </dd>
+      <dt class="bcls-question language-editable">How long can data be retained in Audience?</dt>
+      <dd class="bcls-answer language-editable">MAP integrations can be set to a maximum of 6 months, and non-MAP integrations can be set to 3 years. </dd>
+      <dt class="bcls-question language-editable">How long are GUID lookups cached?</dt>
+      <dd class="bcls-answer language-editable">30 days for known and 7 days for unknown (only applies to MAP integrations, no lookups needed for non-MAP integrations)</dd>
+    </dl>
+  </section>
+  <section id="marketing-automation" class="bcls-section">
+    <h2>Marketing automation & viewer analytics</h2>
+    <dl>
+      <dt class="bcls-question language-editable">What is different about tracking video from any other media in my marketing automation platform?</dt>
+      <dd class="bcls-answer language-editable">As opposed to a web page or downloadable white paper, with a video, you can determine exactly how much of the video the viewer watched and, therefore, exactly what content they have been exposed to. </dd>
+      <dt class="bcls-question language-editable">How do you connect with my Eloqua/Marketo/HubSpot account?</dt>
+      <dd class="bcls-answer language-editable">You are able to log into your Eloqua/Marketo/HubSpot account directly through the Video Marketing Suite in the Audience module. From there, you are able to create players and lead forms with MAP tracking built-in, so you can start tracking video analytics immediately.</dd>
+      <dt class="bcls-question language-editable">Can I track views on my Eloqua/Marketo/HubSpot pages as well as my non-Eloqua/Marketo/HubSpot landing pages (Sitecore/WordPress/Gallery etc)? </dt>
+      <dd class="bcls-answer language-editable">Yes, as long as the player being used is “Audience enabled” (has the Audience plugin installed), all views will be tracked whether the player resides on a MAP landing page or any other landing page.</dd>
+      <dt class="bcls-question language-editable">What can I track with this integration?</dt>
+      <dd class="bcls-answer language-editable">With our integration, you can track video viewing analytics (video, video ID, percent viewed, time watched) for known contacts already in your database.</dd>
+      <dt class="bcls-question language-editable">What about unknown contacts?  Can I track them too?</dt>
+      <dd class="bcls-answer language-editable">With Brightcove Audience, you can track unknown contacts, and then when they submit an Eloqua/HubSpot form (become known), Audience is able to associate their viewership information with that new contact retroactively. Audience resubmits viewership information daily to match view data from unknown contacts back to your Oracle Eloqua/HubSpot instance. </dd>
+      <dt class="bcls-question language-editable">Where will my video-view data show up in my MAP?</dt>
+      <dd class="bcls-answer language-editable">This depends on which MAP you are using.  See the following documentation for <a href="https://audience.support.brightcove.com/integrations/eloqua/eloqua-integration-testing-guide.html">Oracle Eloqua</a>, <a href="https://audience.support.brightcove.com/integrations/marketo/marketo-rest-integration-testing-guide.html">Marketo</a> and <a href="https://audience.support.brightcove.com/integrations/hubspot/hubspot-rest-api-integration-testing-guide.html">HubSpot</a>.</dd>
+      <dt class="bcls-question language-editable">Where in Salesforce will my video viewing data show up?</dt>
+      <dd class="bcls-answer language-editable">Video views are delivered into Salesforce as a task under the viewer's contact in the Activity section. See <a href="https://audience.support.brightcove.com/integrations/salesforce/integrating-video-cloud-salesforce.html#sfdata">Viewing video data in Salesforce</a> for an example of this. </dd>
+      <dt class="bcls-question language-editable">Can I be notified with Salesforce when one of my contacts has watched videos?</dt>
+      <dd class="bcls-answer language-editable">Not directly.  However, you can run reports that would notify you of a contact's activity.</dd>
+      <dt class="bcls-question language-editable">Is there any difference between tracking with Salesforce vs. Oracle Eloqua/Marketo?</dt>
+      <dd class="bcls-answer language-editable">The biggest difference is that Salesforce does not use cookies to track users.  Therefore, a unique identifier should be passed to identify the viewer.  See <a href="https://audience.support.brightcove.com/integrations/salesforce/integrating-video-cloud-salesforce.html#identify">this document</a> for more info.  Additionally, Salesforce, being a CRM, does not offer automated follow-ups or lead scoring.  However, you can create tasks in Salesforce, which are then assigned to your sales team for real-life follow-ups.</dd>
+      <dt class="bcls-question language-editable">Audience has a “Custom” integration option, what other platforms can Audience integrate with using this?</dt>
+      <dd class="bcls-answer language-editable">
+        <p>Audience can “integrate” with any data platform that:</p>
+        <ol>
+          <li>Uses a unique identifier for each contact record</li>
+          <li>Has an API that can receive additional data from third-party platforms (like Audience)</li>
+        </ol>
+      </dd>
+    </dl>
+  </section>
+  <section id="lead-forms" class="bcls-section">
+    <h2>Player Lead Forms</h2>
+    <dl>
+      <dt class="bcls-question language-editable">When does Audience display a lead form?</dt>
+      <dd class="bcls-answer language-editable">The default setting only displays the lead form to an unknown user in your MAP database (the ones you want to convert into a known user).  You can override this in the settings if you choose to always display the lead form.  This is most useful for testing.  Known users are automatically tracked, and that data is associated with the contact in your MAP without the need to display a form.</dd>
+      <dt class="bcls-question language-editable">Can I customize lead forms?</dt>
+      <dd class="bcls-answer language-editable">You can adjust the text and fields displayed using the  UI.  You can not modify it beyond what is available in the UI (Gallery can update some styling to make the forms match the site) </dd>
+    </dl>
+  </section>
+  <section id="general" class="bcls-section">
+    <h2>General topics</h2>
+    <dl>
+      <dt class="bcls-question language-editable">Which embed code should I use? Iframe or in-page?</dt>
+      <dd class="bcls-answer language-editable">For Audience to work, it is required that the Advanced embed code is used.  If the Standard (iframe) embed code is used, then the player is isolated from the page, which means the Audience plugin cannot see the unique identifier, and thus, all users will be seen as “unknown”.</dd>
+      <dt class="bcls-question language-editable">What is marketing automation?</dt>
+      <dd class="bcls-answer language-editable">Marketing automation is a technology that tracks lead/user interaction with different online marketing channels (email, web, forms, content, video, social, etc.). Marketing automation helps marketers market more effectively across these channels and automates repetitive marketing tasks (such as email communications). Marketing automation allows the marketer to set up automated and personalized tasks based on predefined variables. 
+        For example, if a user watches 75% of a specific video, send them an email on that specific subject, but if they only watch 12%, send them something else. </dd>
+      <dt class="bcls-question language-editable">Is Brightcove a marketing automation company?</dt>
+      <dd class="bcls-answer language-editable">No, Brightcove provides a complete solution for video marketing. With our solution, you can get your videos online, organize your content, create players, create video portals, track analytics, and integrate with your own existing marketing automation platform. Brightcove integrates video analytics into marketing automation platforms.</dd>
+      <dt class="bcls-question language-editable">How can I check to see if a Marketo custom activity is set up correctly?</dt>
+      <dd class="bcls-answer language-editable">Audience has a hidden URL which offers some debugging tools for certain kinds of integrations, Marketo REST being one. <a href="https://studio.brightcove.com/products/videocloud/audience/debug">https://studio.brightcove.com/products/videocloud/audience/debug</a>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="audience settings " src="/assets/images/module/general/faq-debug.png" /></figure>
+      </dd>
+      <dt class="bcls-question language-editable">What needs to be done to configure a custom integration?</dt>
+      <dd class="bcls-answer language-editable">Three things need to be done:
+        <ol>
+          <li>You need to expose a unique identifier in the URL or code of the page that Audience can capture.</li>
+          <li> Create a script that makes use of the Audience API's to retrieve the data as a JSON file (Brightcove Global Services can help with this).</li>
+          <li> Map the data to fields  in your destination database (think spreadsheet merge).</li>
+        </ol>
+        The following support documentation covers these tasks:
+        <ul>
+          <li><a href="https://audience.support.brightcove.com/integrations/non-map/creating-custom-integrations-audience-module.html">Creating Custom Integrations with the Audience Module</a> - Covers how to provide a unique identifier that Audience can capture</li>
+          <li> <a href="https://audience.support.brightcove.com/develop/overview-audience-api.html">Audience API</a> -  Covers how to programmatically retrieve all the data as a JSON file which you can then import into your data processing system of choice</li>
+        </ul>
+      </dd>
+      <dt class="bcls-question language-editable">How does Audience push CDO data to Eloqua?</dt>
+      <dd class="bcls-answer language-editable">We use the custom object bulk API. <a href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAC/api-bulk-2.0-customobjects.html">https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAC/api-bulk-2.0-customobjects.html </a></dd>
+      <dt class="bcls-question language-editable">How does Audience push the external asset activity? How can I control the Campaign, External Asset, and Activity Types used?</dt>
+      <dd class="bcls-answer language-editable">We using the external activity API (<a href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAC/op-api-rest-2.0-data-activity-post.html">https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAC/op-api-rest-2.0-data-activity-post.html</a>). There's no control over the name of the campaign, asset name or type. We simply create a campaign on our own (named BrightcoveVideoPlay) and then proceed to create activities, also named BrightcoveVideoPlay. </dd>
+      <dt class="bcls-question language-editable">What IP addresses can I whitelist so that Audience can talk to service X?</dt>
+      <dd class="bcls-answer language-editable">Audience has established a set of IP addresses that should be used for IP whitelisting. To see the list, edit an Eloqua connection and click the <a ng-click="showInfo()" ng-if="::!ctrl.hideWhitelistInfo && ctrl.isEloqua(ctrl.integration)" context="troubleSeeing"><strong>Unable to see Audience data in Eloqua?</strong></a> link to see the list of IP addresses.</dd>
+    </dl>
+  </section>
+</article>
