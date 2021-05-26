@@ -65,13 +65,13 @@ parent: Administering Accounts
       <li>Select <strong>Pardot</strong> for the integration type.</li>
       <li>Enter your <strong>Email</strong> and <strong>Password</strong> you use to login to Pardot.</li>
     </ol>
-    <h3 id="pardot-api-key">Get the Pardot API key</h3>
-    <p>To get the value for the API Key field, follow these steps.</p>
+    <h3 id="pardot-api-key">Get the Pardot Business Unit ID</h3>
+    <p>To get the value for the Pardot Business Unit ID field, follow these steps.</p>
     <ol  class="bcls-tasklist">
-      <li>Log in to Pardot.</li>
-      <li> Click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-gear-icon.png" />) and then <strong>Settings</strong>.</li>
-      <li> Click the <strong>My Profile</strong> link at the top of the page.</li>
-      <li> Copy the value in the <strong>API User Key</strong> field and paste it into the <strong>User Key</strong> field.</li>
+      <li>Login to your Salesforce account.</li>
+      <li> Click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-gear-icon.png" />) and then <strong>Setup</strong>.</li>
+      <li>In the left navigation, in the <strong>Quick Find</strong> box, search for <strong>Pardot</strong>, then click <strong>Pardot Account Setup</strong>.</li>
+      <li> Locate the <strong> Business Unit ID</strong> field. Enter the value into the <strong>Pardot Business Unit ID</strong> field in Audience.</li>
     </ol>
     <h3 id="tracking-ids">Get the tracking IDs</h3>
     <p>To get the value for the <strong>Tracking piAld</strong> and <strong>Tracking piCld</strong> fields, follow these steps.</p>
@@ -99,7 +99,6 @@ parent: Administering Accounts
     <ol class="bcls-tasklist-restart">
       <li>For the <strong>Mapping Type</strong>, select <strong>Advanced</strong>.</li>
       <li>In the <strong>Salesforce Object</strong> dropdown list, select a Salesforce object to map the video data to. Typically, when using the Pardot integration type, you will map the view fields to the <a href="/admin/creating-salesforce-object-pardot.html">Salesforce custom object</a> you created.
-        </p>
       </li>
       <li>Map the appropriate <strong>View Field</strong> to Salesforce fields. The following example shows the video fields being mapped to a custom object.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce advanced mapping" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>
