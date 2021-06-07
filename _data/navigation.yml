@@ -113,8 +113,8 @@
   name: Release Notes
   url: /release-notes/index.html
   docs:
-    - name: 2020
-      url: /release-notes/2020.html
+    - name: Brightcove Campaign Release Notes
+      url: /release-notes/campaign-release-notes.html
 - section: 
   name: Support
   url: /support/index.html
