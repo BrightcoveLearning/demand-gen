@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="In this topic you will learn how to create an Oracle Eloqua form that can be used to capture lead data during video playback.">
   
   <title>Creating Lead Forms in Oracle Eloqua</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -490,37 +490,6 @@ body {
 }
   </pre>
     </div>
-    <div class="BCL-subsection">
-      <h3>Advanced form styling example</h3>
-      <p>This example uses JavaScript to change the background color of the form to black and does some basic field formatting. The form will appear as follows:</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="eloqua styled form advanced" src="/assets/images/admin/eloqua-form-adv-styling.png" /></figure>
-      <p>For this styling, add the following JavaScript to the bottom of the form HTML.</p>
-      <pre>
-
-&lt;script&gt;
-  var labels = document.getElementsByClassName('elq-label'),
-      eForm = document.querySelector('form.elq-form'),
-      submitButton = document.getElementsByClassName('submit-button-style')[0],
-      // titleLable = document.querySelector('label.label'),
-      firstName = document.getElementsByName('firstName')[0],
-      lastName = document.getElementsByName('lastName')[0],
-      emailAddress = document.getElementsByName('emailAddress')[0],
-      i;
-
-  for (i = 0; i < labels.length; i++)
-     { labels[i].setAttribute('style', 'display:none;'); }
-
-  eForm.parentNode.setAttribute('style', 'background-color:#333;height:12em;text-align:center;padding:0% 20%;');
-  // titleLable.setAttribute('style', 'display:none;');
-  submitButton.setAttribute('style', 'height:2em;background-color:#337d87;color:#fff;border:none;border-radius:.3em;padding:.3em .5em;font-size:1em;');
-  firstName.setAttribute('style', 'margin:.5em;height:2em;width:80%;padding-left:.5em;font-size:1em;border:none;border-radius:.3em;');
-  firstName.setAttribute('placeholder', 'First Name');
-  lastName.setAttribute('style', 'margin:.5em;height:2em;width:80%;padding-left:.5em;font-size:1em;border:none;border-radius:.3em;');
-  lastName.setAttribute('placeholder', 'Last Name');
-  emailAddress.setAttribute('style', 'margin:.5em;height:2em;width:80%;padding-left:.5em;font-size:1em;border:none;border-radius:.3em;');
-  emailAddress.setAttribute('placeholder', 'Email');
-&lt;/script&gt;</pre>
-    </div>
   </section>
   <section class="bcls-section">
     <h2 id="createform">Creating a Brightcove Campaign lead form</h2>
@@ -556,7 +525,7 @@ body {
 
 <hr>
 <div class="last-updated">
-  Page last updated on 29 Sep 2020
+  Page last updated on 10 Jun 2021
 </div>
 
 
