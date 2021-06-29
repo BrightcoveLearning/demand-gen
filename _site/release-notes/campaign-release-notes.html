@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="Brightcove Campaign Release Notes">
   
-  <title>Managing Videos</title>
+  <title>2020</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,9 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/videos/">Managing Videos</a></li>
+      <li class="breadcrumb-item"><a href="/release-notes/">Release Notes</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Managing Videos</li>
+      <li class="breadcrumb-item active" aria-current="page">2020</li>
     </ol>
   </nav>
 </header>
@@ -127,7 +127,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 						
 					
 						
-							<option value="https://audience.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience</option>
+							<option value="https://studio.support.brightcove.com/audience/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience</option>
 						
 					
 						
@@ -143,11 +143,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 						
 					
 						
-							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+							<option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
 						
 					
 						
-							<option value="https://social.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
 						
 					
 				</select>
@@ -373,7 +373,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/release-notes/2020.html">2020</a></li>
+                    <li><a href="/release-notes/campaign-release-notes.html">Brightcove Campaign Release Notes</a></li>
                   
                 
               </ul>
@@ -393,6 +393,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/reset-support-portal-password.html">Reset Your Support Portal Password</a></li>
                   
                 
               </ul>
@@ -428,103 +432,170 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Managing Videos</h1>
+  <h1>Brightcove Campaign&trade; Product Updates</h1>
+  <summary>This topic outlines the updates that have been made to the Brightcove Campaign application.</summary>
   <section class="bcls-section">
-    <p>To access the videos in the account, login to <a href="https://studio.brightcove.com/products/brightcovecampaign">Brightcove Campaign&trade;</a> and click <strong>Videos</strong> in the navigation header.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/videos-homepage.png" /></figure>
-    <p>The body of the page will display the following:</p>
+    <h2>Brightcove Campaign Rebranding</h2>
+    <h4>2 Jun 2021</h4>
     <ul>
-      <li>Video thumbnail and duration </li>
-      <li>Video name</li>
-      <li>Video ID - System assigned video ID (unique across all accounts)</li>
-      <li>Status
-        <ul>
-          <li><img alt="" src="/assets/images/videos/activate-icon.png" /> - Indicates the video is active</li>
-          <li><img alt="" src="/assets/images/videos/deactivate-icon.png" /> - Indicates the video is inactive (can't be played)</li>
-        </ul>
-      </li>
-      <li><a href="/get-started/overview-video-content-types.html">Video Content Type</a></li>
-      <li><a href="#audit">Created date and time and user ID</a></li>
-      <li><a href="#audit">Updated date and time and user ID</a></li>
+      <li>Brightcove Campaign has been updated to correspond to the updated Brightcove branding.</li>
     </ul>
-    <p>Multiple videos can be selected by clicking on a checkbox next to the video thumbnail and then shift-clicking on another checkbox. The list of videos can be sorted by clicking on a column header. The Videos page uses a "sticky" sort and will remember the sort selection. When you navigate away and come back or login again, the Videos page  will default to the sort that was last selected.</p>
-    <p>The button bar at the top of the page provides the ability to:</p>
+    <hr/>
+    <h2>Reset Player Styling</h2>
+    <h4>15 Jul 2020</h4>
     <ul>
-      <li><a href="#publish">Publish</a> - Publish videos to a web page or Email</li>
-      <li><a href="#content-type">Edit Content Type</a> - Assign a Video Content Type to videos</li>
-      <li><a href="#upload">Upload</a> - Upload videos to the account</li>
-      <li><a href="#activate">Activate/Deactivate</a> - Activate or Deactivate videos</li>
-      <li><a href="#delete">Delete</a> - Remove videos from the account </li>
+      <li>It is now possible to reset the player styling settings back to the default. For more information, see <a href="/admin/styling-players.html">Styling Players</a>.</li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/videos-button-bar.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="edit">Editing video properties</h2>
-    <p>To edit the video properties, click on the video name to open the video properties page. See <a href="/videos/editing-video-properties.html">Editing Video Properties</a> for information on editing video properties.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="publish">Publishing videos</h2>
-    <p>The Publish feature in Brightcove Campaign can be used to easily generate the embed code and images needed to distribute a video using a marketing automation platform (MAP). For information on publishing videos, see <a href="/videos/publishing-videos.html">Publishing Videos</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="content-type">Editing content types</h2>
-    <p>The <strong>Video Content Type</strong> column on the Videos page displays the Video Content Type for the video. Brightcove uses the Video Content Type to compile your analytics with those of similar videos and provide more robust analytics that includes Brightcove's Video Benchmark Score (VBS) and customized advice. To assign a Video Content Type to one or more videos:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Select one or more videos by clicking the checkbox next to the video(s).</li>
-      <li>Click <strong>Edit Content Type</strong>.</li>
-      <li>Select a content type for the selected videos.</li>
-      <li>Click <strong>Save</strong>.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: While Brightcove recommends assigning Video Content Types to all videos, this field can be disabled as part of the <a href="/admin/managing-account-settings.html">account settings</a>.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="upload">Uploading videos</h2>
-    <p>For information on uploading videos to the account, see <a href="/videos/uploading-videos.html">Uploading Videos</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="activate">Activating and Deactivating videos</h2>
-    <p>The <strong>Status</strong> column on the Videos page indicates if the video is <strong>Activated</strong> or <strong>Deactivated</strong>.</p>
+    <hr/>
+    <h2>Chrome Extension 2.0.5</h2>
+    <h4>17 Jun 2020</h4>
     <ul>
-      <li><img alt="" src="/assets/images/videos/activate-icon.png" /> - Indicates the video is active (video can be played)</li>
-      <li><img alt="" src="/assets/images/videos/deactivate-icon.png" /> - Indicates the video is inactive (video can't be played)</li>
+      <li>Updated sign in form tabbing order</li>
     </ul>
-    <p>To <strong>Activate</strong> a video, select it and then click <strong>Activate</strong>. To <strong>Deactivate</strong> a video, select it and then click <strong>Deactivate</strong>. If the <strong>Status</strong> column is not displayed, use the column selector <img alt="" src="/assets/images/videos/column-selector.png" /> to select it. </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="share">Sharing videos to other accounts</h2>
-    <p>Media sharing allows publishers with Brightcove Video Cloud accounts to share the videos to Brightcove Campaign accounts. The accounts can be your own, corporate accounts or accounts of other publishers. The video thumbnail will display an arrow in the upper left to indicate  that the video was shared into the account. In the example below, the  Brightcove Overview video was shared into this account.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/sharing-example.png" /></figure>
-    <p>For more information on working with shared videos, see <a href="/videos/working-with-shared-videos.html">Working with Shared Videos</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="delete">Deleting videos</h2>
-    <p>To delete videos, click the checkboxes next to the video thumbnails of the videos to delete and then click the delete button (<img alt="" src="/assets/images/videos/delete-icon.png" />). Confirm the delete by clicking the <strong>Delete</strong> button.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/confirm-delete.png" /></figure>
-    <figure class="bcls-figure"></figure>
-    <figure class="bcls-figure"></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="audit">Created and updated date and time information</h2>
-    <p>The user ID of the user who created and/or updated the video will be displayed in the Created Date/Updated Date columns. Note that if a user who performed an action is removed from an account, their ID will still appear.</p>
-    <p>There are cases where changes made to a video will not record a user ID and cases where a user ID may not be displayed:</p>
+    <hr />
+    <h2>v 1.4.0</h2>
+    <h4>11 Jun 2020</h4>
     <ul>
-      <li>When the video source is replaced, the updated date for the video will be updated but the user who initiated the action will not be recorded</li>
-      <li>When the images (poster/thumbnail) and/or text tracks are updated, the updated date for the video will be updated but the user who initiated the action will not be recorded</li>
+      <li>Improved error handling and messaging</li>
     </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="search">Searching for videos</h2>
-    <p>The Search field can be used to search the videos and playlists in your account. For more information, see <a href="/videos/how-to-search-for-videos.html">How to Search for Videos</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="columns">Customizing the column display</h2>
-    <p>The columns that appear in the body of the page can be customized by clicking on the columns button (<img alt="" src="/assets/images/videos/column-selector.png" />) and then selecting the columns that should be displayed.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/select-columns.png" /></figure>
-    <p>As more columns are selected, it is possible to horizontally scroll to see all of the columns.</p>
+    <hr/>
+    <h2>Chrome Extension 2.0.4</h2>
+    <h4>28 May 2020</h4>
+    <ul>
+      <li>Adjust padding on active nav links</li>
+      <li>Display additional login error codes</li>
+      <li>Bypass error display for 401 token expiration</li>
+    </ul>
+    <hr />
+    <h2>Player Styling</h2>
+    <h4>28 May 2020</h4>
+    <ul>
+      <li>It is now possible to do some basic player styling. For more information, see <a href="/admin/styling-players.html">Styling Players</a>.</li>
+    </ul>
+    <hr/>
+    <h2>v 1.3.1</h2>
+    <h4>13 May 2020</h4>
+    <ul>
+      <li>Detect and handle scenarios where Audience plugin isn&rsquo;t configured correctly</li>
+      <li>Display content type key when labels can&rsquo;t be loaded via API</li>
+      <li>Clean up Campaign account edition logic</li>
+    </ul>
+    <hr/>
+    <h2>Chrome Extension 2.0.2</h2>
+    <h4>11 May 2020</h4>
+    <ul>
+      <li>Localized support documentation links</li>
+      <li>Added tooltips to navigation menu</li>
+    </ul>
+    <hr />
+    <h2>v 1.3.0</h2>
+    <h4>6 May 2020</h4>
+    <ul>
+      <li>Localize documentation links</li>
+      <li>Fix inconsistent heading styles on Publish page</li>
+    </ul>
+    <hr/>
+    <h2>Chrome Extension 2.0.1</h2>
+    <h4>14 Apr 2020</h4>
+    <ul>
+      <li>Fixes a login bug</li>
+      <li>Fixes a bug with display of maximum allowed videos</li>
+      <li>Round averages for Analytics Gauge display</li>
+      <li>Round averages for no-content-type video analytics</li>
+      <li>Integrate Campaign common utility library</li>
+      <li>Removed tips coming soon message</li>
+    </ul>
+    <hr />
+    <h2>v 1.2.0</h2>
+    <h4>7 Apr 2020</h4>
+    <ul>
+      <li>Ability to update Video Content Type for multiple videos</li>
+      <li>Add Salesforce support to Publish page</li>
+      <li> Updated translations for MAP/Lead forms admin cases</li>
+      <li> Round averages for Analytics Gauge displays</li>
+      <li>Round average percent viewed for opt-out dashboard</li>
+      <li> Remove “Advice coming soon” for now</li>
+      <li> Add lead forms docs link to Publish page</li>
+    </ul>
+    <hr/>
+    <h2>Chrome Extension 2.0</h2>
+    <h4>30 Mar 2020</h4>
+    <ul>
+      <li> Modified feature flag, enabled publish/videos list views</li>
+      <li>Removed duplicate video ids when querying content types</li>
+      <li>Added code to stick tooltip to bounds of gauge component</li>
+      <li>Publish UI: Added lead Fforms support to Connections page</li>
+      <li>Adding an extra sleep</li>
+      <li>Add support for BC_ACCOUNT cookie</li>
+      <li>Update campaign-common library to v1.0.1</li>
+      <li>Adjusted video data structure so it contains created_at, not published_at</li>
+      <li>Avoid unneeded content type calls </li>
+      <li>Restructured CSS, added redux handling of analytics load state</li>
+    </ul>
+    <hr />
+    <h2>v 1.1.0</h2>
+    <h4>25 Mar 2020</h4>
+    <ul>
+      <li>Format created dates based on current language</li>
+      <li> Fix statbox sizing on Analytics page at certain browser sizes in IE11</li>
+      <li> Updated dashboard to show correct created date</li>
+    </ul>
+    <hr/>
+    <h2>v 1.0.6</h2>
+    <h4>10 Mar 2020</h4>
+    <ul>
+      <li>Fix link for More Analytics on Dashboard</li>
+      <li>Format video list creation date for consistency</li>
+      <li>Dashboard: Change label for published date to created</li>
+    </ul>
+    <hr/>
+    <h2>Chrome Extension 1.1.0</h2>
+    <h4>18 Feb 2020</h4>
+    <ul>
+      <li>Fix bug if average percent viewed is above 100</li>
+      <li>Fixed text overflow for non English localizations</li>
+      <li>Fix a bug to adjust the max-height of the extension</li>
+      <li>Fix a bug where clicking on 'Sign Out' leaves user hanging on loader</li>
+    </ul>
+    <hr />
+    <h2>v 1.0.5</h2>
+    <h4>18 Feb 2020</h4>
+    <ul>
+      <li>Update date range for benchmark query to better handle processing backups</li>
+      <li>Use higher resolution thumbnail for Publish page, Video SEO Code, Facebook Tags, and image for email</li>
+    </ul>
+    <hr />
+    <h2>v 1.0.4</h2>
+    <h4>16 Jan 2020</h4>
+    <ul>
+      <li>If benchmarks are not available, show "Unknown" for benchmarks instead of unavailable Dashboard</li>
+      <li>Improve video list visual style</li>
+      <li>Update MAP connections call to action if not an administrator</li>
+    </ul>
+    <hr />
+    <h2>v 1.0.1</h2>
+    <h4>14 Jan 2020</h4>
+    <ul>
+      <li>Added "Learn More" link to SEO tips on Publish page</li>
+      <li>Adjusted sizing of player icon in Publish page email tab</li>
+      <li>Fix label for MAP Connections field on Publish page when no connections are set up</li>
+      <li>Added Publish page translations</li>
+      <li>Localized content types on Dashboard &amp; Publish</li>
+      <li>Fix missing data bug in opt-out Dashboard</li>
+      <li>Show loading animation when switching query on Dashboard</li>
+      <li>Fix video.google.com link on Publish page</li>
+      <li>Improve layout of Dashboard at smaller window sizes</li>
+      <li>Improvements to Dashboard error handling and error messages</li>
+      <li>Improved localizations on Publish page</li>
+    </ul>
+    <hr />
+    <h2>Initial Release</h2>
+    <h4>18 Dec 2019</h4>
+    <p>The initial release of Brightcove Campaign.</p>
+    <hr />
   </section>
 </article>
-<!-- End of content -->
-</body></html>
+
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -540,7 +611,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 08 May 2020
+  Page last updated on 07 Jun 2021
 </div>
 
 

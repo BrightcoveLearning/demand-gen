@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="In this topic you will learn how about the Video Benchmark Score and learn how it is calculated.">
   
   <title>How Video Benchmark Score is Calculated</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -127,7 +127,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 						
 					
 						
-							<option value="https://audience.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience</option>
+							<option value="https://studio.support.brightcove.com/audience/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience</option>
 						
 					
 						
@@ -143,11 +143,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 						
 					
 						
-							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+							<option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
 						
 					
 						
-							<option value="https://social.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
 						
 					
 				</select>
@@ -373,7 +373,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/release-notes/2020.html">2020</a></li>
+                    <li><a href="/release-notes/campaign-release-notes.html">Brightcove Campaign Release Notes</a></li>
                   
                 
               </ul>
@@ -393,6 +393,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/reset-support-portal-password.html">Reset Your Support Portal Password</a></li>
                   
                 
               </ul>
@@ -434,12 +438,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>The Video Benchmark Score (VBS) examines two key video metrics:</p>
     <ul>
       <li>Play Rate</li>
-      <li>Engagement Rate</li>
+      <li>Average Percent Viewed</li>
     </ul>
     <p>Play Rate is calculated by dividing the number of video views by the number of times the video was loaded (video views / video loads). If you have a page with a video on it and that page is viewed 10 times, and viewers watch the video on 4 of those page views, the video will have a 40% play rate.  </p>
-    <p>Engagement Rate measures the percentage of a video that is actually watched. For example, two viewers watch a 60 second video. The first viewer watches for 5 seconds and the second viewer watches for 25 seconds. In total these viewers have accumulated 30 seconds of view time, or an average of 15 seconds. The Engagement Rate would be 25%  (5 seconds + 25 seconds)/(60 seconds * 2 viewers).</p>
-    <p>The VBS starts by comparing  the Play Rate and Engagement Rate of your video to  all videos with the same Video Content Type (Product Overview, Product Details, etc.). We then determine where your video ranks within this grouping: is it in the 10th percentile, 20th percentile, etc. These two percentiles are then averaged. So if you're video is in the 60th percentile for Play rate and 70th percentile in engagement rate, you're VBS would be 65.</p>
-    <p>There is  additional downward weighting of the VBS if either Play Rate or Engagement Rate is at or below the 30th percentile. This is to emphasize the poor performance and the need to improve.</p>
+    <p>Average Percent Viewed measures the percentage of a video that is actually watched. For example, two viewers watch a 60 second video. The first viewer watches for 5 seconds and the second viewer watches for 25 seconds. In total these viewers have accumulated 30 seconds of view time, or an average of 15 seconds. The Average Percent Viewed would be 25%  (5 seconds + 25 seconds)/(60 seconds * 2 viewers).</p>
+    <p>The VBS starts by comparing  the Play Rate and Average Percent Viewed of your video to  all videos with the same Video Content Type (Product Overview, Product Details, etc.). We then determine where your video ranks within this grouping: is it in the 10th percentile, 20th percentile, etc. These two percentiles are then averaged. So if you're video is in the 60th percentile for play rate and 70th percentile in average percent viewed, you're VBS would be 65.</p>
+    <p>There is  additional downward weighting of the VBS if either Play Rate or Average Percent Viewed is at or below the 30th percentile. This is to emphasize the poor performance and the need to improve.</p>
     <p>The formula for downward weighting is as follows, written in pseudo-code: </p>
     <pre><code translate="No">
 If either rate is &lt;=30
@@ -469,7 +473,7 @@ end if
 
 <hr>
 <div class="last-updated">
-  Page last updated on 28 Sep 2020
+  Page last updated on 14 Jun 2021
 </div>
 
 

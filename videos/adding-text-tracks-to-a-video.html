@@ -1,10 +1,11 @@
 ---
 title: Adding Text Tracks to a Video
 parent: Managing Videos
+description: In this topic you will learn how to add text tracks to a video.
 ---
 <article class="bcls-article">
   <h1>Adding Text Tracks to a Video</h1>
-  <summary>In this topic you will learn how to add text tracks to a video.</summary>
+  <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>The text tracks properties can be configured to provide captions for a video. Captions provide additional or interpretive information to individuals who wish to access it. Captions are necessary so the deaf and hard of hearing can access the audio portion of video presentations. To display captions for a video, you need to complete the following tasks:</p>
     <ul>
@@ -34,8 +35,8 @@ brief overview of what
 00:00:14.940 --&gt; 00:00:17.490 align:middle line:90%
 you can accomplish using it.
 </pre>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: Caption file names should only include letters (upper or lower case), numbers, dashes (-) and underscores (_) .</aside>
-    <p>For more information on the WebVTT format, see <a href="http://dev.w3.org/html5/webvtt/">this link</a>. You should have a separate caption file for each language you need to support. While there are many third-party tools to help create captions files, Brightcove has several partners that provide transcription, captioning and translation services. For a complete list of Brightcove partners, visit the <a href="https://www.brightcove.com/en/partners/find-partner">Partners</a> section of our website.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Caption file names should only include letters (upper or lower case), numbers, dashes (-) and underscores (_) .</aside>
+    <p>For more information on the WebVTT format, see <a href="http://dev.w3.org/html5/webvtt/">this link</a>. You should have a separate caption file for each language you need to support. While there are many third-party tools to help create captions files, Brightcove has several partners that provide transcription, captioning and translation services. For a complete list of Brightcove partners, visit the <a href="https://www.brightcove.com/en/partners/">Partners</a> section of our website.</p>
   </section>
   <section class="bcls-section">
     <h2 id="texttrack">Configuring the text track properties</h2>
@@ -50,8 +51,8 @@ you can accomplish using it.
           <li><strong>File Upload</strong> - Click <strong>Browse</strong> and select the text track file from the file system.</li>
           <li><strong>URL Upload</strong> - Enter the public URL where the text track file resides and then click <strong>Upload</strong>.</li>
           <li><strong>Remote URL</strong> - Enter the public URL where the text track file resides. The URL must be less than 250 characters. Captions will be loaded from the remote URL.
-            <aside class="bcls-aside bcls-aside--information language-editable">Note: If you are hosting captions files on your own server, make sure the file is located at a publicly addressable URL. The server hosting the captions file should also have Cross-Origin Resource Sharing (CORS) enabled.</aside>
-            <aside class="bcls-aside bcls-aside--information language-editable">Note: Text track file names with parentheses, question marks, quotation marks, spaces and other special characters will silently fail when uploading. Brightcove recommends using file names without special characters.</aside>
+            <aside class="bcls-aside bcls-aside--information">Note: If you are hosting captions files on your own server, make sure the file is located at a publicly addressable URL. The server hosting the captions file should also have Cross-Origin Resource Sharing (CORS) enabled.</aside>
+            <aside class="bcls-aside bcls-aside--information">Note: Text track file names with parentheses, question marks, quotation marks, spaces and other special characters will silently fail when uploading. Brightcove recommends using file names without special characters.</aside>
           </li>
         </ul>
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/text-tracks.png" /></figure>
@@ -71,16 +72,16 @@ you can accomplish using it.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/text-tracks-edit.png" /></figure>
       </li>
       <li>Check <strong>Default (Auto Display)</strong> to make the track the default. Most browsers will attempt to display the default text track first but language and accessibility settings may override the default setting.
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: The default setting does not work with IE11.</aside>
+        <aside class="bcls-aside bcls-aside--information">Note: The default setting does not work with IE11.</aside>
       </li>
       <li>Click <strong>Add Text Track</strong> to save the text track information.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/text-tracks-added.png" /></figure>
       </li>
       <li>Click <strong>Add Text Track</strong> to add another text track or<strong> Save</strong> to save the text tracks.
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: Changes made to the text track properties may take up to 15 minutes to appear.</aside>
+        <aside class="bcls-aside bcls-aside--information">Note: Changes made to the text track properties may take up to 15 minutes to appear.</aside>
       </li>
     </ol>
-    <p>If any text tracks have been designated as the default, they will appear in <strong>bold</strong>. To delete a text track, click the delete icon (<img alt="" src="/assets/images/videos/delete-icon-small.png" />) next to the text track.</p>
+    <p>If any text tracks have been designated as the default, they will appear in <strong>bold</strong>. To delete a text track, click the delete icon (<img alt="" src="/assets/images/videos/delete-icon.png" />) next to the text track.</p>
     <p>When a video with  captions is published, a <strong>CC</strong> button will appear on the player chrome. Click the <strong>CC</strong> button to select a caption language and display the captions.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/cc-button.png" /></figure>
   </section>

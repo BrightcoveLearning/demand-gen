@@ -1,10 +1,11 @@
 ---
 title: Connecting to Salesforce
 parent: Administering Accounts
+description: In this topic you will learn how to configure Brightcove Campaign&trade; for use with Salesforce.
 ---
 <article class="bcls-article">
   <h1>Connecting to Salesforce</h1>
-  <summary>In this topic you will learn how to configure Brightcove Campaign&trade; for use with Salesforce.</summary>
+  <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>Brightcove Campaign can be configured to integrate with  Salesforce. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  Salesforce. Once in Salesforce, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
   </section>
@@ -29,8 +30,8 @@ parent: Administering Accounts
   <section class="bcls-section">
     <h2 id="setupconnection">Setting up the connection</h2>
     <p>Follow these steps to setup the connection between Brightcove Campaign and Salesforce.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: The connection process will open popup windows in your browser. You should disable any browser popup blockers before setting up the connection.</aside>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Salesforce user account to use when configuring the integration with Brightcove Campaign.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: The connection process will open popup windows in your browser. You should disable any browser popup blockers before setting up the connection.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: Brightcove recommends creating a dedicated Salesforce user account to use when configuring the integration with Brightcove Campaign.</aside>
     <ol class="bcls-tasklist-restart">
       <li>Log in to Brightcove Campaign.</li>
       <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
@@ -54,24 +55,23 @@ parent: Administering Accounts
       <li>Click <strong>Save</strong>.</li>
       <li>Click the <strong>Back to MAP Connections</strong> link at the top of the page to return to the MAP Connections page.</li>
     </ol>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: If you create a connection without configuring an integration type, the connection will have a status of <strong>Connection Incomplete</strong> on the MAP Connections page.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: If you create a connection without configuring an integration type, the connection will have a status of <strong>Connection Incomplete</strong> on the MAP Connections page.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="pardot">Configuring a Pardot integration</h2>
     <p>Once the Brightcove Campaign to Salesforce connection has been made, you need to configure an integration type. This section covers the steps to use a <strong>Pardot</strong> integration type.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: Before configuring the Pardot integration, you should complete the steps outlined in the <a href="/admin/creating-salesforce-object-pardot.html">Creating a Custom Salesforce Object for Pardot Integration</a> topic.</aside>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove recommends creating a dedicated Pardot user account to use when configuring the integration with Brightcove Campaign.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: Before configuring the Pardot integration, you should complete the steps outlined in the <a href="/admin/creating-salesforce-object-pardot.html">Creating a Custom Salesforce Object for Pardot Integration</a> topic.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: Brightcove recommends creating a dedicated Pardot user account to use when configuring the integration with Brightcove Campaign.</aside>
     <ol class="bcls-tasklist">
       <li>Select <strong>Pardot</strong> for the integration type.</li>
-      <li>Enter your <strong>Email</strong> and <strong>Password</strong> you use to login to Pardot.</li>
     </ol>
-    <h3 id="pardot-api-key">Get the Pardot API key</h3>
-    <p>To get the value for the API Key field, follow these steps.</p>
+    <h3 id="pardot-api-key">Get the Pardot Business Unit ID</h3>
+    <p>To get the value for the Pardot Business Unit ID field, follow these steps.</p>
     <ol  class="bcls-tasklist">
-      <li>Log in to Pardot.</li>
-      <li> Click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-gear-icon.png" />) and then <strong>Settings</strong>.</li>
-      <li> Click the <strong>My Profile</strong> link at the top of the page.</li>
-      <li> Copy the value in the <strong>API User Key</strong> field and paste it into the <strong>User Key</strong> field.</li>
+      <li>Login to your Salesforce account.</li>
+      <li> Click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/pardot-gear-icon.png" />) and then <strong>Setup</strong>.</li>
+      <li>In the left navigation, in the <strong>Quick Find</strong> box, search for <strong>Pardot</strong>, then click <strong>Pardot Account Setup</strong>.</li>
+      <li> Locate the <strong> Business Unit ID</strong> field. Enter the value into the <strong>Pardot Business Unit ID</strong> field in Audience.</li>
     </ol>
     <h3 id="tracking-ids">Get the tracking IDs</h3>
     <p>To get the value for the <strong>Tracking piAld</strong> and <strong>Tracking piCld</strong> fields, follow these steps.</p>
@@ -99,7 +99,6 @@ parent: Administering Accounts
     <ol class="bcls-tasklist-restart">
       <li>For the <strong>Mapping Type</strong>, select <strong>Advanced</strong>.</li>
       <li>In the <strong>Salesforce Object</strong> dropdown list, select a Salesforce object to map the video data to. Typically, when using the Pardot integration type, you will map the view fields to the <a href="/admin/creating-salesforce-object-pardot.html">Salesforce custom object</a> you created.
-        </p>
       </li>
       <li>Map the appropriate <strong>View Field</strong> to Salesforce fields. The following example shows the video fields being mapped to a custom object.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="salesforce advanced mapping" src="/assets/images/admin/salesforce-adv-mapping.png" /></figure>

@@ -113,8 +113,8 @@
   name: Release Notes
   url: /release-notes/index.html
   docs:
-    - name: 2020
-      url: /release-notes/2020.html
+    - name: Brightcove Campaign Release Notes
+      url: /release-notes/campaign-release-notes.html
 - section: 
   name: Support
   url: /support/index.html
@@ -125,6 +125,8 @@
       url: '/support/contact-sales.html'
     - name: 'Opening a Support Case'
       url: '/support/opening-case-with-brightcove-support.html'
+    - name: 'Reset Your Support Portal Password'
+      url: '/support/reset-support-portal-password.html'
 
 # TODO correct and add additional sections/pages
 # TODO note that the order of items here determines the order in navigation
