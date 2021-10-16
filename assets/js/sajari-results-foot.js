@@ -1,7 +1,3 @@
----
-layout: null
----
-
   var getUrlParam = function(e){var t = new RegExp("[?&]" + e.replace(/[\[\]]/g, "\\$&") + "(=([^&#]*)|&|#|$)"),a = t.exec(window.location.href);return a && a[2] ? decodeURIComponent(a[2].replace(/\+/g, " ")) : ""};
   var domain = location.hostname,
   site_domain,
@@ -15,7 +11,7 @@ layout: null
   } else {
     lang = 'en-us';
   }
-  site_domain = lang_prefix + '{{ site.site_domain }}';
+  site_domain = lang_prefix + 'campaign.support.brightcove.com';
   filter = "domain='" + site_domain +  "'";
   lang_filter = "lang='" + lang + "'";
   console.log('filter', filter);

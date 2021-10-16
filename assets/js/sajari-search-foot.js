@@ -1,7 +1,3 @@
----
-layout: null
----
-
 var _sj = _sj || [];
 _sj.push(['project', '1588255093746585379']);
 _sj.push(['collection', 'brightcove-documenation']);
