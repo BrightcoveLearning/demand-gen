@@ -37,6 +37,7 @@ site_domain: "campaign.support.brightcove.com"
 
 #TODO change product
 product: Brightcove Campaign
+product_short: Campaign
 color: rgb(51, 51, 51)
 product_color: rgb(193, 66, 217)
 product_icon: "campaign-logo.svg"
