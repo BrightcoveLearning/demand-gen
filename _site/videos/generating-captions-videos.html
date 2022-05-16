@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="In this topic you will learn how to generate video captions.">
   
-  <title>404 - Page Not Found</title>
+  <title>Generating Captions for Videos</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -58,7 +58,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">404 - Page Not Found</li>
+      <li class="breadcrumb-item"><a href="/videos/">Managing Videos</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Generating Captions for Videos</li>
     </ol>
   </nav>
 </header>
@@ -437,10 +439,144 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>404 - Page Not Found</h1>
 <article class="bcls-article">
-  <p>Sorry, the page you requested does not exist. Try going to <a href="/">Home page</a> and navigating to it or searching for it.</p>
-  <p>For additional help, <a href="mailto:training@brightcove.com">email us</a>.</p>
+  <h1>Generating Captions for Videos</h1>
+  <summary>In this topic you will learn how to generate video captions.</summary>
+  <section class="bcls-section">
+    
+    <p>Brightcove Campaign provides the ability to  generate video captions for newly uploaded or existing videos. After the caption files are generated, they are automatically configured as part of the video's text tracks properties. Brightcove recommends <a href="#review">reviewing the generated captions</a> for accuracy. Processing time to generate the captions will vary but  it generally takes about 1.5x the length of the video to generate  captions for a video. </p>
+    <p>In order to generate captions, the following are required:</p>
+    <ul>
+      <li>The videos must have been transcoded using a Context Aware or Dynamic Delivery ingest profile</li>
+      <li> The minimum length of a video to generate auto captions is:
+        <ul>
+          <li>5 seconds, if the language is specified</li>
+          <li>15 seconds, if the language is auto-detected</li>
+        </ul>
+      </li>
+      <li>The maximum length of a video that can be auto-captioned is 4 hours</li>
+    </ul>
+    <p>Campaign uses the follow process to determine the source that will be used to generate the captions.</p>
+    <ul>
+      <li>If the video has default audio track, that will be used as the captions source file (supported by default in the Media module)</li>
+      <li>If the video has no default audio track but a master/mezzanine file exists, that will be used as the  source file (supported by default in the Media module)</li>
+      <li>If the video has no default audio track or master/mezzanine files, but audio tracks are specified in the Dynamic Ingest call, the specified audio track will be used  (not yet supported in the Media module)</li>
+      <li>If the video has no default audio track, no master/mezzanine files, and no audio track is specified, captions cannot be generated</li>
+    </ul>
+    <p>If you are using a third-party to generate caption files, see <a href="adding-captions-videos-using-media-module.html">Adding Captions to Videos using the Media Module</a> for information on how to associate caption files with videos.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Please contact your Brightcove Account Manager to have this feature enabled.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="upload">Generating captions when uploading videos</h2>
+    <p>The Upload module provides an option to generate caption files when videos are uploaded. To generate a caption file during upload, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Upload</strong> module.</li>
+      <li>Enable the <strong>Auto captioning</strong> option, the <strong>Automatic captioning settings </strong>dialog will open.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/gen-captions-settings.png" /></figure>
+      </li>
+      <li>Select the <strong>Language</strong> to generate the captions in or select <strong>auto-detect</strong> to generate captions in the language spoken in the video. If a <strong>Language </strong>is not selected, the video language is auto-detected. Selecting a language will improve the caption file generation time and may improve overall accuracy.</li>
+      <li>Enter a <strong>Label</strong>. The label is typically set to the language used in the video. The label will be displayed in the CC dropdown in the video player and will be used by viewers to select the captions to be displayed.</li>
+      <li>Click<span class="button-blue">Done</span>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="existing">Generating captions for an existing video</h2>
+    <p>The Media module provides the option to generate  caption files for existing videos in your account.  To generate a caption file for an existing video, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Click the link for the video you want to edit to open the video properties.</li>
+
+      <li>Locate the <strong>Text Tracks</strong> section and click <span class="button-blue-text-bordered">Edit</span></li>
+      <li>Select the <strong>Auto caption</strong> option.</li>
+      <li>Select the <strong>Language</strong> to generate the captions in. If a <strong>Language</strong> is not selected, the video language is auto-detected. Selecting a language will improve the caption file generation time and may improve overall accuracy.</li>
+      <li>Enter a <strong>Label</strong>. The label is typically set to the language used in the video. The label will be displayed in the CC dropdown in the video player and will be used by viewers to select the captions to be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/gen-captions-auto-caption.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Add Text Track</span>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+    <p>The caption generation process will begin. When complete, a message will be displayed.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/gen-captions-complete.png" /></figure>
+    </p>
+    <p>After the captions are generated, Brightcove recommends <a href="#review">reviewing the captions</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="multiple">Generating captions for multiple videos</h2>
+    <p>The Media module also provides the option to generate  caption files for multiple videos at once.  A maximum of 100 videos can be captioned at once. To generate a caption files for multiple videos, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select the check box next to the videos  you want to generate captions for.</li>
+      <li>Click <strong>More</strong> &gt; <strong>Auto caption</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="review">Reviewing caption files</h2>
+    <p>After the caption files are generated, they are automatically configured as part of the video's text tracks properties. Captions  will have a status of <strong>Published</strong> and appear immediately during video playback. Brightcove recommends reviewing the generated captions.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Click on the video to open the video properties.</li>
+      <li>At the top of the page, click the <strong>CC</strong> button to open the caption editor.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-cc-icon.png" /></figure>
+      </li>
+      <li>Click <strong>Save draft</strong>. This will set the caption status to <strong>Draft</strong> and the captions will not be displayed.</li>
+    </ol>
+    <p>The <a href="using-the-caption-editor.html">caption editor</a> can be used to make any needed edits to the captions. When done, click <span class="button-blue">Publish text track</span> to publish the text tracks.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="download">Downloading caption files</h2>
+    <p>Chances are the caption generation process will not be perfect and you may need to edit  names used in the video and/or  punctuation. The Media module provides the ability to download  caption files. To download a caption file, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Click the link for the video you want to edit.</li>
+      <li>Locate the <strong>Text Tracks</strong> section and click <span class="button-blue-text-bordered">Edit</span> .
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/gen-captions-edit-text-track.png" /></figure>
+      </li>
+      <li>Click the download icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/icon-download.png" />) in the <strong>Actions</strong> column to download the caption file.</li>
+    </ol>
+    <p>The caption file is a formatted WEBVTT file and can be edited using any text editor. Once the changes are made, delete the existing caption file by clicking on the delete icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/icon-red-delete.png" />) in the <strong>Actions</strong> column. The edited caption file can then be uploaded. For information on how to upload a new text tracks file, see <a href="adding-captions-videos-using-media-module.html#texttrack">Configuring the text track properties</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="supported_languages">Supported languages</h2>
+    <p>Currently, auto captions are limited to the following languages.</p>
+    <table>
+      <tr>
+        <td width="311"><ul>
+            <li>Arabic (Gulf)</li>
+            <li>Arabic (Modern Standard)</li>
+            <li>Chinese (Mandarin)</li>
+            <li>Dutch</li>
+            <li>English (Australian)</li>
+            <li>English (British)</li>
+            <li>English (Indian)</li>
+            <li>English (Irish)</li>
+            <li>English (US)</li>
+            <li>Farsi</li>
+            <li>French</li>
+            <li>French (Canadian)</li>
+            <li>German</li>
+            <li>German (Swiss)</li>
+            <li>Hebrew</li>
+          </ul></td>
+        <td width="255"><ul>
+            <li>Hindi (Indian)</li>
+            <li>Indonesian</li>
+            <li>Italian</li>
+            <li>Japanese</li>
+            <li>Korean</li>
+            <li>Malay</li>
+            <li>Portuguese</li>
+            <li>Portuguese (Brazilian)</li>
+            <li>Russian</li>
+            <li>Spanish</li>
+            <li>Spanish (US)</li>
+            <li>Tamil</li>
+            <li>Telugu</li>
+            <li>Turkish</li>
+          </ul></td>
+      </tr>
+    </table>
+  </section>
 </article>
 
 <!-- complete bootstrap layout -->
@@ -458,7 +594,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 16 Aug 2020
+  Page last updated on 09 May 2022
 </div>
 
 
