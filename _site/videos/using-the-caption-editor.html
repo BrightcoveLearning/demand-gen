@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to configure Brightcove Campaign&trade; for use with Marketo using the REST APIs.">
+  <meta name="description" content="In this topic you will learn how to edit captions using the caption editor.">
   
-  <title>Connecting to Marketo using the REST APIs</title>
+  <title>Using the Caption Editor</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -58,9 +58,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/admin/">Administering Accounts</a></li>
+      <li class="breadcrumb-item"><a href="/videos/">Managing Videos</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Connecting to Marketo using the REST APIs</li>
+      <li class="breadcrumb-item active" aria-current="page">Using the Caption Editor</li>
     </ol>
   </nav>
 </header>
@@ -444,51 +444,77 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Connecting to Marketo using the REST APIs</h1>
-  <summary>In this topic you will learn how to configure Brightcove Campaign&trade; for use with Marketo using the REST APIs.</summary>
+  <h1>Using the Caption Editor</h1>
+  <summary>In this topic you will learn how to edit captions using the caption editor.</summary>
   <section class="bcls-section">
-    <p>Brightcove Campaign can be configured to integrate with  Marketo. When the integration is configured,  video engagement data for videos published using Brightcove Campaign is  synchronized to  Marketo. Once in Marketo, this data can be used for segmentation, campaign logic, reports, lead scoring, and personalizing communications.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: For information on how to configure Brightcove Campaign for use with Marketo using the Munchkin ID, see <a href="connecting-to-marketo-munchkin.html">Connecting to Marketo using Munchkin</a>.</aside>
+    <p>Captions can be added to videos and provide additional or interpretive information to individuals who wish to access it. Captions are associated with videos as part of the <strong>Text Track</strong> properties. Campaign provides the ability to <a href="generating-captions-videos.html">auto-generate captions</a> for a video or captions can be <a href="adding-captions-videos-using-media-module.html">manually associated</a> with videos. </p>
+    <p>Once captions have been added to videos, the caption editor can be used to edit the caption files. The text tracks properties can be configured to provide captions for a video. </p>
+    <aside class="bcls-aside bcls-aside--information">Note: The caption editor can't be used with videos that have been ingested using a Legacy profile (a grey cloud icon <img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/node14464-dd-icon-grey.png" /> will appear next to the video name).</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: Any type of text tracks (i.e. <a href="adding-chapters-video.html">chapters</a>) can be edited using the caption editor as long as it is a VTT file. When editing, the text will appear in the preview player as a caption but that is not necessarily how it will display to the end viewer.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="requirements">Requirements</h2>
-    <p>To use Brightcove Campaign with the Marketo REST integration, you must:</p>
-    <ul>
-      <li>Create a role in Marketo which has access to all of the API permissions</li>
-      <li>Create a LaunchPoint Service</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="api">Creating an API-only user and LaunchPoint service</h2>
-    <p>Before you can make a call to the Marketo REST API, you need to create a new API role with access to all of the APIs, create an API-only user and then create a service that uniquely identifies your client application. The steps to complete these tasks are outlined in the <a href="https://developers.marketo.com/blog/quick-start-guide-for-marketo-rest-api/">Marketo documentation</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="setupConnection">Setting up the connection</h2>
-    <p>Once the configuration steps on the Marketo side have been completed, follow these steps to setup the connection between Brightcove Campaign and Marketo.</p>
-    <h3 id="establishConnection">Establishing the connection between Brightcove Campaign and Marketo</h3>
-    <ol class="bcls-tasklist-restart" style="--s:1">
-      <li> Log in to Brightcove Campaign.</li>
-      <li> In the navigation header, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) and then <strong>MAP Connections</strong>. A list of current connections (if any) will appear. </li>
-      <li>Click <strong>Add New Connection</strong>.</li>
-      <li>Select <strong>Marketo</strong> from the dropdown list.</li>
-      <li>Select the <strong>Standard (REST API) </strong>integration type. You will required to paste in several values from your Marketo account. Note that you must be logged in as a Marketo administrator to complete the following steps. </li>
-      <li>Enter your <strong>Marketo Account ID</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Munchkin</strong>.</li>
-      <li>Enter your <strong>Marketo REST API Endpoint URL</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>Web Services</strong>. Copy the <strong>Endpoint</strong> in the <strong>REST API</strong> section.</li>
-      <li>Enter your <strong>Marketo REST API Identity URL</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> Web Services</strong>.</li>
-      <li>Enter <strong>Marketo LaunchPoint Client ID</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt; <strong>LaunchPoint</strong> and then click the <strong>View Details</strong> link for the LaunchPoint you created earlier as part of this setup.</li>
-      <li>Enter <strong>Marketo LaunchPoint Client Secret</strong>. To get this value, in Marketo click <strong>Admin</strong> &gt;<strong> LaunchPoint</strong> and then click the <strong>View Details</strong> link for the LaunchPoint you created earlier as part of this setup.</li>
-      <li>Click <strong>Save</strong>.</li>
+    <h2 id="open">Opening the caption editor</h2>
+    <p>To open the caption editor, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong>  module.</li>
+      <li>Click a video name  to open the video properties page.</li>
+      <li>Icons above the preview player can be used to display the preview player or the caption editor. Click the <strong>CC</strong> icon to open the caption editor.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-cc-icon.png" /></figure>
+      </li>
     </ol>
-    <p>The connection to Marketo is now set up and ready to use.
-      By default, the <strong>Connection Status</strong> will be <strong>Enabled</strong>. The <strong>Connection Status</strong> determines if video engagement data is sent to Marketo:</p>
+    <p>The first text track will be loaded into the editor. If there are no text tracks, the editor will be empty.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-captions-loaded.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: If you would like to disable the caption editor for your account, contact Brightcove Support.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit">Editing a caption file</h2>
+    <p>To edit a caption file, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the caption editor.</li>
+      <li>The caption editor will load the first text track into the editor. If you need to edit a different text track, click <span class="button-blue">Choose text track ˇ</span> and select the text track to edit. The editor will display the tracks and the associated start and end times.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-choose-track.png" /></figure>
+      </li>
+      <li>Edit the text track content as needed. The preview player can be used to preview changes to the text track.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-captions-edited.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: You must click out of the caption line and then back in to view your changes in the preview player.</aside>
+        <aside class="bcls-aside bcls-aside--information">Note: For videos longer than one hour, the timecode format will change to 00:00:00:000.</aside>
+      </li>
+      <li>Click <span class="button-blue">Publish text track</span> to save the changes. Campaign will upload the updated text tracks file.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-status-published.png" /></figure>
+      </li>
+      <aside class="bcls-aside bcls-aside--information">Note: There will be a slight delay before  updates to text tracks appear in players.</aside>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="auto-caption">Generating captions</h2>
+    <p>The caption editor can be used to generate captions for a video. To generate captions for a video, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the caption editor.</li>
+      <li>Click <span class="button-blue">Auto caption</span>.</li>
+      <li>Select the <strong>Language</strong> to generate the captions in. If a <strong>Language</strong> is not selected, the video language is auto-detected. Selecting a language will improve the caption file generation time and may improve overall accuracy.</li>
+      <li>Enter a <strong>Label</strong>. The label is typically set to the language used in the video. The label will be displayed in the CC dropdown in the video player and will be used by viewers to select the captions to be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-caption-settings.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Done</span>.</li>
+    </ol>
+    <p>The page will need to be refreshed when the captions are complete for them to populate in the caption editor. The generated captions will have a <strong>Published</strong> status after they are generated.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="draft">Saving drafts</h2>
+    <p>When a caption file is saved as a draft, it will not be displayed to viewers. Drafts are useful when you are in the process of editing or reviewing a caption file. To save a caption file as a draft, open caption editor and click <span class="button-blue">Save draft</span>. The caption editor will display a status of <strong>Draft</strong>.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-status-draft.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="issues">Known issues and feature gaps</h2>
+    <p>Because the caption Editor is not yet a finished feature, there are some known issues/feature gaps that you may want to be aware of. These are listed below and will be resolved in the coming weeks. </p>
     <ul>
-      <li><strong>Enabled</strong> - Data is collected and will be sent to Marketo</li>
-      <li><strong>Disabled</strong> - No data is collected (integration is disabled)</li>
+      <li><strong>Publish and Unsave workflow</strong> - We recognize that it is not ideal to have to publish a text track and then unpublish separately to hide the captions from end viewers. We are working on making this a single action.</li>
+      <li><strong>Overlapping captions</strong> - If one caption has a start time with the same timecode as the previous caption’s end time, they will appear to overlap in the caption player. It will not appear that way to end viewers - the caption line with the same start timecode will win the conflict.</li>
+      <li><strong>Timecode errors</strong> - Only numbers and colons are allowed in the timecode field. If you enter in any other character-types (e.g. letters, commas), it will result in an error. To fix this, replace the disallowed characters with a number or colon. </li>
     </ul>
-    <p>Click <strong>Save</strong> to save changes. To remove the integration, click <strong>Delete</strong>.</p>
   </section>
 </article>
-</body></html>
+
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -504,7 +530,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 19 Jun 2021
+  Page last updated on 09 May 2022
 </div>
 
 
