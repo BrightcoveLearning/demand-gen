@@ -27,6 +27,8 @@
       url: /videos/driving-video-views-email.html
     - name: Editing Video Properties
       url: /videos/editing-video-properties.html
+    - name: Generating Captions for Videos
+      url: /videos/generating-captions-videos.html
     - name: Managing Videos
       url: /videos/managing-videos.html
     - name: Publishing Videos
@@ -37,6 +39,8 @@
       url: /videos/uploading-poster-and-thumbnail-images.html
     - name: Uploading Videos
       url: /videos/uploading-videos.html
+    - name: Using the Caption Editor
+      url: /videos/using-the-caption-editor.html
     - name: Working with Shared Videos
       url: /videos/working-with-shared-videos.html
 - section: 
