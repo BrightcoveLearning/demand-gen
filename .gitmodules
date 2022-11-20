@@ -50,3 +50,6 @@
 	path = assets/s-site-assets-images
 	url = https://github.com/BrightcoveLearning/s-site-assets-images
   branch = main
+[submodule "_data/s-site-assets-data"]
+	path = _data/s-site-assets-data
+	url = https://github.com/BrightcoveLearning/s-site-assets-data
