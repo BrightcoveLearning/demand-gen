@@ -1,83 +1,33 @@
 ---
 title: Brightcove Campaign Documentation
+layout: landing_page
 ---
-<article class="bcls-article">
-  <h1 style="font-weight: bold;">Brightcove Campaign<sup>&trade;</sup> Documentation</h1>
-        <aside class="bcls-aside bcls-aside--information">Note: This documentation is for the Campaign standalone application. If you are using the Campaign module accessed from within Video Cloud Studio, the documentation is available <a href="https://studio.support.brightcove.com/campaign/index.html">here</a>.</aside>
+<!-- main content -->
+<div class="page-content">
+  <div class="container">
+    <div class="docs-overview py-5">
+      <div class="row justify-content-center">
 
-  <section class="card-wrapper">
-    <section onclick="window.location.pathname= '/get-started/index.html';" class="bcls-card">
-      <div class="card-content">
-        <h2><a href="get-started/index.html">Getting Started</a></h2>
-        <p>Just getting started with Brightcove Campaign?</p>
-        <ul>
-          <li><a href="/get-started/overview-video-content-types.html">Overview of Video Content Types</a></li>
-          <li><a href="/get-started/uploading-publishing-your-first-video.html">Uploading and Publishing Your First Video</a></li>
-        </ul>
-        <p><a href="/get-started/index.html">View All...</a></p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname= '/videos/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="videos"><a href="/videos/">Managing Videos</a></h2>
-        <p>Learn how to upload and manage videos.</p>
-        <ul>
-          <li><a href="/videos/uploading-videos.html">Uploading Videos</a></li>
-          <li><a href="/videos/managing-videos.html">Managing Videos</a></li>
-          <li><a href="/videos/publishing-videos.html">Publishing Videos</a></li>
-        </ul>
-        <p><a href="/videos/index.html">View All...</a></p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname= '/dashboard/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="dashboard"><a href="/dashboard/">Reviewing the Dashboard</a></h2>
-        <p>Learn about the various Dashboard pages that are available that provide basic video analytics.</p>
-        <ul>
-          <li><a href="/dashboard/dashboard-overview.html">Overview of the Dashboard</a></li>
-          <li><a href="/dashboard/reviewing-adv-dashboard.html">Advanced Dashboard</a></li>
-          <li><a href="/dashboard/reviewing-basic-dashboard.html">Basic Dashboard</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname= '/analytics/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="analytics"><a href="/analytics/">Reviewing Analytics</a></h2>
-        <p>Learn how to view video analytics to see how your videos are performing.</p>
-        <ul>
-          <li><a href="/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a> </li>
-          <li><a href="/analytics/how-vbs-calculated.html">How Video Benchmark Score is Calculated</a></li>
-          <li><a href="/analytics/using-hud.html">Using the Chrome Extension</a> </li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname= '/admin/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="admin"><a href="/admin/">Administering Accounts</a></h2>
-        <p>Learn how to create users and configure other account settings.</p>
-        <ul>
-          <li><a href="/admin/managing-users.html">Managing Users</a></li>
-          <li><a href="/admin/viewing-billing-information.html">Billing Information</a></li>
-          <li><a href="/admin/configuring-map-connections.html">Configuring MAP Connections</a></li>
-        </ul>
-        <p><a href="/admin/index.html">View all...</a></p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname= '/release-notes/index.html';" class="bcls-card">
-      <div class="card-content">
-        <h2><a href="/release-notes/campaign-release-notes.html">Release Notes</a></h2>
-        <p>Learn about new product features</p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname= '/support/index.html';" class="bcls-card">
-      <div class="card-content">
-        <h2><a href="/support/index.html">Support</a></h2>
-        <p>Have a question or need help?</p>
-        <ul>
-          <li><a href="/support/viewing-brightcove-system-status-page.html">View Brightcove System Status</a></li>
-          <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
-        </ul>
-      </div>
-    </section>
-  </section>
-</article>
+
+        {% for section in site.data.navigation offset:1 %}
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card-hover card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="span-icon card-icon-holder icon-theme me-2">
+                  <i class="{{ section.icon }}"></i>
+                </span><!--//card-icon-holder-->
+                <span class="card-title-text">{{ section.name }}</span>
+              </h5>
+              <div class="card-text">
+                {{ section.description }}
+              </div>
+              <a class="card-link-mask" href="{{ section.url }}"></a>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        {% endfor %}
+      </div><!--//row-->
+    </div><!--//container-->
+  </div><!--//container-->
+</div><!--//page-content-->

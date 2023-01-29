@@ -45,13 +45,18 @@ search_id: "017969773216783359937:tynvaqmi3xs"
 feedbackify_id: "14985"
 bing_custom_config_id: "50aa017b-6fdf-41ea-bde9-fe24aa4fe216"
 defaults:
-  - 
+  -
     scope:
       path: ""
       type: "pages"
     values:
-      layout: "page"
-
+      layout: "doc_pages"
+  -
+    scope:
+      path: "*/index.html"
+      type: "pages"
+    values:
+      layout: "index_pages"
 # plugins
 plugins:
   - jekyll-last-modified-at

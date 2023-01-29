@@ -4,6 +4,8 @@
 - section: 
   name: Getting Started
   url: /get-started/index.html
+  icon: fa-regular fa-map-pin
+  description: Topics to help you get started with Brightcove Campaign
   docs:
     - name: Campaign Training Videos
       url: /get-started/brightcove-campaign-training-videos.html
@@ -18,6 +20,7 @@
 - section: 
   name: Managing Videos
   url: /videos/index.html
+  description: Learn how to manage the videos in your account.
   docs:
     - name: Adding Text Tracks
       url: /videos/adding-text-tracks-to-a-video.html
@@ -46,6 +49,8 @@
 - section: 
   name: Reviewing the Dashboard
   url: /dashboard/index.html
+  icon: fa-regular fa-gauge-high
+  description: The Brightcove Campaign™ Dashboard provides a high-level overview of how your published videos are performing.
   docs:
     - name: Dashboard Overview
       url: /dashboard/dashboard-overview.html
@@ -56,6 +61,8 @@
 - section: 
   name: Reviewing Analytics
   url: /analytics/index.html
+  icon: fa-regular fa-chart-line-up
+  description: Learn how to view analytics about the performance of your videos.
   docs:
     - name: How Video Benchmark Score is Calculated
       url: /analytics/how-vbs-calculated.html
@@ -66,6 +73,8 @@
 - section: 
   name: Administering Accounts
   url: /admin/index.html
+  icon: fa-regular fa-gear
+  description: Learn how to create users and manage account settings.
   docs:
     - name: Configuring Adobe Analytics
       url: /admin/configuring-adobe-analytics-event-tracking.html
@@ -116,12 +125,16 @@
 - section: 
   name: Release Notes
   url: /release-notes/index.html
+  icon: fa-regular fa-memo-pad
+  description: Learn about new features.
   docs:
     - name: Brightcove Campaign Release Notes
       url: /release-notes/campaign-release-notes.html
 - section: 
   name: Support
   url: /support/index.html
+  icon: fa-regular fa-comments-question-check
+  description: Learn how to contact Brightcove Support.
   docs:
     - name: 'Viewing the Brightcove System Status Page'
       url: '/support/viewing-brightcove-system-status-page.html'
