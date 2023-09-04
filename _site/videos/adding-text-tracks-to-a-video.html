@@ -612,7 +612,7 @@
   <h1>Adding Text Tracks to a Video</h1>
   <summary>In this topic you will learn how to add text tracks to a video.</summary>
   <section class="bcls-section">
-
+<!--  -->
     <p>The text tracks properties can be configured to provide captions for a video. Captions provide additional or interpretive information to individuals who wish to access it. Captions are necessary so the deaf and hard of hearing can access the audio portion of video presentations. To display captions for a video in the Brightcove player, you need to complete the following tasks:</p>
     <ul>
       <li><a href="#captionsfile">Create caption files</a></li>
@@ -620,6 +620,7 @@
 
     </ul>
   </section>
+  
   <section class="bcls-section">
     <h2 id="captionsfile">Creating caption files</h2>
     <p>To add captions to a video, you first need to create a captions file. One option is to use Brightcove Campaign to <a href="generating-captions-videos.html">generate captions for videos</a>.  The Brightcove Player supports Web Video Text Tracks Format (WebVTT), SRT, DFXP and SCC formats, although all non-WebVTT formats are converted to WebVTT as part of the Dynamic Delivery ingestion process.
@@ -663,6 +664,7 @@ you can accomplish using it.
     </aside>
     <p>For more information on the WebVTT format, see <a href="https://www.w3.org/TR/webvtt1/">this link</a>. You should have a separate caption file for each language you need to support. While there are many third-party tools to help create captions files, Brightcove has several partners that provide transcription, captioning and translation services. For a complete list of Brightcove partners, visit the <a href="https://www.brightcove.com/en/partners">Partners</a> section of our website.</p>
   </section>
+
   <section class="bcls-section">
     <h2 id="texttrack">Configuring the text track properties</h2>
     <p>Once the caption files have been created, they can be uploaded and hosted by Brightcove or reside at an internet accessible URL.</p>
@@ -674,7 +676,8 @@ you can accomplish using it.
 
       <li>Open the <strong>Videos</strong> page.</li>
 
-      <li>Click the video tittle link.</li>
+      <li>Click the video title link.</li>
+      
       <li>Click <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>
         or double-click in the <strong>Text Tracks</strong> section.</li>
       <li>Select if the text track file will be uploaded to Campaign or hosted on an external URL.
@@ -713,19 +716,24 @@ you can accomplish using it.
       <li>Click <span class="button-blue"> Add Text Track</span>  to add another text track or <span class="button-blue"> Save</span>  to save the text tracks.
         <aside class="bcls-aside bcls-aside--information">Note: Changes made to the text track properties may take up to 15 minutes to appear in published players.</aside>
       </li>
+      
     </ol>
     <p>If any text tracks have been designated as the default, they will appear in <strong>bold</strong>. To delete a text track, click the delete icon (<img alt="" src="/assets/images/s-media-img/captions/node15481-delete-icon.png" />) next to the text track.</p>
     <p>When a player with associated captions is published, a <strong>CC</strong> button will appear on the player chrome. Click the <strong>CC</strong> button to select a caption language and display the captions.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/captions/node15481-cc-button.png" /></figure>
     <aside class="bcls-aside bcls-aside--information"><strong>Note:</strong> The <strong>Caption(CC)/Subtitles icon depends on the player's language</strong>. Brightcove strongly advises users not to change this because it is an intentional design choice to present a localized UI.</aside>
   </section>
+
   <section class="bcls-section">
     <h2 id="edit_captions">Edit caption properties</h2>
-    <p>To edit the properties of existing captions, click <strong>Edit</strong> in the Text Tracks panel, and then <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>  on the captions item that you want to edit:</p>
+    
+    <p>To edit the properties of existing captions, click <img src="assets/images/media/video-details/three-dots-button.webp" alt=""> in the Text Tracks panel, and select the <strong>Edit track</strong>  on the captions item that you want to edit:</p>
     <figure class="bcls-figure"><img class="bcls-image" alt="Editing Caption Properties" src="/assets/images/s-media-img/captions/node15481-edit-captions.png" />
       <figcaption class="bcls-caption--image">Editing Caption Properties</figcaption>
     </figure>
+    
   </section>
+
   <section class="bcls-section">
     <h2 id="download">Downloading caption files</h2>
     <p>The Media module provides the ability to download  caption files. To download a caption file, follow these steps.</p>
@@ -734,13 +742,16 @@ you can accomplish using it.
       <li>Open the <strong>Videos</strong> page.</li>
 
       <li>Click the link for the video you want to edit.</li>
+       
       <li>Locate the <strong>Text Tracks</strong> section and <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>.
 
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/captions/gen-captions-edit-text-track.png" /></figure>
       </li>
       <li>Click the download icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/icon-download.png" />) in the <strong>Actions</strong> column to download the caption file. </li>
+    
     </ol>
   </section>
+
 
   <section class="bcls-section">
     <h2 id="limitations">Limitations</h2>
